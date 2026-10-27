@@ -1,0 +1,14 @@
+'use client';
+import {useRouter} from 'next/navigation';
+import {Pin,Pencil,ChevronRight} from './tone-icon';
+import {editorialDate,WriterMark} from './editorial-ui';
+import type {RunRecord} from '@/packages/contracts';
+export const batchName=(r:RunRecord)=>r.name||`测试 ${new Date(r.createdAt).getMonth()+1}/${new Date(r.createdAt).getDate()} · ${r.spec.cases.length} 个案例`;
+const match=(r:RunRecord,q:string)=>`${batchName(r)} ${r.spec.cases.map(c=>c.title).join(' ')} ${r.spec.models.map(m=>m.name+' '+m.model).join(' ')}`.toLowerCase().includes(q.toLowerCase());
+const states:Record<string,string>={waiting_runner:'等待本机执行',preflight:'执行前检查',running:'执行中',uploading:'归档中',completed:'已完成',partial_failed:'部分失败',failed:'执行失败'};
+export function BatchSidebar({runs,query}:{runs:RunRecord[];query:string}){
+ const router=useRouter(),filtered=runs.filter(r=>match(r,query));return <div className="context-history test-context unified-batch-sidebar">{['置顶','全部测试'].map(label=><section className="test-group" key={label}><h2>{label}<span>{label==='置顶'?filtered.filter(r=>r.pinned).length:filtered.length}</span></h2>{filtered.filter(r=>label!=='置顶'||r.pinned).map(r=><div className="test-row" key={r.id}><button className="test-open" onClick={()=>router.push('/r/'+r.id)}><WriterMark profileId={r.spec.models[0]?.name}/><span>{batchName(r)}</span>{r.pinned&&<Pin size={11}/>}</button></div>)}{label==='置顶'&&!filtered.some(r=>r.pinned)&&<p className="test-empty">暂无置顶</p>}</section>)}</div>;
+}
+export function BatchList({runs,query,rename,pin,busy}:{runs:RunRecord[];query:string;rename:(r:RunRecord)=>void;pin:(r:RunRecord)=>void;busy:boolean}){
+ const router=useRouter(),filtered=runs.filter(r=>match(r,query));return <div className="result-batches">{filtered.length?filtered.map(r=><article className="result-batch" key={r.id}><button className="result-batch-open" onClick={()=>router.push('/r/'+r.id)}><span className="result-batch-name"><strong>{batchName(r)}</strong><span className={'hm-state '+r.status}>{states[r.status]||r.status}</span></span><span className="result-batch-meta">{editorialDate(r.createdAt)} · {r.spec.cases.length} 个案例 · {r.spec.models.length} 个 Agent 配置</span><span className="result-batch-cases">{r.spec.cases.map(c=>c.title).join(' · ')}</span></button><button className={'ed-icon '+(r.pinned?'on':'')} title={r.pinned?'取消置顶':'置顶测试'} aria-label={(r.pinned?'取消置顶 ':'置顶 ')+batchName(r)} disabled={busy} onClick={()=>pin(r)}><Pin size={15} fill={r.pinned?'currentColor':'none'}/></button><button className="ed-icon" title="重命名" aria-label={'重命名 '+batchName(r)} onClick={()=>rename(r)}><Pencil size={15}/></button><button className="ed-icon" aria-label={'打开 '+batchName(r)} onClick={()=>router.push('/r/'+r.id)}><ChevronRight size={15}/></button></article>):<div className="hm-empty">没有匹配的测试记录</div>}</div>;
+}

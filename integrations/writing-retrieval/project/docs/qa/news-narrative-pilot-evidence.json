@@ -1,0 +1,224 @@
+{
+  "scope": "Five selected historical news articles; source anchors and media-node order only, not current news verification or visual inspection.",
+  "records": [
+    {
+      "articleId": "A100443",
+      "title": "苹果最终选择了阿里巴巴的通义大模型",
+      "activeGenre": "资讯",
+      "activeStructure": "N1",
+      "rawPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/文章/AI产品阿颖/2025/A100443 苹果最终选择了阿里巴巴的通义大模型.md",
+      "analysisPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/全文拆解v5/文章/A100443.md",
+      "paragraphCount": 13,
+      "snapshotTextMatchesVault": true,
+      "markdownSha256": "b10f80f98c580f0f93a68decabd540cf05228ceeb4325b5fa55fbc12d2013f4a",
+      "sourceMarkdownImagesIncludingDecorations": 1,
+      "anchors": [
+        {
+          "from": "P1",
+          "to": "P2",
+          "startExcerpt": "据一位直接了解相关决定的人士透露，苹果公司最近开始与中国互联网和电子商务巨头阿里巴巴集团合作，在中国推出人工智能（AI）功能。此举是苹果战略",
+          "endExcerpt": "这位人士还表示，苹果和阿里巴巴已经将他们共同开发的中国 AI 功能提交给中国网信监管部门审批，这表明双方的合作已经取得了显著进展。"
+        },
+        {
+          "from": "P3",
+          "to": "P4",
+          "startExcerpt": "去年，苹果开始在美国和其他国家的 iPhone 等设备上推出 AI 功能（苹果称之为 Apple Intelligence）。这些功能结合了",
+          "endExcerpt": "具体功能包括改进 iPhone 的照片搜索、通知和文本重写能力。然而，我们知道，苹果在中国的AI 能力，不能直接使用OpenAI等未备案产品"
+        },
+        {
+          "from": "P5",
+          "to": "P7",
+          "startExcerpt": "据两位知情人士透露，从 2023 年开始，苹果测试了来自中国知名 AI 开发商的不同 AI 模型，并在去年选择了百度作为主要合作伙伴。但由于",
+          "endExcerpt": "目前尚不清楚苹果是否完全排除了使用百度模型的可能性，或者百度的模型是否会成为未来中国 iPhone 用户可以选择的为 Apple Intel"
+        },
+        {
+          "from": "P8",
+          "to": "P10",
+          "startExcerpt": "对于苹果来说，在中国找到合适的 AI 合作伙伴以遏制市场份额损失的风险很高。中国是苹果在美国以外的第二大市场，在截至 12 月的季度中占销售",
+          "endExcerpt": "苹果的一位发言人拒绝置评。百度、腾讯、字节跳动和 DeepSeek 也未回应置评请求。"
+        },
+        {
+          "from": "P11",
+          "to": "P13",
+          "startExcerpt": "苹果的目标是找到一个能够基于中国用户的个人数据理解他们请求的中国合作伙伴。据三位熟悉苹果想法的人士透露，当评估中国公司开发的 AI 模型时，",
+          "endExcerpt": "阿里巴巴是中国国内 AI 行业的领导者之一，与 DeepSeek 和 TikTok 所有者字节跳动并列。阿里巴巴开发了自己的大型语言模型，称"
+        }
+      ]
+    },
+    {
+      "articleId": "A100538",
+      "title": "OpenAI前董事吐槽Altman做人不诚实",
+      "activeGenre": "资讯",
+      "activeStructure": "N1",
+      "rawPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/文章/AI产品阿颖/2024/A100538 OpenAI前董事吐槽Altman做人不诚实.md",
+      "analysisPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/全文拆解v5/文章/A100538.md",
+      "paragraphCount": 17,
+      "snapshotTextMatchesVault": true,
+      "markdownSha256": "7a51c48564a5aa7a8f3f9a28f181914caa39e50ab463d9e016e626f2d5594a1b",
+      "sourceMarkdownImagesIncludingDecorations": 1,
+      "anchors": [
+        {
+          "from": "P1",
+          "to": "P4",
+          "startExcerpt": "前 OpenAI 董事会成员 Helen Toner 在周二的一次采访中分享了前 CEO Sam Altman 被解职并在新董事会成立后重新",
+          "endExcerpt": "“多年来，Sam 通过隐瞒信息、歪曲公司情况，有时甚至直接对董事会撒谎，使得董事会难以有效履行职责，” 她解释道。Toner 是 AI 专家"
+        },
+        {
+          "from": "P5",
+          "to": "P13",
+          "startExcerpt": "Toner 提到，尽管她不能分享所有细节，但举例说到 2022 年 11 月 ChatGPT 发布时的情况，“董事会事先未被告知，我们是在 ",
+          "endExcerpt": "在 Altman 被罢免和重新担任 CEO 之前，她说那些有过糟糕经历的人实际上不愿意站出来指控 Altman，因为他们担心如果 Sam 最"
+        },
+        {
+          "from": "P14",
+          "to": "P16",
+          "startExcerpt": "OpenAI 向福克斯商业频道提供了一份由 OpenAI 董事会主席 Bret Taylor 在《TED AI Show》上发表的声明。",
+          "endExcerpt": "此外，超过 95% 的员工包括高级领导层要求恢复 Sam 的 CEO 职位并要求前董事会成员辞职。我们的重点仍然是向前推进，追求 OpenA"
+        }
+      ]
+    },
+    {
+      "articleId": "A100806",
+      "title": "谷歌正在构建新一代的搜索引擎",
+      "activeGenre": "资讯",
+      "activeStructure": "N3",
+      "rawPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/文章/AI产品阿颖/2023/A100806 谷歌正在构建新一代的搜索引擎.md",
+      "analysisPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/全文拆解v5/文章/A100806.md",
+      "paragraphCount": 35,
+      "snapshotTextMatchesVault": true,
+      "markdownSha256": "ccce70c8908ef786c1434299fd268510070b4322491dfd7c619f128e97a0f629",
+      "sourceMarkdownImagesIncludingDecorations": 3,
+      "anchors": [
+        {
+          "from": "P1",
+          "to": "P3",
+          "startExcerpt": "今年 3 月份，当得知三星考虑用微软 Bing 搜索引擎取代谷歌作为其设备的默认搜索引擎时，谷歌员工感到很震惊。",
+          "endExcerpt": "据《纽约时报》查阅的内部信息显示，谷歌对三星的想法反应强烈，内部甚至出现了 “恐慌” 情绪。三星合同每年涉及约 30 亿美元的收入。还有一份"
+        },
+        {
+          "from": "P4",
+          "to": "P6",
+          "startExcerpt": "像新 Bing 这样的 AI 竞争对手正在迅速成为谷歌搜索业务 25 年来最大的威胁。为此，谷歌正在竭力打造一个全新的由人工智能技术驱动的搜",
+          "endExcerpt": "谷歌发言人 Lara Levin 在一份声明中表示，“并非每一份头脑风暴的提案或产品想法都会推出，但正如我们之前所说，我们很兴奋地将新的人工"
+        },
+        {
+          "from": "P7",
+          "to": "P18",
+          "startExcerpt": "每天有数十亿人使用谷歌搜索引擎，从找餐馆和路线到理解医学诊断等各种事情都会用到它。那个简单的白色页面，上面只有公司的 Logo 和一个空的搜",
+          "endExcerpt": "谷歌 3 月份发布的 Bard 聊天机器人收到的评价褒贬不一"
+        },
+        {
+          "from": "P19",
+          "to": "P29",
+          "startExcerpt": "新搜索引擎的计划显示了谷歌重新构想搜索体验的雄心，但现在仍处于早期阶段，尚无明确的发布时间表。",
+          "endExcerpt": "另一个名为 Searchalong 的产品将允许用户在通过谷歌 Chrome 浏览器上网冲浪时向聊天机器人询问问题。例如，人们可以询问聊天机"
+        },
+        {
+          "from": "P30",
+          "to": "P31",
+          "startExcerpt": "前谷歌销售和服务副总裁 Jim Lecinski 表示，该公司已经采取行动，现在必须让用户相信它与竞争对手一样 “强大、有能力和现代”。",
+          "endExcerpt": "“如果我们是领先的搜索引擎，并且这是搜索引擎的新属性、新功能、新特征，我们希望确保我们也参与这场竞赛，” 营销学教授 Lecinski 在接"
+        }
+      ]
+    },
+    {
+      "articleId": "A400166",
+      "title": "豆包手机来了，直接给中兴干涨停了",
+      "activeGenre": "资讯",
+      "activeStructure": "N4",
+      "rawPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/文章/路人甲TM/2025/A400166 豆包手机来了，直接给中兴干涨停了.md",
+      "analysisPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/全文拆解v5/文章/A400166.md",
+      "paragraphCount": 43,
+      "snapshotTextMatchesVault": true,
+      "markdownSha256": "71f2cea14eb3866ace627d5e86ee2de9f5c6e3b5f6865ea29217ad86979326a0",
+      "sourceMarkdownImagesIncludingDecorations": 2,
+      "anchors": [
+        {
+          "from": "P1",
+          "to": "P7",
+          "startExcerpt": "在行业内传文已久、不见其身的豆包手机终于来了！",
+          "endExcerpt": "不多说，下面直接看产品："
+        },
+        {
+          "from": "P8",
+          "to": "P17",
+          "startExcerpt": "1、真正像人一样操作手机能力",
+          "endExcerpt": "只有付钱这下，需要人工介入。"
+        },
+        {
+          "from": "P18",
+          "to": "P29",
+          "startExcerpt": "当然，之前也有Agent在网页端实现类似的功能，但是这一次是在手机！移动互联网时代，App成为了信息之间最大的区隔，大部分厂商都做不到横跨所",
+          "endExcerpt": "豆包不是在一个APP里打转，它是把手机系统当成了一个整体。这就是操作系统级嵌入的能力。"
+        },
+        {
+          "from": "P30",
+          "to": "P36",
+          "startExcerpt": "目前的豆包手机助手完美吗？肯定不。",
+          "endExcerpt": "资本市场已经用脚投票了，现在上车中兴或许已经晚了，但是一个赛道打开了。"
+        },
+        {
+          "from": "P38",
+          "to": "P43",
+          "startExcerpt": "当然，这只是体验机，这款手机的名字暂时还只是叫做努比亚。",
+          "endExcerpt": "我今天已经第一时间下单了nubia M153，从来没这么急迫的期待一台手机送到自己的手上，最近几天我会好好体验一下这款豆包手机，深度体验后，"
+        }
+      ]
+    },
+    {
+      "articleId": "A600190",
+      "title": "刚刚DeepSeek官宣V3.1！测底入局Agent～",
+      "activeGenre": "资讯",
+      "activeStructure": "N2",
+      "rawPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/文章/袋鼠帝/2025/A600190 刚刚DeepSeek官宣V3.1！测底入局Agent～.md",
+      "analysisPath": "/Users/mac/Documents/Obsidian Vault/公众号写作结构库/全文拆解v5/文章/A600190.md",
+      "paragraphCount": 14,
+      "snapshotTextMatchesVault": true,
+      "markdownSha256": "f7f67cce905486ca44a4a7306fd5aada37507ae93cfe4d1a6ba238c0875a5bba",
+      "sourceMarkdownImagesIncludingDecorations": 0,
+      "anchors": [
+        {
+          "from": "P1",
+          "to": "P2",
+          "startExcerpt": "刚刚DeepSeek官宣V3.1了！给大家总结了一下要点：",
+          "endExcerpt": "核心就是，这次更新奔着Agent去的。 \nV3.1终于支持了混合推理架构（同时支持思考模式与非思考模式） \n推理速度相比之前的R1更快，能在"
+        },
+        {
+          "from": "P3",
+          "to": "P8",
+          "startExcerpt": "对开发者和我们这些爱折腾的人来说，有这么几条关键信息。 \n一：Agent能力，也就是工具调用能力，强了一大截。不管是在编程、修代码，还是做复",
+          "endExcerpt": "四：开源的DeepSeek V3.1模型，tokenizer和chat template都大改了，自己部署的话要看新文档，别踩坑。"
+        },
+        {
+          "from": "P9",
+          "to": "P12",
+          "startExcerpt": "最后，API要涨价了。",
+          "endExcerpt": "从9月6日开始执行新价格，并且取消夜间优惠。想省钱的，抓紧最后这半个月。"
+        },
+        {
+          "from": "P13",
+          "to": "P14",
+          "startExcerpt": "不过问题不大，还是白菜价，随便用～",
+          "endExcerpt": "信息来源：DeepSeek-V3.1 发布，迈向 Agent 时代的第一步"
+        }
+      ]
+    }
+  ],
+  "mediaRelations": [
+    {
+      "articleId": "A400166",
+      "before": "对比一下京东、淘宝和拼多多上的洗发水哪个更便宜",
+      "after": "在官方演示中",
+      "mediaOrderVerified": true
+    },
+    {
+      "articleId": "A400166",
+      "before": "前几天某某约我在哪来着",
+      "after": "中间需要的操作",
+      "mediaOrderVerified": true
+    }
+  ],
+  "productChanged": false,
+  "vaultChanged": false,
+  "paidDeepSeekCalls": 0
+}

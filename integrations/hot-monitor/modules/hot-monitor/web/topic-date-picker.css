@@ -1,0 +1,71 @@
+.hm-dialog-panel:has(.hm-topic-date-picker) {width:min(900px,100%);}
+.hm-shell .hm-dialog-body:has(>.hm-topic-date-picker) {padding:20px 24px;overflow-y:auto;}
+.hm-topic-date-picker {min-width:0;color:#627792;}
+.hm-topic-date-current {display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;align-items:start;padding:12px 14px;margin-bottom:15px;border-left:3px solid #91ace5;background:#f4f7ff;border-radius:var(--radius-control);}
+.hm-topic-date-current>span {font-size:11px;color:#7a8fb0;line-height:1.9;}
+.hm-topic-date-current>strong {font-size:13px;font-weight:600;line-height:1.7;color:#536d98;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.hm-topic-date-current>small {grid-column:2;font-size:11px;line-height:1.7;color:#8395ad;}
+.hm-topic-date-intro {display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:17px;}
+.hm-topic-date-intro>p {font-size:12px;line-height:1.8;color:#7b8da6;}
+.hm-shell .hm-topic-date-intro>label {display:flex;align-items:center;gap:8px;font-size:11px;color:#7187a4;flex:0 0 auto;}
+.hm-shell .hm-topic-date-intro input {width:158px;min-height:35px;padding:6px 9px;font-size:12px;}
+.hm-topic-date-columns {display:grid;grid-template-columns:160px minmax(0,1fr);gap:22px;min-width:0;height:min(44dvh,360px);}
+.hm-topic-date-rail {display:flex;min-height:0;flex-direction:column;}
+.hm-topic-date-rail>h3 {flex:0 0 auto;font-size:12px;color:#7c91b1;font-weight:550;margin:0 0 12px 8px;line-height:1.7;}
+.hm-topic-date-list {display:grid;align-content:start;gap:4px;flex:1;min-height:0;overflow:auto;padding:1px 8px 1px 1px;overscroll-behavior:contain;scrollbar-width:thin;}
+.hm-shell .hm-topic-date-list button {display:flex;align-items:center;justify-content:space-between;gap:9px;min-height:38px;padding:8px 9px;border:0;color:#7086a4;background:transparent;box-shadow:none;font-size:12px;text-align:left;border-radius:var(--radius-control);}
+.hm-shell .hm-topic-date-list button:hover,.hm-shell .hm-topic-date-list button[aria-pressed=true] {background:#edf3ff;color:#5276c4;}
+.hm-topic-day-count {font-size:11px;color:#8c9fb9;font-variant-numeric:tabular-nums;}
+.hm-topic-date-list button[aria-pressed=true] .hm-topic-day-count {color:#6e8dcb;}
+.hm-topic-date-preview {display:flex;min-width:0;min-height:0;flex-direction:column;padding-left:22px;border-left:1px solid #edf1f8;background:#fff;}
+.hm-topic-date-heading {display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex:0 0 auto;}
+.hm-topic-date-heading h3 {font-size:14px;font-weight:600;color:#577198;line-height:1.6;}
+.hm-topic-date-heading>span {font-size:11px;color:#8599b5;font-variant-numeric:tabular-nums;}
+.hm-shell .hm-topic-date-search {display:flex;align-items:center;gap:8px;flex:0 0 auto;margin-bottom:10px;}
+.hm-topic-date-search>span {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+.hm-shell .hm-topic-date-search input {width:100%;min-width:0;min-height:35px;padding:7px 10px;font-size:12px;background:#fafcff;border-color:#e6edf8;}
+.hm-shell .hm-topic-date-search button {flex:0 0 auto;min-height:30px;padding:5px 7px;border-color:transparent;background:transparent;box-shadow:none;font-size:11px;color:#7692bf;}
+.hm-topic-date-results {flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:6px;}
+.hm-topic-date-results ul {display:grid;margin:0;padding:0;}
+.hm-shell .hm-topic-date-results li {padding:0;margin:0;list-style:none;border-bottom:1px solid #f0f3f9;}
+.hm-shell .hm-topic-date-results li:last-child {border-bottom:0;}
+.hm-shell .hm-topic-date-preview .hm-topic-pick {display:flex;align-items:center;justify-content:space-between;gap:15px;width:100%;padding:12px 8px;min-height:66px;text-align:left;white-space:normal;border:0;border-radius:var(--radius-control);background:#fff;box-shadow:none;}
+.hm-shell .hm-topic-date-preview .hm-topic-pick:hover {background:#f7faff;}
+.hm-shell .hm-topic-date-preview .hm-topic-pick[aria-current=true] {background:#f5f8ff;}
+.hm-topic-pick-copy {display:grid;gap:5px;min-width:0;}
+.hm-topic-pick-copy strong {font-size:14px;font-weight:550;line-height:1.8;color:#5e7595;overflow-wrap:anywhere;}
+.hm-topic-pick-copy>span {font-size:11px;line-height:1.7;color:#8296b2;}
+.hm-topic-pick-action {flex:0 0 auto;color:#7a98cb;font-size:11px;}
+.hm-topic-pick[aria-current=true] .hm-topic-pick-action {color:#7ba99b;}
+.hm-topic-date-status,.hm-topic-date-error>p {flex:0 0 auto;font-size:12px;color:#7f94b0;line-height:1.8;margin:8px 0;}
+.hm-topic-date-error>p {color:#aa936a;}
+.hm-shell .hm-topic-date-error>button {padding:6px 8px;min-height:30px;font-size:11px;box-shadow:none;}
+.hm-topic-date-empty {font-size:12px;line-height:1.9;color:#7f94b0;padding:14px 8px;}
+.hm-topic-date-empty a {display:block;margin-top:8px;color:#7794c3;}
+.hm-shell .hm-topic-date-empty button {display:block;border:0;background:transparent;box-shadow:none;color:#7794c3;font-size:12px;padding:6px 0;}
+.hm-topic-date-footnote {font-size:11px;line-height:1.8;color:#8d9fb7;margin-top:17px;}
+.hm-topic-date-picker button:focus-visible,.hm-topic-date-picker input:focus-visible {outline:2px solid #9bb8ee;outline-offset:2px;}
+@media(max-width:640px){
+ .hm-shell .hm-dialog-body:has(>.hm-topic-date-picker) {padding:15px 16px 19px;}
+ .hm-topic-date-current {display:block;padding:10px 12px;margin-bottom:13px;}
+ .hm-topic-date-current>span {display:block;font-size:10px;margin-bottom:3px;}
+ .hm-topic-date-current>strong {font-size:12px;}
+ .hm-topic-date-current>small {display:block;margin-top:4px;font-size:10px;}
+ .hm-topic-date-intro {display:block;margin-bottom:14px;}
+ .hm-topic-date-intro>p {font-size:11px;margin-bottom:8px;}
+ .hm-shell .hm-topic-date-intro>label {display:flex;align-items:center;justify-content:space-between;gap:10px;}
+ .hm-shell .hm-topic-date-intro input {width:164px;}
+ .hm-topic-date-columns {grid-template-columns:minmax(0,1fr);gap:15px;height:auto;}
+ .hm-topic-date-rail>h3 {margin:0 0 7px;font-size:11px;}
+ .hm-topic-date-list {display:flex;flex-wrap:nowrap;gap:5px;max-height:none;min-height:0;overflow-x:auto;overflow-y:hidden;padding:2px 1px 6px;}
+ .hm-shell .hm-topic-date-list button {flex:0 0 auto;min-height:35px;padding:7px 9px;font-size:11px;gap:8px;background:#f8faff;}
+ .hm-topic-day-count {font-size:10px;}
+ .hm-topic-date-preview {display:block;border:0;padding:0;}
+ .hm-topic-date-heading {margin-bottom:9px;}
+ .hm-topic-date-heading h3 {font-size:13px;}
+ .hm-topic-date-results {max-height:none;min-height:70px;overflow:visible;padding:0;}
+ .hm-shell .hm-topic-date-preview .hm-topic-pick {gap:9px;padding:11px 5px;min-height:60px;}
+ .hm-topic-pick-copy strong {font-size:13px;line-height:1.85;}
+ .hm-topic-pick-action {font-size:10px;}
+ .hm-topic-date-footnote {font-size:10px;margin-top:12px;}
+}

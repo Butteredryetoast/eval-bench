@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filled tones / study">
+<path id="Tone / mid" opacity="0.55" d="M2 4C4.66667 2.86667 8 3.2 12 5C16 3.2 19.3333 2.86667 22 4V18.8C22 19.8667 21.4333 20.2667 20.3 20C17.7 19.6 14.9333 20.2667 12 22C9.06667 20.2667 6.3 19.6 3.7 20C2.56667 20.2667 2 19.8667 2 18.8V4Z" fill="#3F5CFF"/>
+<path id="Tone / light" opacity="0.2" d="M12 5C16 3.2 19.3333 2.86667 22 4V18.8C22 19.8667 21.4333 20.2667 20.3 20C17.7 19.6 14.9333 20.2667 12 22V5Z" fill="#3F5CFF"/>
+<path id="Tone / dark" d="M12 5V20M5 8C6.33333 7.86667 7.66667 8.2 9 9M5 12C6.33333 11.8667 7.66667 12.2 9 13M15 9C16.3333 8.2 17.6667 7.86667 19 8M15 13C16.3333 12.2 17.6667 11.8667 19 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#3F5CFF"/>
+</g>
+</svg>

@@ -1,0 +1,240 @@
+{
+  "note": "猿大侠自选的补充入口；写入候选目录不等于通过试采或已启用。",
+  "sources": [
+    {
+      "name": "AppSo / 爱范儿",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.ifanr.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.ifanr.com/",
+      "example": "https://www.ifanr.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "少数派：数字生活",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://sspai.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://sspai.com/",
+      "example": "https://sspai.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "量子位",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.qbitai.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.qbitai.com/",
+      "example": "https://www.qbitai.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "IT之家：手机与科技综合",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.ithome.com/rss/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.ithome.com/",
+      "example": "https://www.ithome.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "9to5Mac：苹果动态",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://9to5mac.com/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://9to5mac.com/",
+      "example": "https://9to5mac.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "MacRumors：苹果与生态",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://feeds.macrumors.com/MacRumors-All",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.macrumors.com/",
+      "example": "https://www.macrumors.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "Apple 中国 Newsroom",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.apple.com.cn/newsroom/rss-feed.rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "originalExample": "https://www.apple.com.cn/newsroom/",
+      "example": "https://www.apple.com.cn/newsroom/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "机核：游戏与创作者",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.gcores.com/rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.gcores.com/",
+      "example": "https://www.gcores.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "触乐：游戏与行业",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.chuapp.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.chuapp.com/",
+      "example": "https://www.chuapp.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "Product Hunt：产品发现",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.producthunt.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "originalExample": "https://www.producthunt.com/",
+      "example": "https://www.producthunt.com/",
+      "priority": true,
+      "discoveredVia": "yuan-daxia-curated",
+      "status": "candidate"
+    },
+    {
+      "name": "n8n Blog",
+      "kind": "rss",
+      "platform": "网站 / RSS",
+      "config": {
+        "feedUrl": "https://blog.n8n.io/rss/"
+      },
+      "tier": "T1",
+      "fields": [
+        "AI与大模型"
+      ],
+      "sourceRole": "官方一手",
+      "originalExample": "https://blog.n8n.io/ai-agent-memory-how-llm-agents-manage-state-in-production/",
+      "priority": true
+    },
+    {
+      "name": "Ollama：Blog（RSS）",
+      "kind": "rss",
+      "platform": "网站 / RSS",
+      "config": {
+        "feedUrl": "https://ollama.com/blog/rss.xml"
+      },
+      "tier": "T1",
+      "fields": [
+        "AI与大模型"
+      ],
+      "sourceRole": "官方一手",
+      "originalExample": "https://ollama.com/blog/speech-models",
+      "priority": true
+    },
+    {
+      "name": "PyTorch：Blog（RSS）",
+      "kind": "rss",
+      "platform": "网站 / RSS",
+      "config": {
+        "feedUrl": "https://pytorch.org/feed/"
+      },
+      "tier": "T1",
+      "fields": [
+        "AI与大模型"
+      ],
+      "sourceRole": "官方一手",
+      "originalExample": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
+      "priority": true
+    },
+    {
+      "name": "a16z：News（RSS）",
+      "kind": "rss",
+      "platform": "网站 / RSS",
+      "config": {
+        "feedUrl": "https://www.a16z.news/feed"
+      },
+      "tier": "T1",
+      "fields": [
+        "商业资本"
+      ],
+      "sourceRole": "官方一手",
+      "originalExample": "https://www.a16z.news/p/patch-or-die",
+      "priority": true
+    },
+    {
+      "name": "Browser Use",
+      "kind": "rss",
+      "platform": "网站 / RSS",
+      "config": {
+        "feedUrl": "https://browser-use.com/rss.xml"
+      },
+      "tier": "T1",
+      "fields": [
+        "AI与大模型"
+      ],
+      "sourceRole": "官方一手",
+      "originalExample": "https://browser-use.com/posts/coding-agent-logged-in-chrome",
+      "priority": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "profiles": [
+    {
+      "id": "my-api-model",
+      "name": "我的 API 模型",
+      "vendor": "填写实际服务商",
+      "model": "填写账号实际可用的型号",
+      "adapter": "api",
+      "baseUrl": "https://provider.example/v1",
+      "apiKeyEnv": "MY_MODEL_API_KEY",
+      "color": "#16816b",
+      "modes": ["text", "html"],
+      "supportsTemperature": false,
+      "maxTokens": 4096
+    },
+    {
+      "id": "my-harness",
+      "name": "我的工具配置",
+      "vendor": "填写工具或厂商名称",
+      "model": "填写工具使用的实际型号",
+      "adapter": "command",
+      "program": "填写已安装工具的可执行程序名",
+      "args": ["--task-file", "{{taskFile}}", "--output-dir", "{{outputDir}}"],
+      "color": "#526cce",
+      "modes": ["text", "html", "harness"],
+      "supportsTemperature": false,
+      "outputExtensions": [".html", ".css", ".js", ".md", ".txt", ".png", ".jpg", ".svg", ".mp4"]
+    }
+  ]
+}

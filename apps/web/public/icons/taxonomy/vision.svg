@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filled tones / vision">
+<path id="Tone / light" opacity="0.2" d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" fill="#7A8290"/>
+<path id="Tone / mid" opacity="0.55" d="M3 12C3 12 6 6 12 6C18 6 21 12 21 12C21 12 18 18 12 18C6 18 3 12 3 12Z" fill="#7A8290"/>
+<path id="Tone / dark" d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" fill="#7A8290"/>
+<path id="Tone / white" d="M12 14.2C13.215 14.2 14.2 13.215 14.2 12C14.2 10.785 13.215 9.8 12 9.8C10.785 9.8 9.8 10.785 9.8 12C9.8 13.215 10.785 14.2 12 14.2Z" fill="white"/>
+<path id="Tone / light_2" opacity="0.2" d="M13.5 11.7C14.1627 11.7 14.7 11.1627 14.7 10.5C14.7 9.83726 14.1627 9.3 13.5 9.3C12.8373 9.3 12.3 9.83726 12.3 10.5C12.3 11.1627 12.8373 11.7 13.5 11.7Z" fill="#7A8290"/>
+</g>
+</svg>

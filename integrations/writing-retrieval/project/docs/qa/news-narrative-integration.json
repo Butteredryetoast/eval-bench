@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-27T09:41:01.745Z",
+  "scope": "Real live Obsidian + actual Haystack/FastEmbed retrieval + synthetic local HTTP provider. No real DeepSeek prose-quality claim.",
+  "revision": "0cee77272ae62ea7b338faacbfc17a7935959c712f748ef176e89d320b8f3fad",
+  "stats": {
+    "articles": 5858,
+    "templates": 27,
+    "independentReviews": 364,
+    "analyzedArticles": 1000,
+    "notes": 11,
+    "blueprints": 5
+  },
+  "blueprints": [
+    {
+      "id": "NEWS-CHOICE",
+      "revision": "83b72264dadd846975ae714b3cfbe9939cd25f3152c0933ddd42753b13b690f9",
+      "sourceArticleIds": [
+        "A100443"
+      ],
+      "nodes": 5
+    },
+    {
+      "id": "NEWS-DEMO",
+      "revision": "bc913614c8c6aab2cb2b6623316b0dd317d5995b506ca823cb5ea4170bee5877",
+      "sourceArticleIds": [
+        "A400166"
+      ],
+      "nodes": 5
+    },
+    {
+      "id": "NEWS-DISPUTE",
+      "revision": "83123aaf3faf5969dad919fe6e4044e490287891102b4fd726f2a3b3227bfa62",
+      "sourceArticleIds": [
+        "A100538"
+      ],
+      "nodes": 4
+    },
+    {
+      "id": "NEWS-PRESSURE",
+      "revision": "1dc8619b605161c6a138c2a8589b714eb3d2ece98445e2ea6bd4fe115a693f51",
+      "sourceArticleIds": [
+        "A100806"
+      ],
+      "nodes": 5
+    },
+    {
+      "id": "NEWS-UPDATE",
+      "revision": "f331db1547498d390aab27f6e1460cefa9b64efd3e4638888917d4ff24a25293",
+      "sourceArticleIds": [
+        "A600190"
+      ],
+      "nodes": 4
+    }
+  ],
+  "cases": [
+    {
+      "brief": "解释一项模型 API 更新：关键变化、使用取舍和行动窗口",
+      "ms": 40307,
+      "blueprintId": "NEWS-UPDATE",
+      "blueprintChoices": [
+        "NEWS-UPDATE",
+        "NEWS-DEMO",
+        "NEWS-CHOICE"
+      ],
+      "missing": 3,
+      "markdown": "# [验收示例] 资讯叙事流程\n\n本地模拟片段 step-1-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-1-evidence：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-1-observation：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-1-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-2-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n【素材位：面向读者任务的关键更新及来源】\n\n【待写：补齐“面向读者任务的关键更新及来源”后，只根据本单元已提供的素材解释或判断：将事实翻译成使用影响，再进入下一项重要变化 不借用历史作者的亲历或旧事实。】\n\n本地模拟片段 step-2-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-3-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n【素材位：新旧条件、成本或迁移要求的对照】\n\n【待写：补齐“新旧条件、成本或迁移要求的对照”后，只根据本单元已提供的素材解释或判断：据可比条件解释变化，缺基准不先写“更省/更贵多少” 不借用历史作者的亲历或旧事实。】\n\n本地模拟片段 step-3-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-4-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n【素材位：生效时间、适用人群与来源入口】\n\n【待写：补齐“生效时间、适用人群与来源入口”后，只根据本单元已提供的素材解释或判断：给有条件的行动建议或待观察项 不借用历史作者的亲历或旧事实。】\n\n本地模拟片段 step-4-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。",
+      "revisionLayoutVerified": true,
+      "retrieval": {
+        "name": "Haystack · 中文混合检索",
+        "methods": [
+          "SQLite BM25",
+          "FastEmbed 中文向量召回",
+          "Haystack RRF",
+          "中文交叉编码器重排"
+        ],
+        "engine": "haystack-fastembed-v1",
+        "phase": "ready",
+        "ready": true,
+        "vectorSearch": true,
+        "remoteModelCalls": 0,
+        "revision": "0cee77272ae62ea7b338faacbfc17a7935959c712f748ef176e89d320b8f3fad",
+        "sources": 6901,
+        "passages": 93601,
+        "articles": 5858,
+        "templates": 27,
+        "embeddingModel": "BAAI/bge-small-zh-v1.5",
+        "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+        "embeddingLoaded": true,
+        "rerankerLoaded": true,
+        "peakRssMiB": 659,
+        "threads": 2,
+        "rankCandidates": 20,
+        "done": 0,
+        "rerankApplied": true,
+        "queryMs": 16270,
+        "lexicalCandidates": 27,
+        "vectorCandidates": 28,
+        "taskLabels": [
+          "对比选型"
+        ],
+        "returnedExamples": 12,
+        "notice": "已按主题、段落和中文重排模型筛选；模型分数不是准确率。"
+      }
+    },
+    {
+      "brief": "围绕一项有争议的产品决定，区分指控、当事方回应与未知边界",
+      "ms": 28151,
+      "blueprintId": "NEWS-DISPUTE",
+      "blueprintChoices": [
+        "NEWS-DISPUTE",
+        "NEWS-PRESSURE",
+        "NEWS-CHOICE"
+      ],
+      "missing": 3,
+      "markdown": "# [验收示例] 资讯叙事流程\n\n本地模拟片段 step-1-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-1-evidence：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-1-observation：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-1-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-2-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n【素材位：提出方的具体事例、引文及证据状态】\n\n【待写：补齐“提出方的具体事例、引文及证据状态”后，只根据本单元已提供的素材解释或判断：整理说法及其证据边界，不自行裁定指控为真 不借用历史作者的亲历或旧事实。】\n\n本地模拟片段 step-2-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-3-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n【素材位：回应方的原话或可追溯转述】\n\n【待写：补齐“回应方的原话或可追溯转述”后，只根据本单元已提供的素材解释或判断：分清已经回应、未回应与说法冲突，保持归属 不借用历史作者的亲历或旧事实。】\n\n本地模拟片段 step-3-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n本地模拟片段 step-4-setup：仅用于核对节点顺序和素材位置，不代表真实模型写作。\n\n【素材位：已确认事项、未回应事项及下一步核查线索】\n\n【待写：补齐“已确认事项、未回应事项及下一步核查线索”后，只根据本单元已提供的素材解释或判断：不为凑结尾替任何一方定论；来源没有结论就保留未决 不借用历史作者的亲历或旧事实。】\n\n本地模拟片段 step-4-transition：仅用于核对节点顺序和素材位置，不代表真实模型写作。",
+      "revisionLayoutVerified": true,
+      "retrieval": {
+        "name": "Haystack · 中文混合检索",
+        "methods": [
+          "SQLite BM25",
+          "FastEmbed 中文向量召回",
+          "Haystack RRF",
+          "中文交叉编码器重排"
+        ],
+        "engine": "haystack-fastembed-v1",
+        "phase": "ready",
+        "ready": true,
+        "vectorSearch": true,
+        "remoteModelCalls": 0,
+        "revision": "0cee77272ae62ea7b338faacbfc17a7935959c712f748ef176e89d320b8f3fad",
+        "sources": 6901,
+        "passages": 93601,
+        "articles": 5858,
+        "templates": 27,
+        "embeddingModel": "BAAI/bge-small-zh-v1.5",
+        "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+        "embeddingLoaded": true,
+        "rerankerLoaded": true,
+        "peakRssMiB": 659,
+        "threads": 2,
+        "rankCandidates": 20,
+        "done": 0,
+        "rerankApplied": true,
+        "queryMs": 10558,
+        "lexicalCandidates": 27,
+        "vectorCandidates": 28,
+        "taskLabels": [
+          "判断影响"
+        ],
+        "returnedExamples": 12,
+        "notice": "已按主题、段落和中文重排模型筛选；模型分数不是准确率。"
+      }
+    }
+  ],
+  "interceptedProviderRequests": 6,
+  "paidProviderRequests": 0
+}

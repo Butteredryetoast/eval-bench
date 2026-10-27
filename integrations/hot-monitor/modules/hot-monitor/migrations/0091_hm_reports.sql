@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS hm_reports (id text PRIMARY KEY, event_id text NOT NULL REFERENCES hm_events(id), canonical_url text NOT NULL, data jsonb NOT NULL, updated_at timestamptz NOT NULL DEFAULT now());

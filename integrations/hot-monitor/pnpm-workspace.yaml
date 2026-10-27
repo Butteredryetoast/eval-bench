@@ -1,0 +1,9 @@
+packages:
+  - packages/*
+  - apps/api
+  - apps/worker
+  - industry
+  - site
+  - modules/*
+allowBuilds:
+  sharp: true

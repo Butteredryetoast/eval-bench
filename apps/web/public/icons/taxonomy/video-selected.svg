@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filled tones / video">
+<path id="Tone / dark" d="M19 3H5C2.79086 3 1 4.79086 1 7V17C1 19.2091 2.79086 21 5 21H19C21.2091 21 23 19.2091 23 17V7C23 4.79086 21.2091 3 19 3Z" fill="#3F5CFF"/>
+<path id="Tone / white" d="M9 7L17 12L9 17V7Z" fill="white"/>
+<path id="Tone / mid" opacity="0.55" d="M17 16H23V18C23 18.7956 22.6839 19.5587 22.1213 20.1213C21.5587 20.6839 20.7956 21 20 21H16L17 16Z" fill="#3F5CFF"/>
+</g>
+</svg>

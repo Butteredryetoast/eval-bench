@@ -1,0 +1,40 @@
+.hm-shell .hm-handoff-topic {display:flex;align-items:flex-start;justify-content:space-between;gap:20px;}
+.hm-shell .hm-handoff-topic h2 {margin:6px 0 0;font-size:20px;line-height:1.6;color:#2c3d5b;}
+.hm-handoff-eyebrow {font-size:11px;font-weight:650;letter-spacing:.06em;color:#7d8eae;}
+.hm-handoff-edit {flex:0 0 auto;font-size:12px;color:#5878d2;line-height:1.8;}
+.hm-handoff-angle {margin:10px 0 0;color:#6c7c96;font-size:13px;line-height:1.85;max-width:78ch;}
+.hm-handoff-switch {margin-top:12px;font-size:12px;color:#7a8ca9;}
+.hm-handoff-switch summary {cursor:pointer;}
+.hm-handoff-switch .hm-form-row {margin-top:12px;}
+.hm-handoff-selection {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px;color:#7787a3;font-size:12px;}
+.hm-handoff-selection>span strong {color:#526dba;margin:0 3px;}
+.hm-shell .hm-handoff-selection button {min-height:30px;padding:6px 9px;font-size:11px;box-shadow:none;}
+.hm-handoff-choices {display:grid;gap:8px;}
+.hm-shell .hm-handoff-choice {display:flex;gap:12px;align-items:flex-start;margin:0;padding:13px 14px;border:1px solid #e9edf5;border-radius:var(--radius-control);background:#fff;cursor:pointer;}
+.hm-shell .hm-handoff-choice[data-selected=true] {background:#f5f8ff;border-color:#dce6ff;}
+.hm-shell .hm-handoff-choice input {width:16px;height:16px;margin-top:3px;flex:0 0 auto;accent-color:#5579e5;}
+.hm-handoff-case-copy {display:grid;min-width:0;gap:6px;}
+.hm-handoff-case-copy>strong {font-size:13px;color:#334768;line-height:1.7;}
+.hm-handoff-case-meta {display:flex;align-items:center;gap:6px 10px;flex-wrap:wrap;font-size:11px;line-height:1.7;color:#8491a6;}
+.hm-handoff-case-meta [data-warning=true] {color:#aa802d;}
+.hm-handoff-case-note {display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12px;line-height:1.7;color:#7d8aa1;white-space:pre-wrap;overflow-wrap:anywhere;}
+.hm-handoff-output {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:19px 21px;border:1px solid #dce6ff;border-radius:var(--radius-panel);background:#f2f6ff;margin:18px 0;}
+.hm-handoff-output>div>strong {font-size:14px;color:#3f5ca0;}
+.hm-handoff-output>div>p {margin:5px 0 0;font-size:12px;color:#7d8eae;}
+.hm-handoff-message {flex-basis:100%;font-size:12px;color:#4e77bd;}
+.hm-handoff-preview,.hm-handoff-advanced {margin:14px 0;font-size:12px;color:#7a8ba6;}
+.hm-handoff-preview>summary,.hm-handoff-advanced>summary {cursor:pointer;font-weight:550;padding:9px 0;}
+.hm-handoff-preview pre {max-height:540px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;padding:20px 23px;border:1px solid #e7edf6;border-radius:var(--radius-control);background:#fff;font:13px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#536680;}
+.hm-handoff-advanced .hm-actions {margin-top:10px;}
+@media(max-width:640px){
+ .hm-shell .hm-handoff-topic {display:block;}
+ .hm-shell .hm-handoff-topic h2 {font-size:17px;line-height:1.65;}
+ .hm-handoff-edit {display:inline-block;margin-top:8px;}
+ .hm-handoff-selection {align-items:flex-start;flex-wrap:wrap;}
+ .hm-shell .hm-handoff-choice {padding:12px 10px;gap:10px;}
+ .hm-handoff-output {padding:16px;margin-block:14px;}
+ .hm-handoff-output>.hm-actions {width:100%;gap:8px;}
+ .hm-handoff-output>.hm-actions>* {flex:1 1 auto;text-align:center;}
+ .hm-handoff-output>.hm-actions>.hm-primary {flex-basis:100%;}
+ .hm-handoff-preview pre {padding:15px;max-height:65dvh;font-size:12px;}
+}

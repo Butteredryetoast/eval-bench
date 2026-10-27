@@ -1,0 +1,975 @@
+{
+  "at": "2026-10-27T07:05:44.436Z",
+  "scope": "Real Vault and normal localhost API; smoke scenarios, not a labelled relevance benchmark.",
+  "paidRemoteCalls": 0,
+  "stats": {
+    "articles": 5858,
+    "templates": 27,
+    "independentReviews": 364,
+    "analyzedArticles": 1000,
+    "notes": 11
+  },
+  "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+  "index": {
+    "name": "Haystack · 中文混合检索",
+    "methods": [
+      "SQLite BM25",
+      "FastEmbed 中文向量召回",
+      "Haystack RRF",
+      "中文交叉编码器重排"
+    ],
+    "engine": "haystack-fastembed-v1",
+    "phase": "ready",
+    "ready": true,
+    "vectorSearch": true,
+    "remoteModelCalls": 0,
+    "done": 6896,
+    "total": 6896,
+    "totalSources": 6896,
+    "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+    "sources": 6896,
+    "passages": 93573,
+    "articles": 5858,
+    "templates": 27,
+    "embeddingModel": "BAAI/bge-small-zh-v1.5",
+    "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+    "embeddingLoaded": true,
+    "rerankerLoaded": true,
+    "peakRssMiB": 1061,
+    "threads": 2,
+    "rankCandidates": 20,
+    "rerankApplied": true,
+    "queryMs": 8183,
+    "lexicalCandidates": 23,
+    "vectorCandidates": 60
+  },
+  "cases": [
+    {
+      "input": {
+        "label": "智能体记忆资讯",
+        "q": "智能体跨会话保留长期记忆，错误记忆如何纠正，隐私授权有什么边界",
+        "genre": "资讯"
+      },
+      "ms": 35812,
+      "results": [
+        {
+          "id": "AP7ac1ee9ea7d3",
+          "title": "从疯狂翻表到群里直接@AI：飞书来了个新同事，把脏活累活全包了",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/AP7ac1ee9ea7d3.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FAP7ac1ee9ea7d3",
+          "snippet": "以报销预审为例说明主管可口语化创建合规技能，再类推到销售客服运营经验，强调组织知识随人员变动保留。\n\n推进关系：由团队业务痛点引出产品消息，先讲数据操作，再说明治理与主动协作能力，最后把功能放回组织流程中讨论。\n\n- 经验沉淀为Skill和长期记忆（P62–P74）：以报销预审为例说明主管可口语化创建合规技能，再类推到销售客服运营经验，强调组织知识随人员变动保留。\n - 放置作用：展示经验标准化及组织复用价值\nP73：对企业来说，这也是多维表格智能体最长期的价值所在。它不会因为员工入职、离职或者岗位调整而消失，而是不断把组织里的优秀经验保留下来，成为团队可以持续复用的数字资产。",
+          "kind": "全文拆解",
+          "reviewStatus": "独立复核通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical"
+            ],
+            "terms": [
+              "智能",
+              "保留",
+              "长期",
+              "记忆"
+            ],
+            "reason": "关键词命中、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/AP7ac1ee9ea7d3.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FAP7ac1ee9ea7d3",
+            "snippet": "以报销预审为例说明主管可口语化创建合规技能，再类推到销售客服运营经验，强调组织知识随人员变动保留。\n\n推进关系：由团队业务痛点引出产品消息，先讲数据操作，再说明治理与主动协作能力，最后把功能放回组织流程中讨论。\n\n- 经验沉淀为Skill和长期记忆（P62–P74）：以报销预审为例说明主管可口语化创建合规技能，再类推到销售客服运营经验，强调组织知识随人员变动保留。\n - 放置作用：展示经验标准化及组织复用价值\nP73：对企业来说，这也是多维表格智能体最长期的价值所在。它不会因为员工入职、离职或者岗位调整而消失，而是不断把组织里的优秀经验保留下来，成为团队可以持续复用的数字资产。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "AP68f75176c4b6",
+          "title": "首款智能体手机正式亮相，最大看点不在硬件",
+          "notePath": "公众号写作结构库/文章/APPSO/2026/AP68f75176c4b6 首款智能体手机正式亮相，最大看点不在硬件.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAPPSO%2F2026%2FAP68f75176c4b6%20%E9%A6%96%E6%AC%BE%E6%99%BA%E8%83%BD%E4%BD%93%E6%89%8B%E6%9C%BA%E6%AD%A3%E5%BC%8F%E4%BA%AE%E7%9B%B8%EF%BC%8C%E6%9C%80%E5%A4%A7%E7%9C%8B%E7%82%B9%E4%B8%8D%E5%9C%A8%E7%A1%AC%E4%BB%B6",
+          "snippet": "现给用户，阶跃将其定义为 STEPX 的主智能体，它具备感知、记忆、规划、连接和执行五项能力。\n至于智能体会不会「过于主动」，阶跃在群访中给出的答案是：主动多少、被动多少，应该由用户授权多少决定。用户给它看多少长期和短期信息，授予多少行动权限，它才主动到什么程度。\n一件事，不再交给一个模型\nStep AOS 的另一项差异在于，它没有让一个模型包办所有任务，而是使用端云模型矩阵。同时，反复强调模型矩阵和级联调度。\n端侧概括为「快反应」，云侧概括为「深思考」。这意味着，端侧模型承担低延迟、隐私敏感的即时任务，云端的旗舰与标准模型则处理更复杂的推理、分析和规划；语音、视觉等多模态模型构成智能体感知现实世界的入口。",
+          "kind": "原文",
+          "reviewStatus": "APPSO跨段复核",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical"
+            ],
+            "terms": [
+              "智能",
+              "长期",
+              "记忆",
+              "隐私",
+              "授权"
+            ],
+            "reason": "关键词命中、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/APPSO/2026/AP68f75176c4b6 首款智能体手机正式亮相，最大看点不在硬件.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAPPSO%2F2026%2FAP68f75176c4b6%20%E9%A6%96%E6%AC%BE%E6%99%BA%E8%83%BD%E4%BD%93%E6%89%8B%E6%9C%BA%E6%AD%A3%E5%BC%8F%E4%BA%AE%E7%9B%B8%EF%BC%8C%E6%9C%80%E5%A4%A7%E7%9C%8B%E7%82%B9%E4%B8%8D%E5%9C%A8%E7%A1%AC%E4%BB%B6",
+            "snippet": "现给用户，阶跃将其定义为 STEPX 的主智能体，它具备感知、记忆、规划、连接和执行五项能力。\n至于智能体会不会「过于主动」，阶跃在群访中给出的答案是：主动多少、被动多少，应该由用户授权多少决定。用户给它看多少长期和短期信息，授予多少行动权限，它才主动到什么程度。\n一件事，不再交给一个模型\nStep AOS 的另一项差异在于，它没有让一个模型包办所有任务，而是使用端云模型矩阵。同时，反复强调模型矩阵和级联调度。\n端侧概括为「快反应」，云侧概括为「深思考」。这意味着，端侧模型承担低延迟、隐私敏感的即时任务，云端的旗舰与标准模型则处理更复杂的推理、分析和规划；语音、视觉等多模态模型构成智能体感知现实世界的入口。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A500147",
+          "title": "我把ClaudeCode源码里学到的都做成Skill！",
+          "notePath": "公众号写作结构库/文章/卡尔的AI沃茨/2026/A500147 我把ClaudeCode源码里学到的都做成Skill！.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E5%8D%A1%E5%B0%94%E7%9A%84AI%E6%B2%83%E8%8C%A8%2F2026%2FA500147%20%E6%88%91%E6%8A%8AClaudeCode%E6%BA%90%E7%A0%81%E9%87%8C%E5%AD%A6%E5%88%B0%E7%9A%84%E9%83%BD%E5%81%9A%E6%88%90Skill%EF%BC%81",
+          "snippet": "志和旧记忆合并整理成一份短小稳定的长期记忆。\n2\\. CC Memory Extractor \n用法：当一轮协作结束后，用它从最近对话里提取用户偏好，反馈，项目约束和参考资料。用人话说就是 这个人喜欢怎么和AI合作 沉淀下来，下次不用再重新磨合。\n3\\. CC Context Compressor \n用法：当会话太长，准备切上下文或交给别的 Agent 时，用它把当前进展压成 9 段式结构化摘要。这个Skill我目前打算多迭代几版本，能最大限度保住用户原话，关键文件，错误和下一步。\n4\\. CC Verification Gate \n用法：当任务看起来已经做完时，用它再拉一次只读验证视角，专门检查是不是真的完成了。这样就可以减少AI假装完成，没跑验证却说通过，漏边界条件这类常见问题。",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "长期",
+              "记忆",
+              "错误",
+              "边界"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/卡尔的AI沃茨/2026/A500147 我把ClaudeCode源码里学到的都做成Skill！.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E5%8D%A1%E5%B0%94%E7%9A%84AI%E6%B2%83%E8%8C%A8%2F2026%2FA500147%20%E6%88%91%E6%8A%8AClaudeCode%E6%BA%90%E7%A0%81%E9%87%8C%E5%AD%A6%E5%88%B0%E7%9A%84%E9%83%BD%E5%81%9A%E6%88%90Skill%EF%BC%81",
+            "snippet": "志和旧记忆合并整理成一份短小稳定的长期记忆。\n2\\. CC Memory Extractor \n用法：当一轮协作结束后，用它从最近对话里提取用户偏好，反馈，项目约束和参考资料。用人话说就是 这个人喜欢怎么和AI合作 沉淀下来，下次不用再重新磨合。\n3\\. CC Context Compressor \n用法：当会话太长，准备切上下文或交给别的 Agent 时，用它把当前进展压成 9 段式结构化摘要。这个Skill我目前打算多迭代几版本，能最大限度保住用户原话，关键文件，错误和下一步。\n4\\. CC Verification Gate \n用法：当任务看起来已经做完时，用它再拉一次只读验证视角，专门检查是不是真的完成了。这样就可以减少AI假装完成，没跑验证却说通过，漏边界条件这类常见问题。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "APeab385b4205e",
+          "title": "刚刚，Claude进群了，老板再也不用@我了",
+          "notePath": "公众号写作结构库/文章/APPSO/2026/APeab385b4205e 刚刚，Claude进群了，老板再也不用@我了.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAPPSO%2F2026%2FAPeab385b4205e%20%E5%88%9A%E5%88%9A%EF%BC%8CClaude%E8%BF%9B%E7%BE%A4%E4%BA%86%EF%BC%8C%E8%80%81%E6%9D%BF%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%40%E6%88%91%E4%BA%86",
+          "snippet": "限，它还能跨频道学习公司其他公开渠道的信息，像一个真正的老员工一样掌握公司的各种「隐性知识」。\n但这类记忆也有边界。官方说，Claude 的记忆会被限制在管理员定义的频道和身份里，销售频道的 Claude 不会把记忆带到工程频道，也不会从私密频道向外汇报内容。\n主动/环境模式\n这大概是 Claude Tag 最像「真人同事」的地方。开启 ambient behavior 模式后，Claude 不需要你手动去 @ 也会主动干预工作。\n它会监控频道动态，在讨论陷入僵局或某个重要任务长期无人跟进时，主动发帖提醒。它还会主动同步跨工具、跨频道的关键更新，或者在自动化流程（如代码部署）完成后，主动在 Slack 里向团队汇报。\n这和过去那种「问一句答一句」的 AI 使用方式，体验会很不一样。\n异步工作",
+          "kind": "原文",
+          "reviewStatus": "APPSO跨段复核",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "长期",
+              "记忆",
+              "边界"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/APPSO/2026/APeab385b4205e 刚刚，Claude进群了，老板再也不用@我了.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAPPSO%2F2026%2FAPeab385b4205e%20%E5%88%9A%E5%88%9A%EF%BC%8CClaude%E8%BF%9B%E7%BE%A4%E4%BA%86%EF%BC%8C%E8%80%81%E6%9D%BF%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%40%E6%88%91%E4%BA%86",
+            "snippet": "限，它还能跨频道学习公司其他公开渠道的信息，像一个真正的老员工一样掌握公司的各种「隐性知识」。\n但这类记忆也有边界。官方说，Claude 的记忆会被限制在管理员定义的频道和身份里，销售频道的 Claude 不会把记忆带到工程频道，也不会从私密频道向外汇报内容。\n主动/环境模式\n这大概是 Claude Tag 最像「真人同事」的地方。开启 ambient behavior 模式后，Claude 不需要你手动去 @ 也会主动干预工作。\n它会监控频道动态，在讨论陷入僵局或某个重要任务长期无人跟进时，主动发帖提醒。它还会主动同步跨工具、跨频道的关键更新，或者在自动化流程（如代码部署）完成后，主动在 Slack 里向团队汇报。\n这和过去那种「问一句答一句」的 AI 使用方式，体验会很不一样。\n异步工作",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A700011",
+          "title": "100万美元众筹炸场，Violoop正在把Agent推向“智能分身”",
+          "notePath": "公众号写作结构库/文章/苍何/2026/A700011 100万美元众筹炸场，Violoop正在把Agent推向“智能分身”.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%8B%8D%E4%BD%95%2F2026%2FA700011%20100%E4%B8%87%E7%BE%8E%E5%85%83%E4%BC%97%E7%AD%B9%E7%82%B8%E5%9C%BA%EF%BC%8CVioloop%E6%AD%A3%E5%9C%A8%E6%8A%8AAgent%E6%8E%A8%E5%90%91%E2%80%9C%E6%99%BA%E8%83%BD%E5%88%86%E8%BA%AB%E2%80%9D",
+          "snippet": "可以选择、调整或拒绝，但不必每次都从空白对话框开始。\n让Agent长期留下来，需要一个成长闭环\n基础模型知道世界，却不知道一个具体的人如何工作。用户从哪里找资料，怎样处理相似任务，为什么修改上一次结果，哪些决定必须自己确认，这些都不会自动出现在公开训练数据里。\nVioloop把这件事拆成长期记忆、工作流记忆与Skills、个人化模型三层。长期记忆在用户授权下整理人物、项目、文件和事件之间的关联；工作流记忆与Skills保存可复用的方法和执行路径；个人化模型则尝试把反复验证的经验逐步沉淀到个人化参数中。\n这条路线的意义，不是让桌面设备重新训练一个通用模型，而是在通用智能之上形成个人经验层。记忆让AI知道发生过什么，工作流让它学会怎样做，个人化模型让被验证过的经验成为更稳定的能力。",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "智能",
+              "长期",
+              "记忆",
+              "授权"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/苍何/2026/A700011 100万美元众筹炸场，Violoop正在把Agent推向“智能分身”.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%8B%8D%E4%BD%95%2F2026%2FA700011%20100%E4%B8%87%E7%BE%8E%E5%85%83%E4%BC%97%E7%AD%B9%E7%82%B8%E5%9C%BA%EF%BC%8CVioloop%E6%AD%A3%E5%9C%A8%E6%8A%8AAgent%E6%8E%A8%E5%90%91%E2%80%9C%E6%99%BA%E8%83%BD%E5%88%86%E8%BA%AB%E2%80%9D",
+            "snippet": "可以选择、调整或拒绝，但不必每次都从空白对话框开始。\n让Agent长期留下来，需要一个成长闭环\n基础模型知道世界，却不知道一个具体的人如何工作。用户从哪里找资料，怎样处理相似任务，为什么修改上一次结果，哪些决定必须自己确认，这些都不会自动出现在公开训练数据里。\nVioloop把这件事拆成长期记忆、工作流记忆与Skills、个人化模型三层。长期记忆在用户授权下整理人物、项目、文件和事件之间的关联；工作流记忆与Skills保存可复用的方法和执行路径；个人化模型则尝试把反复验证的经验逐步沉淀到个人化参数中。\n这条路线的意义，不是让桌面设备重新训练一个通用模型，而是在通用智能之上形成个人经验层。记忆让AI知道发生过什么，工作流让它学会怎样做，个人化模型让被验证过的经验成为更稳定的能力。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A700084",
+          "title": "腾讯出手，AI 原生数据库来了！",
+          "notePath": "公众号写作结构库/文章/苍何/2026/A700084 腾讯出手，AI 原生数据库来了！.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%8B%8D%E4%BD%95%2F2026%2FA700084%20%E8%85%BE%E8%AE%AF%E5%87%BA%E6%89%8B%EF%BC%8CAI%20%E5%8E%9F%E7%94%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9D%A5%E4%BA%86%EF%BC%81",
+          "snippet": "%-60%。\n我实际跑下来体感很明显，任务完成率上去了，消耗反而降了。\n第二层，长期记忆沉淀。\nAgent 要真正理解业务，就得记住用户偏好、业务规则、历史决策。Agent Memory 用四层渐进式记忆提取，在 PersonaMem 测评数据集上把 OpenClaw 原生记忆评分从 48% 拉到了 76%。\n更关键的是，成功任务还能自动提取成 Skill，让每次经验可被复用。\n第三层，团队记忆组织化。\n这层说实话有点超出我预期。如果每个 Agent 只保留自己的记忆，就没法形成稳定协作。Agent Memory 把分散在对话、任务、文档中的团队上下文组织起来，形成可被多个 Agent 复用的共享记忆层，还有隔离、授权、审计的完整治理能力。\n这是 AI 从个人工具走向组织系统必须补上的基础设施。",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical"
+            ],
+            "terms": [
+              "保留",
+              "长期",
+              "记忆",
+              "授权"
+            ],
+            "reason": "关键词命中、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/苍何/2026/A700084 腾讯出手，AI 原生数据库来了！.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%8B%8D%E4%BD%95%2F2026%2FA700084%20%E8%85%BE%E8%AE%AF%E5%87%BA%E6%89%8B%EF%BC%8CAI%20%E5%8E%9F%E7%94%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9D%A5%E4%BA%86%EF%BC%81",
+            "snippet": "%-60%。\n我实际跑下来体感很明显，任务完成率上去了，消耗反而降了。\n第二层，长期记忆沉淀。\nAgent 要真正理解业务，就得记住用户偏好、业务规则、历史决策。Agent Memory 用四层渐进式记忆提取，在 PersonaMem 测评数据集上把 OpenClaw 原生记忆评分从 48% 拉到了 76%。\n更关键的是，成功任务还能自动提取成 Skill，让每次经验可被复用。\n第三层，团队记忆组织化。\n这层说实话有点超出我预期。如果每个 Agent 只保留自己的记忆，就没法形成稳定协作。Agent Memory 把分散在对话、任务、文档中的团队上下文组织起来，形成可被多个 Agent 复用的共享记忆层，还有隔离、授权、审计的完整治理能力。\n这是 AI 从个人工具走向组织系统必须补上的基础设施。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        }
+      ],
+      "retrieval": {
+        "name": "Haystack · 中文混合检索",
+        "methods": [
+          "SQLite BM25",
+          "FastEmbed 中文向量召回",
+          "Haystack RRF",
+          "中文交叉编码器重排"
+        ],
+        "engine": "haystack-fastembed-v1",
+        "phase": "ready",
+        "ready": true,
+        "vectorSearch": true,
+        "remoteModelCalls": 0,
+        "done": 6896,
+        "total": 6896,
+        "totalSources": 6896,
+        "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+        "sources": 6896,
+        "passages": 93573,
+        "articles": 5858,
+        "templates": 27,
+        "embeddingModel": "BAAI/bge-small-zh-v1.5",
+        "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+        "embeddingLoaded": true,
+        "rerankerLoaded": true,
+        "peakRssMiB": 1061,
+        "threads": 2,
+        "rankCandidates": 20,
+        "rerankApplied": true,
+        "queryMs": 34990,
+        "lexicalCandidates": 60,
+        "vectorCandidates": 60
+      }
+    },
+    {
+      "input": {
+        "label": "视频工具测评",
+        "q": "比较视频生成工具的镜头连续性、人物一致性和失败场景，说明如何选择",
+        "genre": "测评"
+      },
+      "ms": 39802,
+      "results": [
+        {
+          "id": "A500405",
+          "title": "100镜实测新版即梦AI视频3.0，我称之为性价比拉满听懂人话的全能选手！",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A500405.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500405",
+          "snippet": "读者任务：了解一款视频生成模型在动作时序、镜头控制、人物一致性、画面补足和风格生成上的能力及短板。\n\n适用选题：视频生成模型评测、创作工具体验和多维提示词遵循能力检查。\n\n所需素材：明确版本、提示词、输入图像、生成时长和设置，覆盖多个任务维度，保留原始视频与失败样例，并用一致判据评估。\n\n缺料时不能使用的条件：不能只凭精选样例声称普遍稳定或量化准确率；没有样本清单不得宣称100镜全面验证；生成影像不可用文字描述代替可复核证据。\n\n适用边界：明确测试者身份和单次使用范围；将“80%以上”等数值和性价比评价限定为作者观察，说明出现的失败；图片/视频未核验时不确认画面效果。",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical"
+            ],
+            "terms": [
+              "视频",
+              "生成",
+              "工具",
+              "镜头",
+              "人物",
+              "一致性",
+              "失败",
+              "说明"
+            ],
+            "reason": "关键词命中、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A500405.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500405",
+            "snippet": "读者任务：了解一款视频生成模型在动作时序、镜头控制、人物一致性、画面补足和风格生成上的能力及短板。\n\n适用选题：视频生成模型评测、创作工具体验和多维提示词遵循能力检查。\n\n所需素材：明确版本、提示词、输入图像、生成时长和设置，覆盖多个任务维度，保留原始视频与失败样例，并用一致判据评估。\n\n缺料时不能使用的条件：不能只凭精选样例声称普遍稳定或量化准确率；没有样本清单不得宣称100镜全面验证；生成影像不可用文字描述代替可复核证据。\n\n适用边界：明确测试者身份和单次使用范围；将“80%以上”等数值和性价比评价限定为作者观察，说明出现的失败；图片/视频未核验时不确认画面效果。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A500466",
+          "title": "100镜实测Vidu 2.0！一致性新玩法再次称霸2D动画界",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A500466.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500466",
+          "snippet": "读者任务：评估视频生成模型在动画素材上的速度、人物/物体一致性、镜头控制、首尾帧和风格稳定能力。\n\n适用选题：AI动画、视频生成模型升级、角色一致性与镜头语言控制。\n\n所需素材：明确版本和账号权限、可重复的多类输入素材与提示词、同条件旧版或竞品对照、多次抽样记录、速度/成本数据、原始输出视频和清晰度/稳定性评价标准。\n\n缺料时不能使用的条件：不能把内测少量样例概括为普遍稳定性；比较版本或竞品需统一提示、时长、分辨率和抽样；免费模式需注明排队和使用条件；媒体缺失时不能独立确认视觉效果。\n\n适用边界：作者团队称进行了百余镜头内测，但正文未展示抽样数据或完整测试条件；主要效果以GIF/图片媒体表达，当前输入无法复核；价格和免费政策仅对应文章时点。",
+          "kind": "全文拆解",
+          "reviewStatus": "独立复核通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "比较",
+              "视频",
+              "生成",
+              "镜头",
+              "人物",
+              "一致性"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A500466.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500466",
+            "snippet": "读者任务：评估视频生成模型在动画素材上的速度、人物/物体一致性、镜头控制、首尾帧和风格稳定能力。\n\n适用选题：AI动画、视频生成模型升级、角色一致性与镜头语言控制。\n\n所需素材：明确版本和账号权限、可重复的多类输入素材与提示词、同条件旧版或竞品对照、多次抽样记录、速度/成本数据、原始输出视频和清晰度/稳定性评价标准。\n\n缺料时不能使用的条件：不能把内测少量样例概括为普遍稳定性；比较版本或竞品需统一提示、时长、分辨率和抽样；免费模式需注明排队和使用条件；媒体缺失时不能独立确认视觉效果。\n\n适用边界：作者团队称进行了百余镜头内测，但正文未展示抽样数据或完整测试条件；主要效果以GIF/图片媒体表达，当前输入无法复核；价格和免费政策仅对应文章时点。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A100281",
+          "title": "我用起来最顺手的 AI 视频生成工具",
+          "notePath": "公众号写作结构库/文章/AI产品阿颖/2025/A100281 我用起来最顺手的 AI 视频生成工具.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAI%E4%BA%A7%E5%93%81%E9%98%BF%E9%A2%96%2F2025%2FA100281%20%E6%88%91%E7%94%A8%E8%B5%B7%E6%9D%A5%E6%9C%80%E9%A1%BA%E6%89%8B%E7%9A%84%20AI%20%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7",
+          "snippet": "看 V5 能否还原下画面。提示词很简单，直接说：\n两位运动员在激烈的比赛。\n▶点击观看微信视频\n视频里的拳击运动员出拳、躲闪的动作都极其逼真。无论是动作的节奏感，还是身体的协调性与力量传递，都还原得相当到位。整体观感已经非常接近一场真实比赛的现场。我发给家人，他们没看出来是 AI 生成的，以假乱真。\n03\n主体一致性\n最后是主体一致性。前面的几个例子最长只有 8 秒，但在真实的视频场景里，我们往往需要更长的视频，这就引出一个新的挑战：\n不仅要维持镜头和动作的流畅，还得保证人物一致性。同一个角色在不同场景下保持稳定的外貌特征、动作习惯和情绪表达。",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "视频",
+              "生成",
+              "镜头",
+              "人物",
+              "一致性",
+              "场景"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/AI产品阿颖/2025/A100281 我用起来最顺手的 AI 视频生成工具.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAI%E4%BA%A7%E5%93%81%E9%98%BF%E9%A2%96%2F2025%2FA100281%20%E6%88%91%E7%94%A8%E8%B5%B7%E6%9D%A5%E6%9C%80%E9%A1%BA%E6%89%8B%E7%9A%84%20AI%20%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7",
+            "snippet": "看 V5 能否还原下画面。提示词很简单，直接说：\n两位运动员在激烈的比赛。\n▶点击观看微信视频\n视频里的拳击运动员出拳、躲闪的动作都极其逼真。无论是动作的节奏感，还是身体的协调性与力量传递，都还原得相当到位。整体观感已经非常接近一场真实比赛的现场。我发给家人，他们没看出来是 AI 生成的，以假乱真。\n03\n主体一致性\n最后是主体一致性。前面的几个例子最长只有 8 秒，但在真实的视频场景里，我们往往需要更长的视频，这就引出一个新的挑战：\n不仅要维持镜头和动作的流畅，还得保证人物一致性。同一个角色在不同场景下保持稳定的外貌特征、动作习惯和情绪表达。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "APda673e8ebd69",
+          "title": "Wan 3.0 有了自己的镜头美学",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/APda673e8ebd69.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FAPda673e8ebd69",
+          "snippet": "读者任务：通过多种真实创作任务评价视频模型是否支持可控叙事工作流。\n\n适用选题：视频生成模型测评、角色一致性、编辑能力和创作者工具链。\n\n所需素材：需有创作目标、具体生成或编辑过程、可观察结果、限制案例及适用边界。\n\n缺料时不能使用的条件：若只有发布参数或产品演示，不能推断真实工作流已被验证；媒体无法检查时须限缩结论。\n\n适用边界：文中“我们”是APPSO体验团队的叙述，不推断为运营账号个人测试；视频素材未独立观看。",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "vector"
+            ],
+            "terms": [
+              "视频",
+              "生成",
+              "工具",
+              "一致性"
+            ],
+            "reason": "语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/APda673e8ebd69.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FAPda673e8ebd69",
+            "snippet": "读者任务：通过多种真实创作任务评价视频模型是否支持可控叙事工作流。\n\n适用选题：视频生成模型测评、角色一致性、编辑能力和创作者工具链。\n\n所需素材：需有创作目标、具体生成或编辑过程、可观察结果、限制案例及适用边界。\n\n缺料时不能使用的条件：若只有发布参数或产品演示，不能推断真实工作流已被验证；媒体无法检查时须限缩结论。\n\n适用边界：文中“我们”是APPSO体验团队的叙述，不推断为运营账号个人测试；视频素材未独立观看。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A500481",
+          "title": "谷歌版 4k Sora上手效果分享，它可太懂物理世界和人物运动了！",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A500481.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500481",
+          "snippet": "引用海外创作者土豆系列和官方失败案例，作者称角色保持稳定，同时指出部分元素扭曲或幻觉，并推测多抽可改善。\n\n推进关系：按原文顺序推进\n\n- 土豆角色一致性与badcase（P33–P38）：引用海外创作者土豆系列和官方失败案例，作者称角色保持稳定，同时指出部分元素扭曲或幻觉，并推测多抽可改善。\n - 放置作用：补充一致性表现和失败边界\nP37：再有就是，以往对比更个工具的效果，我要生成近百个视频横评，",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical"
+            ],
+            "terms": [
+              "视频",
+              "生成",
+              "工具",
+              "一致性",
+              "失败"
+            ],
+            "reason": "关键词命中、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A500481.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500481",
+            "snippet": "引用海外创作者土豆系列和官方失败案例，作者称角色保持稳定，同时指出部分元素扭曲或幻觉，并推测多抽可改善。\n\n推进关系：按原文顺序推进\n\n- 土豆角色一致性与badcase（P33–P38）：引用海外创作者土豆系列和官方失败案例，作者称角色保持稳定，同时指出部分元素扭曲或幻觉，并推测多抽可改善。\n - 放置作用：补充一致性表现和失败边界\nP37：再有就是，以往对比更个工具的效果，我要生成近百个视频横评，",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A500523",
+          "title": "[Runway] Gen3 VS [国产Sora] Vidu，我又用100个镜头来测评图生视频效果了！",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A500523.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500523",
+          "snippet": "解释单列动作是因人物交互常显得像移动PPT，展示光剑切磋和打铁，作者称Vidu动作连贯性突出。\n\n推进关系：按原文顺序推进\n\n- 动作交互对照（P72–P76）：解释单列动作是因人物交互常显得像移动PPT，展示光剑切磋和打铁，作者称Vidu动作连贯性突出。\n - 放置作用：检验人物动作连续性\nP76：把动作单拎出来是因为实际做视频的时候，我非常希望能多一点人物交互的镜头，现阶段很多模型做出来的效果都是移动的PPT🤣",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "视频",
+              "镜头",
+              "连续性",
+              "人物"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A500523.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA500523",
+            "snippet": "解释单列动作是因人物交互常显得像移动PPT，展示光剑切磋和打铁，作者称Vidu动作连贯性突出。\n\n推进关系：按原文顺序推进\n\n- 动作交互对照（P72–P76）：解释单列动作是因人物交互常显得像移动PPT，展示光剑切磋和打铁，作者称Vidu动作连贯性突出。\n - 放置作用：检验人物动作连续性\nP76：把动作单拎出来是因为实际做视频的时候，我非常希望能多一点人物交互的镜头，现阶段很多模型做出来的效果都是移动的PPT🤣",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        }
+      ],
+      "retrieval": {
+        "name": "Haystack · 中文混合检索",
+        "methods": [
+          "SQLite BM25",
+          "FastEmbed 中文向量召回",
+          "Haystack RRF",
+          "中文交叉编码器重排"
+        ],
+        "engine": "haystack-fastembed-v1",
+        "phase": "ready",
+        "ready": true,
+        "vectorSearch": true,
+        "remoteModelCalls": 0,
+        "done": 6896,
+        "total": 6896,
+        "totalSources": 6896,
+        "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+        "sources": 6896,
+        "passages": 93573,
+        "articles": 5858,
+        "templates": 27,
+        "embeddingModel": "BAAI/bge-small-zh-v1.5",
+        "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+        "embeddingLoaded": true,
+        "rerankerLoaded": true,
+        "peakRssMiB": 1061,
+        "threads": 2,
+        "rankCandidates": 20,
+        "rerankApplied": true,
+        "queryMs": 39726,
+        "lexicalCandidates": 60,
+        "vectorCandidates": 60
+      }
+    },
+    {
+      "input": {
+        "label": "本地知识库教程",
+        "q": "如何在电脑部署私有知识库，准备条件、操作步骤、常见错误和验收",
+        "genre": "教程"
+      },
+      "ms": 29174,
+      "results": [
+        {
+          "id": "A600264",
+          "title": "私有知识库+本地300种模型一键部署，私密性拉满！这个国产开源工具太绝了",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A600264.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA600264",
+          "snippet": "读者任务：在个人电脑上安装AingDesk并建立使用本地模型的文档知识库，检查文件解析和问答效果。\n\n适用选题：本地大模型部署、私有RAG知识库、桌面AI工具配置。\n\n所需素材：操作系统下载入口、硬件条件、模型选择依据、文档导入步骤、检索模型和生成模型配置及验收问题。\n\n缺料时不能使用的条件：不能把作者的显存经验值和单机测试当作通用保证；启用第三方API、联网搜索或云端分享时不能宣称全链路离线；API Key应妥善保管。\n\n适用边界：教程需把完全本地模式与第三方API、在线搜索、云端分享分开说明；“私密性拉满”是营销式判断，未构成安全审计或零泄露保证。",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "电脑",
+              "部署",
+              "私有",
+              "知识库",
+              "条件",
+              "验收"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A600264.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA600264",
+            "snippet": "读者任务：在个人电脑上安装AingDesk并建立使用本地模型的文档知识库，检查文件解析和问答效果。\n\n适用选题：本地大模型部署、私有RAG知识库、桌面AI工具配置。\n\n所需素材：操作系统下载入口、硬件条件、模型选择依据、文档导入步骤、检索模型和生成模型配置及验收问题。\n\n缺料时不能使用的条件：不能把作者的显存经验值和单机测试当作通用保证；启用第三方API、联网搜索或云端分享时不能宣称全链路离线；API Key应妥善保管。\n\n适用边界：教程需把完全本地模式与第三方API、在线搜索、云端分享分开说明；“私密性拉满”是营销式判断，未构成安全审计或零泄露保证。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A600287",
+          "title": "DeepSeek接入本地私有知识库，有电脑就能搞，这个方案可以封神了！【喂饭级教程】",
+          "notePath": "公众号写作结构库/文章/袋鼠帝/2025/A600287 DeepSeek接入本地私有知识库，有电脑就能搞，这个方案可以封神了！【喂饭级教程】.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%A2%8B%E9%BC%A0%E5%B8%9D%2F2025%2FA600287%20DeepSeek%E6%8E%A5%E5%85%A5%E6%9C%AC%E5%9C%B0%E7%A7%81%E6%9C%89%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E6%9C%89%E7%94%B5%E8%84%91%E5%B0%B1%E8%83%BD%E6%90%9E%EF%BC%8C%E8%BF%99%E4%B8%AA%E6%96%B9%E6%A1%88%E5%8F%AF%E4%BB%A5%E5%B0%81%E7%A5%9E%E4%BA%86%EF%BC%81%E3%80%90%E5%96%82%E9%A5%AD%E7%BA%A7%E6%95%99%E7%A8%8B%E3%80%91",
+          "snippet": "置的 火山引擎DeepSeek-V3\n创建成功之后，我们选择导入文本数据集\n这里我选择本地文件\n把准备好的知识库资料（是部分公众号文章的txt文件）\n虽然FastGPT支持直接上传pdf等，但是实测转换成txt或者md的效果会更好。推荐使用textIn、或者doc2X等工具进行转换。\n上传完成之后点击下一步\n这里一定要选择 问答拆分，然后点击下一步\n点击开始\n可以看到资料都在索引中了，接下来要做的就是等待\n等到所有资料状态都变成 已就绪，那么知识库就初步搭建完毕啦\nDeepSeek接入个人知识库\n知识库创建完成之后需要关联到DeepSeek智能体使用\n先进入之前创建的FastGPT智能体，关联知识库->选择\n选择刚才创建的 公众号文章知识库，点击完成\n配置知识库参数（如下图）\n选择混合检索，勾选上结果重排",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "知识库",
+              "准备"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/袋鼠帝/2025/A600287 DeepSeek接入本地私有知识库，有电脑就能搞，这个方案可以封神了！【喂饭级教程】.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%A2%8B%E9%BC%A0%E5%B8%9D%2F2025%2FA600287%20DeepSeek%E6%8E%A5%E5%85%A5%E6%9C%AC%E5%9C%B0%E7%A7%81%E6%9C%89%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E6%9C%89%E7%94%B5%E8%84%91%E5%B0%B1%E8%83%BD%E6%90%9E%EF%BC%8C%E8%BF%99%E4%B8%AA%E6%96%B9%E6%A1%88%E5%8F%AF%E4%BB%A5%E5%B0%81%E7%A5%9E%E4%BA%86%EF%BC%81%E3%80%90%E5%96%82%E9%A5%AD%E7%BA%A7%E6%95%99%E7%A8%8B%E3%80%91",
+            "snippet": "置的 火山引擎DeepSeek-V3\n创建成功之后，我们选择导入文本数据集\n这里我选择本地文件\n把准备好的知识库资料（是部分公众号文章的txt文件）\n虽然FastGPT支持直接上传pdf等，但是实测转换成txt或者md的效果会更好。推荐使用textIn、或者doc2X等工具进行转换。\n上传完成之后点击下一步\n这里一定要选择 问答拆分，然后点击下一步\n点击开始\n可以看到资料都在索引中了，接下来要做的就是等待\n等到所有资料状态都变成 已就绪，那么知识库就初步搭建完毕啦\nDeepSeek接入个人知识库\n知识库创建完成之后需要关联到DeepSeek智能体使用\n先进入之前创建的FastGPT智能体，关联知识库->选择\n选择刚才创建的 公众号文章知识库，点击完成\n配置知识库参数（如下图）\n选择混合检索，勾选上结果重排",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "AP05e35808de67",
+          "title": "用Codex搭建大神Karpathy同款知识库，我养出了比我还懂的AI | 附保姆级教程",
+          "notePath": "公众号写作结构库/文章/APPSO/2026/AP05e35808de67 用Codex搭建大神Karpathy同款知识库，我养出了比我还懂的AI 附保姆级教程.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAPPSO%2F2026%2FAP05e35808de67%20%E7%94%A8Codex%E6%90%AD%E5%BB%BA%E5%A4%A7%E7%A5%9EKarpathy%E5%90%8C%E6%AC%BE%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E6%88%91%E5%85%BB%E5%87%BA%E4%BA%86%E6%AF%94%E6%88%91%E8%BF%98%E6%87%82%E7%9A%84AI%20%E9%99%84%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B",
+          "snippet": "不改。\n2\\. 笔记层：你把素材和我的回答，提炼成结构化 markdown 笔记，并互相链接。\n3\\. 规则层：一个 AGENTS.md，写清这个库怎么读、怎么维护——相当于你的\"入职手册\"，\n下次换对话、换模型都能照着接手。\n核心理念：别每次重新问、重新拼。信息一次次沉淀进文件，持续更新、交叉链接、修正矛盾。\n\\# 第一步：动手建文件之前，先问我两件事\n1.【存哪里】问我想把这个知识库放在电脑哪个文件夹（这会成为我的 Obsidian 仓库），\n等我给出路径再创建文件。\n2.【最想要什么】问我：\"现阶段你最想用它解决什么、最想搭出什么系统？\"\n· 同时列出选项，让我勾选（可多选）：\nA. 工作流 / 创作系统（写稿、选题、复盘）\nB. 学习计划（备考、学语言、读书笔记）\nC. 健康管理（健身、饮食、睡眠记录）",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "vector"
+            ],
+            "terms": [
+              "电脑",
+              "知识库"
+            ],
+            "reason": "语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/APPSO/2026/AP05e35808de67 用Codex搭建大神Karpathy同款知识库，我养出了比我还懂的AI 附保姆级教程.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAPPSO%2F2026%2FAP05e35808de67%20%E7%94%A8Codex%E6%90%AD%E5%BB%BA%E5%A4%A7%E7%A5%9EKarpathy%E5%90%8C%E6%AC%BE%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E6%88%91%E5%85%BB%E5%87%BA%E4%BA%86%E6%AF%94%E6%88%91%E8%BF%98%E6%87%82%E7%9A%84AI%20%E9%99%84%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B",
+            "snippet": "不改。\n2\\. 笔记层：你把素材和我的回答，提炼成结构化 markdown 笔记，并互相链接。\n3\\. 规则层：一个 AGENTS.md，写清这个库怎么读、怎么维护——相当于你的\"入职手册\"，\n下次换对话、换模型都能照着接手。\n核心理念：别每次重新问、重新拼。信息一次次沉淀进文件，持续更新、交叉链接、修正矛盾。\n\\# 第一步：动手建文件之前，先问我两件事\n1.【存哪里】问我想把这个知识库放在电脑哪个文件夹（这会成为我的 Obsidian 仓库），\n等我给出路径再创建文件。\n2.【最想要什么】问我：\"现阶段你最想用它解决什么、最想搭出什么系统？\"\n· 同时列出选项，让我勾选（可多选）：\nA. 工作流 / 创作系统（写稿、选题、复盘）\nB. 学习计划（备考、学语言、读书笔记）\nC. 健康管理（健身、饮食、睡眠记录）",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A600296",
+          "title": "满血版DeepSeek联网+私有知识库，效果直接拉满【喂饭级教程】",
+          "notePath": "公众号写作结构库/文章/袋鼠帝/2025/A600296 满血版DeepSeek联网+私有知识库，效果直接拉满【喂饭级教程】.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%A2%8B%E9%BC%A0%E5%B8%9D%2F2025%2FA600296%20%E6%BB%A1%E8%A1%80%E7%89%88DeepSeek%E8%81%94%E7%BD%91%2B%E7%A7%81%E6%9C%89%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E6%95%88%E6%9E%9C%E7%9B%B4%E6%8E%A5%E6%8B%89%E6%BB%A1%E3%80%90%E5%96%82%E9%A5%AD%E7%BA%A7%E6%95%99%E7%A8%8B%E3%80%91",
+          "snippet": ">待发布\n到待发布状态其实就ok了\n回到应用配置点击知识库的 高级选项（设置RAG的一些参数）\n如下图，是默认的配置，推荐就用混合检索，然后因为我的知识库是文档类型，所以只需要在文档设置这里调参即可（可以先不用改，在右边对话框测试一下，感觉效果不佳再调整这里的参数）\n可以说给出的知识库参数，既能达到优化知识库问答效果的目的，又不至于很复杂，用户体验不错。\n所以在没有改任何配置的情况下，我测试了第一个问题，如下\n卧槽，我本来没有报太大的希望\n但是这次腾讯真的惊艳到我了！这个问题横跨了多个文章，就是有两种方式（一种是部署到windows，另一种是部署到手机）\n它两种都回答出来了，并且把手机部署作为备选项（备注了可选），放在了最后，总结的非常全面。\n接着我又测试了一个问题（有哪些浏览器插件 推荐）",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "部署",
+              "知识库"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/袋鼠帝/2025/A600296 满血版DeepSeek联网+私有知识库，效果直接拉满【喂饭级教程】.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2F%E8%A2%8B%E9%BC%A0%E5%B8%9D%2F2025%2FA600296%20%E6%BB%A1%E8%A1%80%E7%89%88DeepSeek%E8%81%94%E7%BD%91%2B%E7%A7%81%E6%9C%89%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E6%95%88%E6%9E%9C%E7%9B%B4%E6%8E%A5%E6%8B%89%E6%BB%A1%E3%80%90%E5%96%82%E9%A5%AD%E7%BA%A7%E6%95%99%E7%A8%8B%E3%80%91",
+            "snippet": ">待发布\n到待发布状态其实就ok了\n回到应用配置点击知识库的 高级选项（设置RAG的一些参数）\n如下图，是默认的配置，推荐就用混合检索，然后因为我的知识库是文档类型，所以只需要在文档设置这里调参即可（可以先不用改，在右边对话框测试一下，感觉效果不佳再调整这里的参数）\n可以说给出的知识库参数，既能达到优化知识库问答效果的目的，又不至于很复杂，用户体验不错。\n所以在没有改任何配置的情况下，我测试了第一个问题，如下\n卧槽，我本来没有报太大的希望\n但是这次腾讯真的惊艳到我了！这个问题横跨了多个文章，就是有两种方式（一种是部署到windows，另一种是部署到手机）\n它两种都回答出来了，并且把手机部署作为备选项（备注了可选），放在了最后，总结的非常全面。\n接着我又测试了一个问题（有哪些浏览器插件 推荐）",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A700042",
+          "title": "用 WorkBuddy / Codex + Obsidian 搭建自生长的个人知识库实战",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A700042.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA700042",
+          "snippet": "读者任务：从架构理解到实际搭建一套可增量维护的本地知识库。\n\n适用选题：个人知识管理、Agent工作流、Obsidian与LLM Wiki实践。\n\n所需素材：真实资料样本、本地Vault、Agent工具、明确的Schema规则、引用和变更记录要求，以及可验收的查询任务。\n\n缺料时不能使用的条件：不应把作者展示的自动建库效果当成普遍保证；模型、插件、会员功能可用性需当前实测。\n\n适用边界：操作步骤和产品能力来自作者实践/介绍，本文未独立运行；提示词和命令属于教程资料，不是已验证执行结果。",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "知识库",
+              "条件",
+              "操作步骤",
+              "验收"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A700042.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA700042",
+            "snippet": "读者任务：从架构理解到实际搭建一套可增量维护的本地知识库。\n\n适用选题：个人知识管理、Agent工作流、Obsidian与LLM Wiki实践。\n\n所需素材：真实资料样本、本地Vault、Agent工具、明确的Schema规则、引用和变更记录要求，以及可验收的查询任务。\n\n缺料时不能使用的条件：不应把作者展示的自动建库效果当成普遍保证；模型、插件、会员功能可用性需当前实测。\n\n适用边界：操作步骤和产品能力来自作者实践/介绍，本文未独立运行；提示词和命令属于教程资料，不是已验证执行结果。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A600315",
+          "title": "把&quot;知识&quot;喂给AI，仅10分钟&quot;调教&quot;出的AI数字分身！效果直接拉满~【喂饭级教程】",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A600315.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA600315",
+          "snippet": "读者任务：把个人或企业资料整理为可被智能体检索并回答问题的知识库，再将整理后的问答数据迁移到能力较简单的平台。\n\n适用选题：知识库配置、RAG应用搭建、客服/内部助手原型，以及不同Agent平台之间的数据准备。\n\n所需素材：可用的原始资料、清理和结构化方案、建库及嵌入模型配置、检索参数、Bot提示词、结果验收方式和必要的平台操作截图。\n\n缺料时不能使用的条件：没有实际平台入口和版本信息时不能照搬界面步骤；没有对照测试时不能承诺回答准确率或普遍效果；处理法律、医疗等高后果知识库时应明确知识来源与专业审核范围。\n\n适用边界：把作者的个人费用和平台推荐视为当时经验，功能与定价可能变化；区分产品自述、截图展示和可复现验证。8-9段图片无法单独核验数字分身效果，教程实际覆盖知识库配置，不等于完整业务级数字人系统。",
+          "kind": "全文拆解",
+          "reviewStatus": "独立复核通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "vector"
+            ],
+            "terms": [
+              "知识库",
+              "准备",
+              "条件",
+              "验收"
+            ],
+            "reason": "语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A600315.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA600315",
+            "snippet": "读者任务：把个人或企业资料整理为可被智能体检索并回答问题的知识库，再将整理后的问答数据迁移到能力较简单的平台。\n\n适用选题：知识库配置、RAG应用搭建、客服/内部助手原型，以及不同Agent平台之间的数据准备。\n\n所需素材：可用的原始资料、清理和结构化方案、建库及嵌入模型配置、检索参数、Bot提示词、结果验收方式和必要的平台操作截图。\n\n缺料时不能使用的条件：没有实际平台入口和版本信息时不能照搬界面步骤；没有对照测试时不能承诺回答准确率或普遍效果；处理法律、医疗等高后果知识库时应明确知识来源与专业审核范围。\n\n适用边界：把作者的个人费用和平台推荐视为当时经验，功能与定价可能变化；区分产品自述、截图展示和可复现验证。8-9段图片无法单独核验数字分身效果，教程实际覆盖知识库配置，不等于完整业务级数字人系统。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        }
+      ],
+      "retrieval": {
+        "name": "Haystack · 中文混合检索",
+        "methods": [
+          "SQLite BM25",
+          "FastEmbed 中文向量召回",
+          "Haystack RRF",
+          "中文交叉编码器重排"
+        ],
+        "engine": "haystack-fastembed-v1",
+        "phase": "ready",
+        "ready": true,
+        "vectorSearch": true,
+        "remoteModelCalls": 0,
+        "done": 6896,
+        "total": 6896,
+        "totalSources": 6896,
+        "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+        "sources": 6896,
+        "passages": 93573,
+        "articles": 5858,
+        "templates": 27,
+        "embeddingModel": "BAAI/bge-small-zh-v1.5",
+        "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+        "embeddingLoaded": true,
+        "rerankerLoaded": true,
+        "peakRssMiB": 1061,
+        "threads": 2,
+        "rankCandidates": 20,
+        "rerankApplied": true,
+        "queryMs": 29051,
+        "lexicalCandidates": 60,
+        "vectorCandidates": 60
+      }
+    },
+    {
+      "input": {
+        "label": "上下文与记忆科普",
+        "q": "大模型上下文窗口和长期记忆有什么区别，解释原理和边界",
+        "genre": "科普"
+      },
+      "ms": 46304,
+      "results": [
+        {
+          "id": "A100242",
+          "title": "Andrej Karpathy 的访谈刷屏了，确实醍醐灌顶",
+          "notePath": "公众号写作结构库/文章/AI产品阿颖/2025/A100242 Andrej Karpathy 的访谈刷屏了，确实醍醐灌顶.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAI%E4%BA%A7%E5%93%81%E9%98%BF%E9%A2%96%2F2025%2FA100242%20Andrej%20Karpathy%20%E7%9A%84%E8%AE%BF%E8%B0%88%E5%88%B7%E5%B1%8F%E4%BA%86%EF%BC%8C%E7%A1%AE%E5%AE%9E%E9%86%8D%E9%86%90%E7%81%8C%E9%A1%B6",
+          "snippet": "是把所有信息都存进脑中。\n这种结构更接近人类大脑的工作方式：理解、试验、反思，而不是死记硬背。\n如果要让模型真正学会思考，就必须在结构上更像大脑。大模型的权重其实就像人类记忆中模糊的印象，而输入的上下文则相当于工作记忆：人类在短期思考时，会把当前的情境加载进意识中，模型也是这样，只不过它还没有形成长期的巩固机制。\nKarpathy 认为，如果要让模型真正学会思考，就必须在结构上更像大脑。人类在清醒时不断积累信息，而在睡眠中，会把这些经验压缩、整理、内化成长期记忆。\n但在当下的大模型中，这个过程是缺失的。模型能记住当下的上下文，却不会把新经验吸收进自己的结构。",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "模型",
+              "上下文",
+              "长期",
+              "记忆"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/AI产品阿颖/2025/A100242 Andrej Karpathy 的访谈刷屏了，确实醍醐灌顶.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAI%E4%BA%A7%E5%93%81%E9%98%BF%E9%A2%96%2F2025%2FA100242%20Andrej%20Karpathy%20%E7%9A%84%E8%AE%BF%E8%B0%88%E5%88%B7%E5%B1%8F%E4%BA%86%EF%BC%8C%E7%A1%AE%E5%AE%9E%E9%86%8D%E9%86%90%E7%81%8C%E9%A1%B6",
+            "snippet": "是把所有信息都存进脑中。\n这种结构更接近人类大脑的工作方式：理解、试验、反思，而不是死记硬背。\n如果要让模型真正学会思考，就必须在结构上更像大脑。大模型的权重其实就像人类记忆中模糊的印象，而输入的上下文则相当于工作记忆：人类在短期思考时，会把当前的情境加载进意识中，模型也是这样，只不过它还没有形成长期的巩固机制。\nKarpathy 认为，如果要让模型真正学会思考，就必须在结构上更像大脑。人类在清醒时不断积累信息，而在睡眠中，会把这些经验压缩、整理、内化成长期记忆。\n但在当下的大模型中，这个过程是缺失的。模型能记住当下的上下文，却不会把新经验吸收进自己的结构。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A100410",
+          "title": "Cursor不适合大型项目？",
+          "notePath": "公众号写作结构库/文章/AI产品阿颖/2025/A100410 Cursor不适合大型项目？.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAI%E4%BA%A7%E5%93%81%E9%98%BF%E9%A2%96%2F2025%2FA100410%20Cursor%E4%B8%8D%E9%80%82%E5%90%88%E5%A4%A7%E5%9E%8B%E9%A1%B9%E7%9B%AE%EF%BC%9F",
+          "snippet": "少了 AI 在某个时刻需要处理的信息量，却并没有让 AI 真正拥有一种可以反复调用的长久记忆。\n所以，当前 GenAI 基于上下文窗口的工作的机制就决定了，它好比是一个只有七秒记忆的鱼，每次只能记住当前一小段信息，游过这道门，就忘了先前经历，导致它不断犯下同样的错误。它可以记住短时间内写过的代码。\n但如果没有长期记忆，Agentic AI 对于规模超过几千行的项目，注定就只能处于半瘫痪状态。问题指向的核心是：我们到底应该如何改变 AI 的记忆的实现机制？不仅仅依靠短时间的上下文窗口来给它提供瞬时记忆，而同时用另外一种方式来提供一种长期记忆的机制。\n和其他问题类似，这个解决方法也可以从我们人类自身寻找。我们人类也有类似的问题：我们的短期记忆容量也很有限，但是我们通过“好记性不如烂笔头”这种方法，解决了这个问题。",
+          "kind": "原文",
+          "reviewStatus": "自动候选",
+          "evidenceLevel": "candidate",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "上下文",
+              "窗口",
+              "长期",
+              "记忆"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "原文",
+            "notePath": "公众号写作结构库/文章/AI产品阿颖/2025/A100410 Cursor不适合大型项目？.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E6%96%87%E7%AB%A0%2FAI%E4%BA%A7%E5%93%81%E9%98%BF%E9%A2%96%2F2025%2FA100410%20Cursor%E4%B8%8D%E9%80%82%E5%90%88%E5%A4%A7%E5%9E%8B%E9%A1%B9%E7%9B%AE%EF%BC%9F",
+            "snippet": "少了 AI 在某个时刻需要处理的信息量，却并没有让 AI 真正拥有一种可以反复调用的长久记忆。\n所以，当前 GenAI 基于上下文窗口的工作的机制就决定了，它好比是一个只有七秒记忆的鱼，每次只能记住当前一小段信息，游过这道门，就忘了先前经历，导致它不断犯下同样的错误。它可以记住短时间内写过的代码。\n但如果没有长期记忆，Agentic AI 对于规模超过几千行的项目，注定就只能处于半瘫痪状态。问题指向的核心是：我们到底应该如何改变 AI 的记忆的实现机制？不仅仅依靠短时间的上下文窗口来给它提供瞬时记忆，而同时用另外一种方式来提供一种长期记忆的机制。\n和其他问题类似，这个解决方法也可以从我们人类自身寻找。我们人类也有类似的问题：我们的短期记忆容量也很有限，但是我们通过“好记性不如烂笔头”这种方法，解决了这个问题。",
+            "reranked": true,
+            "evidenceKinds": [
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A100513",
+          "title": "对大模型原理解读最通透的一篇文章",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A100513.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA100513",
+          "snippet": "由单Token马尔可夫链说明上下文过短会丢失一致性，计算更大窗口需要的组合数量并回顾模型窗口增长。\n\n推进关系：按原文顺序推进\n\n- 上下文窗口与扩展限制（P68–P77）：由单Token马尔可夫链说明上下文过短会丢失一致性，计算更大窗口需要的组合数量并回顾模型窗口增长。\n - 放置作用：解释概率表方案无法扩展的原因\nP75：这行数太多了！而这只是表的一部分，因为我们还需要长度为 1023 的序列，1022 的序列，等等，一直到 1，因为我们想确保在输入中没有足够 Token 时也能处理较短的序列。马尔可夫链是有趣的，但它们确实存在一个很大的可扩展性问题。",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "模型",
+              "上下文",
+              "窗口",
+              "解释"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A100513.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA100513",
+            "snippet": "由单Token马尔可夫链说明上下文过短会丢失一致性，计算更大窗口需要的组合数量并回顾模型窗口增长。\n\n推进关系：按原文顺序推进\n\n- 上下文窗口与扩展限制（P68–P77）：由单Token马尔可夫链说明上下文过短会丢失一致性，计算更大窗口需要的组合数量并回顾模型窗口增长。\n - 放置作用：解释概率表方案无法扩展的原因\nP75：这行数太多了！而这只是表的一部分，因为我们还需要长度为 1023 的序列，1022 的序列，等等，一直到 1，因为我们想确保在输入中没有足够 Token 时也能处理较短的序列。马尔可夫链是有趣的，但它们确实存在一个很大的可扩展性问题。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A200332",
+          "title": "号外，马斯克刚发Grok-3，DeepSeek就贴脸开大！",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A200332.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA200332",
+          "snippet": "与通用模板的差异：按原文实际顺序记录，模板仅作归纳。\nP6：这篇论文到底说了啥呢，我自然让 DeepSeek 来解读了一下：\nP8：好吧，我结合着它的解释和自己的理解，来给大家再简单过一遍：\nP10：这篇论文的核心贡献叫做 「原生稀疏注意力」（Native Sparse Attention，NSA）。要理解它为什么重要，得先知道当前大模型的致命伤：\nP12：现在所有大模型处理长文本，都在用 「全注意力机制」，比如让大模型读整本《三体》，它每个字都要看，带来的后果就是速度慢还烧显卡，64k 字能吃掉 80% 算力。\nP17：滑动窗口法：只看当前段落附近的文字（类似你读书时用手指指着看） → 容易漏掉全局信息；\nP22：它要教会大模型像人类一样阅读，把 「选择重点」 的能力直接植入 AI 的基因。",
+          "kind": "全文拆解",
+          "reviewStatus": "独立复核通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "vector"
+            ],
+            "terms": [
+              "模型",
+              "窗口",
+              "解释"
+            ],
+            "reason": "语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A200332.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA200332",
+            "snippet": "与通用模板的差异：按原文实际顺序记录，模板仅作归纳。\nP6：这篇论文到底说了啥呢，我自然让 DeepSeek 来解读了一下：\nP8：好吧，我结合着它的解释和自己的理解，来给大家再简单过一遍：\nP10：这篇论文的核心贡献叫做 「原生稀疏注意力」（Native Sparse Attention，NSA）。要理解它为什么重要，得先知道当前大模型的致命伤：\nP12：现在所有大模型处理长文本，都在用 「全注意力机制」，比如让大模型读整本《三体》，它每个字都要看，带来的后果就是速度慢还烧显卡，64k 字能吃掉 80% 算力。\nP17：滑动窗口法：只看当前段落附近的文字（类似你读书时用手指指着看） → 容易漏掉全局信息；\nP22：它要教会大模型像人类一样阅读，把 「选择重点」 的能力直接植入 AI 的基因。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A100624",
+          "title": "我想用一个例子，通俗易懂地说说大模型的原理",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A100624.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA100624",
+          "snippet": "承担功能：虚构应用设定；数据建模解释；二维/高维空间可视化；向量关系例子；上下文模式预测；概念映射",
+          "kind": "全文拆解",
+          "reviewStatus": "独立复核通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical",
+              "vector"
+            ],
+            "terms": [
+              "上下文",
+              "解释"
+            ],
+            "reason": "关键词命中、语义召回、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A100624.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA100624",
+            "snippet": "承担功能：虚构应用设定；数据建模解释；二维/高维空间可视化；向量关系例子；上下文模式预测；概念映射",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        },
+        {
+          "id": "A300733",
+          "title": "揭秘AI背后的神秘代码 - Token究竟是什么？",
+          "notePath": "公众号写作结构库/全文拆解v5/文章/A300733.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA300733",
+          "snippet": "读者任务：了解Token化和上下文窗口扩张的基本含义，以及标准自注意力计算量为何可能呈平方级增长。\n\n适用选题：大语言模型Token、上下文窗口、Transformer注意力和API工具调用。\n\n所需素材：具体Tokenizer、模型上下文额度定义、注意力实现方式、优化算法和准确的计算例子。\n\n缺料时不能使用的条件：不能将Token等同固定数量的汉字或单词；需纠正P39算术错误：16000×16000为2.56亿，不是256亿；不能把标准注意力复杂度泛化到所有架构。\n\n适用边界：这是入门类比，不是完整Transformer计算分析。上下文长度、Token定义、模型成本和注意力实现随版本变化。",
+          "kind": "全文拆解",
+          "reviewStatus": "AI自检通过",
+          "evidenceLevel": "analyzed",
+          "match": {
+            "channels": [
+              "lexical"
+            ],
+            "terms": [
+              "模型",
+              "上下文",
+              "窗口",
+              "边界"
+            ],
+            "reason": "关键词命中、中文模型重排",
+            "kind": "全文拆解",
+            "notePath": "公众号写作结构库/全文拆解v5/文章/A300733.md",
+            "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E5%85%A8%E6%96%87%E6%8B%86%E8%A7%A3v5%2F%E6%96%87%E7%AB%A0%2FA300733",
+            "snippet": "读者任务：了解Token化和上下文窗口扩张的基本含义，以及标准自注意力计算量为何可能呈平方级增长。\n\n适用选题：大语言模型Token、上下文窗口、Transformer注意力和API工具调用。\n\n所需素材：具体Tokenizer、模型上下文额度定义、注意力实现方式、优化算法和准确的计算例子。\n\n缺料时不能使用的条件：不能将Token等同固定数量的汉字或单词；需纠正P39算术错误：16000×16000为2.56亿，不是256亿；不能把标准注意力复杂度泛化到所有架构。\n\n适用边界：这是入门类比，不是完整Transformer计算分析。上下文长度、Token定义、模型成本和注意力实现随版本变化。",
+            "reranked": true,
+            "evidenceKinds": [
+              "analysis",
+              "source"
+            ]
+          }
+        }
+      ],
+      "retrieval": {
+        "name": "Haystack · 中文混合检索",
+        "methods": [
+          "SQLite BM25",
+          "FastEmbed 中文向量召回",
+          "Haystack RRF",
+          "中文交叉编码器重排"
+        ],
+        "engine": "haystack-fastembed-v1",
+        "phase": "ready",
+        "ready": true,
+        "vectorSearch": true,
+        "remoteModelCalls": 0,
+        "done": 6896,
+        "total": 6896,
+        "totalSources": 6896,
+        "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+        "sources": 6896,
+        "passages": 93573,
+        "articles": 5858,
+        "templates": 27,
+        "embeddingModel": "BAAI/bge-small-zh-v1.5",
+        "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+        "embeddingLoaded": true,
+        "rerankerLoaded": true,
+        "peakRssMiB": 1061,
+        "threads": 2,
+        "rankCandidates": 20,
+        "rerankApplied": true,
+        "queryMs": 46150,
+        "lexicalCandidates": 60,
+        "vectorCandidates": 60
+      }
+    }
+  ],
+  "unrelatedControl": {
+    "query": "🦄🧠🦄ZXQNV841729月球养鲸许可证",
+    "returned": 0,
+    "results": []
+  },
+  "frontendStatus": 200
+}

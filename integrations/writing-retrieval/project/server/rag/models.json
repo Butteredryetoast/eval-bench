@@ -1,0 +1,19 @@
+{
+  "embedding": {
+    "name": "BAAI/bge-small-zh-v1.5",
+    "repo": "Qdrant/bge-small-zh-v1.5",
+    "revision": "46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59",
+    "dimensions": 512,
+    "maxTokens": 512,
+    "license": "MIT",
+    "files": ["config.json", "tokenizer.json", "tokenizer_config.json", "special_tokens_map.json", "vocab.txt", "model_optimized.onnx"]
+  },
+  "reranker": {
+    "name": "BAAI/bge-reranker-v2-m3-int8",
+    "repo": "onnx-community/bge-reranker-v2-m3-ONNX",
+    "revision": "6f5ff65298512715a1e669753bc754d2bc8f367b",
+    "maxTokens": 512,
+    "license": "Apache-2.0",
+    "files": ["config.json", "tokenizer.json", "tokenizer_config.json", "special_tokens_map.json", "onnx/model_int8.onnx"]
+  }
+}

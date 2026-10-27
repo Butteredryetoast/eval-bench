@@ -1,0 +1,23 @@
+/** Context filter glyphs: the same three gray tones and rounded 24px grid as the case taxonomy. */
+import type {ReactNode} from 'react';
+const glyphs:Record<string,ReactNode>={
+ time:<><rect x="3" y="5" width="18" height="16" rx="4" opacity=".2"/><rect x="3" y="5" width="18" height="5" rx="2" opacity=".55"/><path d="M8 3v4m8-4v4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/><circle cx="9" cy="14" r="1.3"/><circle cx="15" cy="14" r="1.3"/><circle cx="9" cy="18" r="1.3"/></>,
+ field:<><rect x="2" y="3" width="9" height="8" rx="2.5"/><rect x="13" y="3" width="9" height="8" rx="2.5" opacity=".55"/><rect x="2" y="13" width="9" height="8" rx="2.5" opacity=".55"/><rect x="13" y="13" width="9" height="8" rx="2.5" opacity=".2"/></>,
+ source:<><rect x="2" y="4" width="20" height="16" rx="4" opacity=".2"/><rect x="5" y="7" width="5" height="10" rx="1.5" opacity=".55"/><path d="M13 8h6m-6 4h6m-6 4h4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/></>,
+ all:<><rect x="3" y="3" width="18" height="18" rx="4" opacity=".2"/><path d="M7 8h10M7 12h10M7 16h7" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round"/></>,
+ priority:<><circle cx="12" cy="12" r="10" opacity=".2"/><path d="m12 4 2.3 4.7 5.2.8-3.7 3.7.8 5.2-4.6-2.5-4.6 2.5.8-5.2L4.5 9.5l5.2-.8Z" strokeLinejoin="round" stroke="currentColor" strokeWidth="1.5"/></>,
+ hot:<><path d="M13 2c2 5-1 6 2 9 2-1 3-2 3-3 6 9 1 14-6 14C5 22 1 17 5 11c0 3 1 4 2 4-1-6 5-8 6-13Z" opacity=".55"/><path d="M12 12c0 3-4 4-3 7 1 3 6 3 7 0 1-2-1-4-2-5 0 2-2 3-2 3Z"/></>,
+ selected:<><rect x="3" y="3" width="18" height="18" rx="4" opacity=".2"/><path d="m8 13 3 3 6-8" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></>,
+ confirmed:<><circle cx="12" cy="12" r="10" opacity=".2"/><circle cx="12" cy="12" r="7.3" opacity=".55"/><path d="m8 12 3 3 5-6" fill="none" stroke="white" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/></>,
+ bookmark:<><path d="M6 3h12a2 2 0 0 1 2 2v15a1 1 0 0 1-1.5.8L12 17l-6.5 3.8A1 1 0 0 1 4 20V5a2 2 0 0 1 2-2Z" opacity=".2"/><path d="m12 6 1.7 3.1 3.5.5-2.5 2.5.6 3.5-3.3-1.7-3.3 1.7.6-3.5-2.5-2.5 3.5-.5Z" opacity=".8"/></>,
+ used:<><rect x="3" y="3" width="14" height="18" rx="3" opacity=".2"/><path d="M7 7h6M7 11h5M7 15h3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity=".55"/><circle cx="17" cy="16" r="6"/><path d="m14 16 2 2 4-4" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></>,
+ observe:<><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z" opacity=".2"/><circle cx="12" cy="12" r="4.7" opacity=".55"/><circle cx="12" cy="12" r="2"/></>,
+ rejected:<><rect x="3" y="3" width="18" height="18" rx="4" opacity=".2"/><path d="m8 8 8 8m0-8-8 8" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"/></>,
+ pending:<><circle cx="12" cy="12" r="10" opacity=".2"/><path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/></>,
+ media:<><rect x="2" y="3" width="15" height="14" rx="3" opacity=".2"/><rect x="6" y="7" width="16" height="14" rx="3" opacity=".55"/><path d="m10 17 3-5 3 3 2-2 3 5H10Z"/><circle cx="18" cy="11" r="1.5" fill="white"/></>,
+ agent:<><rect x="3" y="5" width="18" height="15" rx="5" opacity=".2"/><path d="M12 2v4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/><rect x="6" y="9" width="12" height="7" rx="3" opacity=".55"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M9 18h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></>,
+ model:<><rect x="5" y="5" width="14" height="14" rx="4" opacity=".2"/><rect x="8" y="8" width="8" height="8" rx="2" opacity=".7"/><path d="M8 2v3m8-3v3M8 19v3m8-3v3M2 8h3m-3 8h3M19 8h3m-3 8h3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></>,
+ batch:<><rect x="3" y="3" width="14" height="16" rx="3" opacity=".2"/><rect x="7" y="7" width="14" height="15" rx="3" opacity=".55"/><path d="M11 11h6m-6 4h6m-6 4h4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></>,
+ manual:<><rect x="3" y="3" width="18" height="18" rx="4" opacity=".2"/><path d="m8 16 1-4 7-7 3 3-7 7Z" opacity=".75"/><path d="M6 19h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></>,
+};
+export function ContextIcon({name,size=18,selected=false}:{name:string;size?:number;selected?:boolean}){return <svg className="context-glyph" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" color={selected?'var(--eval-purple)':'var(--eval-muted)'} aria-hidden="true">{glyphs[name]||glyphs.all}</svg>;}

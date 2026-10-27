@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-27T07:16:36.670Z",
+  "scope": "Four fixed smoke inputs, same Vault revision and models, same result IDs/order. One local run, not a service latency guarantee.",
+  "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+  "comparisons": [
+    {
+      "label": "智能体记忆资讯",
+      "beforeMs": 35812,
+      "afterMs": 12121,
+      "sameResultIdsAndOrder": true
+    },
+    {
+      "label": "视频工具测评",
+      "beforeMs": 39802,
+      "afterMs": 6675,
+      "sameResultIdsAndOrder": true
+    },
+    {
+      "label": "本地知识库教程",
+      "beforeMs": 29174,
+      "afterMs": 6624,
+      "sameResultIdsAndOrder": true
+    },
+    {
+      "label": "上下文与记忆科普",
+      "beforeMs": 46304,
+      "afterMs": 4923,
+      "sameResultIdsAndOrder": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filled tones / visual">
+<path id="Tone / mid" opacity="0.55" d="M11 2.5L2.5 7.2C1.5 7.73333 1.5 8.26667 2.5 8.8L11 13.5C11.6667 13.9 12.3333 13.9 13 13.5L21.5 8.8C22.5 8.26667 22.5 7.73333 21.5 7.2L13 2.5C12.3333 2.1 11.6667 2.1 11 2.5Z" fill="#7A8290"/>
+<path id="Tone / dark" d="M2 9.1V16.2C2 17 2.33333 17.6 3 18L10.4 22.1C11.4667 22.7 12 22.4 12 21.2V13.7L2 9.1Z" fill="#7A8290"/>
+<path id="Tone / light" opacity="0.2" d="M22 9.1L12 13.7V21.2C12 22.4 12.5333 22.7 13.6 22.1L21 18C21.6667 17.6 22 17 22 16.2V9.1Z" fill="#7A8290"/>
+<path id="Tone / white" d="M6 7.6L12 4.4L18 7.6L12 10.8L6 7.6Z" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+</g>
+</svg>

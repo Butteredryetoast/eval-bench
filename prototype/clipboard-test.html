@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>剪贴板能力实测</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;padding:30px 24px 60px;background:#FAFAF9;color:#1C1917;
+    font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+  .wrap{max-width:860px;margin:0 auto}
+  h1{font-size:19px;font-weight:600;margin:0 0 6px;letter-spacing:-.01em}
+  .sub{font-size:13px;color:#78716C;margin:0 0 20px;line-height:1.7}
+  .card{background:#fff;border:1px solid #E7E5E4;border-radius:12px;padding:18px;margin-bottom:16px}
+  .card h2{font-size:14px;font-weight:600;margin:0 0 4px}
+  .card .d{font-size:12px;color:#78716C;margin:0 0 14px;line-height:1.7}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid #F5F5F4}
+  th{font-size:11px;color:#A8A29E;font-weight:500;letter-spacing:.04em}
+  td code{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:#44403C}
+  .yes{color:#15803D;font-weight:500}
+  .no{color:#B91C1C;font-weight:500}
+  .muted{color:#A8A29E}
+  .env{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#57534E}
+  .env b{font-weight:500;color:#1C1917}
+  .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:999px;background:#F5F5F4;color:#57534E}
+  .pill.bad{background:#FEF2F2;color:#B91C1C}
+  .pill.ok{background:#F0FDF4;color:#15803D}
+  button{height:33px;padding:0 12px;border-radius:8px;border:1px solid #D6D3D1;background:#fff;
+    color:#1C1917;font-size:12.5px;cursor:pointer;font-family:inherit;margin:0 8px 8px 0}
+  button:hover{border-color:#A8A29E}
+  .log{margin-top:8px;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;line-height:1.9;
+    background:#1C1917;color:#D6D3D1;border-radius:8px;padding:10px 12px;min-height:64px;white-space:pre-wrap}
+  .ok{color:#6EE7B7}.bad{color:#FCA5A5}
+  .hint{font-size:11.5px;color:#A8A29E;margin-top:8px;line-height:1.75}
+  .thumb{width:100%;height:130px;border-radius:8px;overflow:hidden;background:#1F2430;
+    display:grid;place-items:center;cursor:grab}
+  .thumb:active{cursor:grabbing}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>剪贴板能力实测</h1>
+  <p class="sub">
+    上半部分是<b>能力探测</b>，直接问浏览器支持哪些剪贴板格式，不需要任何权限，任何环境都能看到结果。
+    下半部分是<b>真实写入</b>，需要页面有剪贴板权限，在 iframe 里会被拦。
+  </p>
+
+  <div class="card">
+    <h2>一、能力探测</h2>
+    <p class="d">这一节不写剪贴板，只读取能力声明。它给出的结论与权限无关。</p>
+    <table id="probe">
+      <thead><tr><th>MIME 类型</th><th>用途</th><th>支持</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p class="hint" id="verdict"></p>
+  </div>
+
+  <div class="card">
+    <h2>二、运行环境</h2>
+    <p class="d">如果第二节的真实写入失败，先看这里，多半是环境问题而不是能力问题。</p>
+    <div class="env" id="env"></div>
+  </div>
+
+  <div class="card">
+    <h2>三、真实写入</h2>
+    <p class="d">需要顶层窗口 + 安全上下文。在 iframe 里会报权限策略错误。</p>
+    <div class="thumb">
+      <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="180" height="100" fill="#1F2430"/>
+        <circle cx="90" cy="50" r="15" fill="#fff" opacity=".92"/>
+        <path d="M86 43 L100 50 L86 57 Z" fill="#1F2430"/>
+      </svg>
+    </div>
+    <div style="margin-top:12px">
+      <button id="btnPng">写入 image/png</button>
+      <button id="btnGif">写入 image/gif</button>
+      <button id="btnMp4">写入 video/mp4</button>
+      <button id="btnHtml">写入 text/html</button>
+    </div>
+    <div class="log" id="log">等待测试…</div>
+    <p class="hint">
+      若出现 <code>blocked because of a permissions policy</code>，说明当前页面在 iframe 里且没有获得
+      <code>allow="clipboard-write"</code>。这是宿主页面的设置，不是浏览器的能力限制。
+    </p>
+  </div>
+</div>
+
+<script>
+const TYPES = [
+  ['text/plain', '纯文本'],
+  ['text/html', '富文本（表格粘进飞书会保留）'],
+  ['image/png', '静态图'],
+  ['image/gif', '动图'],
+  ['image/svg+xml', '矢量图'],
+  ['video/mp4', '视频文件'],
+  ['application/pdf', 'PDF 文件']
+];
+
+const logEl = document.getElementById('log');
+function log(msg, cls){
+  const t = new Date().toLocaleTimeString('zh-CN', {hour12:false});
+  logEl.innerHTML += '\n<span style="color:#78716C">' + t + '</span> ' +
+    (cls ? '<span class="' + cls + '">' + msg + '</span>' : msg);
+}
+
+/* ---------- 一、能力探测 ---------- */
+const tbody = document.querySelector('#probe tbody');
+const supported = {};
+TYPES.forEach(([mime, use]) => {
+  let s = null;
+  try {
+    if (window.ClipboardItem && typeof ClipboardItem.supports === 'function') {
+      s = ClipboardItem.supports(mime);
+    }
+  } catch (e) { s = null; }
+
+  supported[mime] = s;
+  const tr = document.createElement('tr');
+  const cell = s === null
+    ? '<span class="muted">无法判断</span>'
+    : s ? '<span class="yes">支持</span>' : '<span class="no">不支持</span>';
+  tr.innerHTML = '<td><code>' + mime + '</code></td><td class="muted">' + use + '</td><td>' + cell + '</td>';
+  tbody.appendChild(tr);
+});
+
+const hasApi = window.ClipboardItem && typeof ClipboardItem.supports === 'function';
+const v = document.getElementById('verdict');
+if (!hasApi) {
+  v.innerHTML = '当前浏览器没有 <code>ClipboardItem.supports()</code>（Safari 与较旧版本没有）。请用 Chrome 打开本页再试。';
+} else {
+  const png = supported['image/png'];
+  const vid = supported['video/mp4'];
+  const gif = supported['image/gif'];
+  let txt = '结论：静态图' + (png ? '可以' : '不可以') + '写入剪贴板，';
+  txt += '视频' + (vid ? '可以' : '不可以') + '写入，';
+  txt += '动图' + (gif ? '可以' : '不可以') + '写入。';
+  if (!vid) txt += ' 视频这一条与权限无关，是浏览器根本不为它提供剪贴板类型。';
+  v.innerHTML = txt;
+}
+
+/* ---------- 二、环境诊断 ---------- */
+const inIframe = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+let policy = '未知';
+try {
+  const pp = document.permissionsPolicy || document.featurePolicy;
+  if (pp && typeof pp.allowsFeature === 'function') {
+    policy = pp.allowsFeature('clipboard-write') ? '允许' : '禁止';
+  }
+} catch (e) { policy = '读取失败'; }
+
+document.getElementById('env').innerHTML = [
+  '<span>安全上下文 <b>' + (window.isSecureContext ? '是' : '否') + '</b></span>',
+  '<span>在 iframe 中 <b>' + (inIframe ? '是' : '否') + '</b></span>',
+  '<span>clipboard-write <b>' + policy + '</b></span>',
+  '<span>协议 <b>' + location.protocol + '</b></span>'
+].join('');
+
+/* ---------- 三、真实写入 ---------- */
+function makeCanvas(){
+  const c = document.createElement('canvas');
+  c.width = 480; c.height = 270;
+  const g = c.getContext('2d');
+  g.fillStyle = '#1F2430'; g.fillRect(0,0,480,270);
+  g.fillStyle = 'rgba(255,255,255,.92)';
+  g.beginPath(); g.arc(240,135,42,0,Math.PI*2); g.fill();
+  g.fillStyle = '#1F2430';
+  g.beginPath(); g.moveTo(230,116); g.lineTo(268,135); g.lineTo(230,154); g.closePath(); g.fill();
+  return c;
+}
+function toBlob(c, type){
+  return new Promise(res => c.toBlob(b => res(b), type));
+}
+
+async function attempt(mime, blob){
+  if (!navigator.clipboard || !window.ClipboardItem) { log(mime + ' → 没有 ClipboardItem', 'bad'); return; }
+  try {
+    await navigator.clipboard.write([new ClipboardItem({ [mime]: blob })]);
+    log(mime + ' → 成功，可以粘贴了', 'ok');
+  } catch (e) {
+    const hint = /permissions policy/i.test(e.message) ? '（环境拦截，非能力缺失）' : '';
+    log(mime + ' → ' + e.name + '：' + e.message + hint, 'bad');
+  }
+}
+
+document.getElementById('btnPng').onclick = async () => {
+  const c = makeCanvas();
+  attempt('image/png', await toBlob(c, 'image/png'));
+};
+document.getElementById('btnGif').onclick = async () => {
+  const b64 = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+  const bin = atob(b64);
+  const arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+  attempt('image/gif', new Blob([arr], {type: 'image/gif'}));
+};
+document.getElementById('btnMp4').onclick = () => {
+  attempt('video/mp4', new Blob([new Uint8Array(2048)], {type: 'video/mp4'}));
+};
+document.getElementById('btnHtml').onclick = () => {
+  attempt('text/html', new Blob(['<p><b>评测结果</b></p><table border="1"><tr><td>GPT-5.5</td><td>可用</td></tr></table>'], {type:'text/html'}));
+};
+
+log('就绪');
+</script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+{
+  "scope": "Original Markdown snapshot versus current Vault; media node order only, no visual inspection or third-party fact verification.",
+  "records": [
+    {
+      "id": "A300587",
+      "title": "他用Luma和Suno复活了逝去11年的爱人，给我看破防了。",
+      "originalSnapshot": "/Users/mac/Documents/Codex/2026-10-22/wo/work/final_articles.json",
+      "sourceRow": 588,
+      "markdownSha256": "5977341e0f938aadfd93e17a940963ce73d37b6f527403ea04aa35248e683602",
+      "markdownImageLinksIncludingCoversAndDecorations": 14,
+      "videoLabels": 2,
+      "vaultMarkdownImageLinks": 0,
+      "vaultParagraphs": 72,
+      "snapshotParagraphs": 72,
+      "paragraphTextMatchesSnapshot": true,
+      "sequenceChecks": [
+        {
+          "label": "成品视频先出，再展开人物故事",
+          "verified": true,
+          "before": "这个视频它是这样的",
+          "mediaMarker": "▶点击观看微信视频",
+          "after": "视频的评论",
+          "offsets": [
+            130,
+            197,
+            260
+          ]
+        },
+        {
+          "label": "故事后段出现信件媒体，接翻译与情绪回扣",
+          "verified": true,
+          "before": "2013年11月18日",
+          "mediaMarker": "![](",
+          "after": "我用AI给这封信提取并翻译",
+          "offsets": [
+            2692,
+            2841,
+            2893
+          ]
+        },
+        {
+          "label": "结尾歌曲媒体承担回扣",
+          "verified": true,
+          "before": "最后，用2013年松尾",
+          "mediaMarker": "▶点击观看微信视频",
+          "after": "银汉难通",
+          "offsets": [
+            3743,
+            3873,
+            3936
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A400039",
+      "title": "视频模型到底怎么选？实测三大热门模型后我终于清楚了",
+      "originalSnapshot": "/Users/mac/Documents/Codex/2026-10-22/wo/work/final_articles.json",
+      "sourceRow": 40,
+      "markdownSha256": "286395c099cbd331296ad9eb8e89d313089bdaea408a06aa70bda58980aadb54",
+      "markdownImageLinksIncludingCoversAndDecorations": 21,
+      "videoLabels": 7,
+      "vaultMarkdownImageLinks": 0,
+      "vaultParagraphs": 115,
+      "snapshotParagraphs": 115,
+      "paragraphTextMatchesSnapshot": true,
+      "sequenceChecks": [
+        {
+          "label": "复杂动作：先讲难点，展示视频，再评结果",
+          "verified": true,
+          "before": "人物和道具要交互",
+          "mediaMarker": "▶点击观看微信视频",
+          "after": "Seedance 2.0 fast整体空间推进",
+          "offsets": [
+            1896,
+            2162,
+            2377
+          ]
+        },
+        {
+          "label": "奇幻场景中途展示对照视频",
+          "verified": true,
+          "before": "看一下依旧是同一套提示词下各大模型的表现",
+          "mediaMarker": "▶点击观看微信视频",
+          "after": "Fast 的表现其实挺让人惊喜",
+          "offsets": [
+            2706,
+            2836,
+            3051
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A500405",
+      "title": "100镜实测新版即梦AI视频3.0，我称之为性价比拉满听懂人话的全能选手！",
+      "originalSnapshot": "/Users/mac/Documents/Codex/2026-10-22/wo/work/final_articles.json",
+      "sourceRow": 406,
+      "markdownSha256": "beb6ff4b01bdf5b597ad4124f7a7dc36f10f88c923674360b19ef9535bd92e81",
+      "markdownImageLinksIncludingCoversAndDecorations": 24,
+      "videoLabels": 3,
+      "vaultMarkdownImageLinks": 0,
+      "vaultParagraphs": 70,
+      "snapshotParagraphs": 70,
+      "paragraphTextMatchesSnapshot": true,
+      "sequenceChecks": [
+        {
+          "label": "开头先展示效果再评价",
+          "verified": true,
+          "before": "先给大家放几个效果",
+          "mediaMarker": "▶点击观看微信视频",
+          "after": "非常出乎我意料",
+          "offsets": [
+            220,
+            287,
+            502
+          ]
+        },
+        {
+          "label": "测试输入与评价之间有输出媒体",
+          "verified": true,
+          "before": "提示语：一位年轻女子向前慢跑几步",
+          "mediaMarker": "![](",
+          "after": "慢跑 -> 停下",
+          "offsets": [
+            889,
+            954,
+            1006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A600264",
+      "title": "私有知识库+本地300种模型一键部署，私密性拉满！这个国产开源工具太绝了",
+      "originalSnapshot": "/Users/mac/Documents/Codex/2026-10-22/wo/work/final_articles.json",
+      "sourceRow": 265,
+      "markdownSha256": "90a99574f0d4f94b5551d24815432261a543a00be8d451f0a96730b2a610065a",
+      "markdownImageLinksIncludingCoversAndDecorations": 47,
+      "videoLabels": 0,
+      "vaultMarkdownImageLinks": 0,
+      "vaultParagraphs": 83,
+      "snapshotParagraphs": 83,
+      "paragraphTextMatchesSnapshot": true,
+      "sequenceChecks": [
+        {
+          "label": "模型选择操作后跟图，再继续下一步",
+          "verified": true,
+          "before": "点击左下角【本地模型】",
+          "mediaMarker": "![](",
+          "after": "甚至可以一键安装",
+          "offsets": [
+            1986,
+            2050,
+            2102
+          ]
+        },
+        {
+          "label": "导入结果与下一操作之间跟图",
+          "verified": true,
+          "before": "19个pdf文件大约1分半处理完毕",
+          "mediaMarker": "![](",
+          "after": "创建智能体",
+          "offsets": [
+            2865,
+            2884,
+            2936
+          ]
+        },
+        {
+          "label": "简短失败判断之后展示媒体，再作总体归纳",
+          "verified": true,
+          "before": "试了一下，上传图片到知识库，发现目前图片解析还不太行",
+          "mediaMarker": "![](",
+          "after": "它的知识库，我体验下来",
+          "offsets": [
+            3531,
+            3559,
+            3611
+          ]
+        }
+      ]
+    }
+  ],
+  "verifiedSequenceChecks": 10,
+  "fifthSample": "APae4085ada612: current Vault text/caption and evidence ordering inspected; original media snapshot not checked.",
+  "phraseCountsNotQualityScores": {
+    "analyses": 1000,
+    "withGenericProgression": 836,
+    "genericProgressionOccurrences": 7140
+  }
+}

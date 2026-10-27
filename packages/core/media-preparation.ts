@@ -1,0 +1,26 @@
+import {z} from 'zod';
+import {spawn} from 'node:child_process';
+import {mkdir,readFile,rm,stat} from 'node:fs/promises';
+import path from 'node:path';
+import ffmpeg from 'ffmpeg-static';
+import {editorialRecords} from './schema';
+import {AppError,newId,now} from './service';
+import type {EditorialService} from './editorial';
+import type {InstancePreparation,PreparedMedia} from '../contracts/editorial';
+
+const activeJobs=(globalThis as typeof globalThis & {casebenchMediaJobs?:Set<string>}).casebenchMediaJobs??=new Set<string>();
+export class MediaPreparationService {
+  constructor(private e:EditorialService){}
+  async preparation(instanceId:string){return (await this.e.list<InstancePreparation>('preparation')).find(p=>p.instanceId===instanceId);}
+  async save(instanceId:string,body:unknown){const v=z.object({revision:z.number().int().nonnegative(),reviewed:z.boolean(),observation:z.string().max(20000)}).strict().parse(body);if(!(await this.e.instances()).some(i=>i.id===instanceId))throw new AppError(404,'实例不存在');const at=now(),initial:InstancePreparation={id:'prep_'+instanceId,instanceId,reviewed:false,observation:'',mediaIds:[],revision:0,createdAt:at,updatedAt:at};await this.e.s.db.insert(editorialRecords).values({id:initial.id,kind:'preparation',data:initial as unknown as Record<string,unknown>,createdAt:at,updatedAt:at}).onConflictDoNothing();return this.e.mutate<InstancePreparation>(initial.id,'preparation',p=>{if(p.revision!==v.revision)throw new AppError(409,'观察记录已更新，请重新读取');return {...p,...v,revision:p.revision+1,updatedAt:now()};});}
+  async attach(body:unknown){const v=z.object({fileId:z.string().max(130),instanceId:z.string().max(130).nullable().default(null),caption:z.string().max(500).default(''),origin:z.enum(['uploaded','recorded']).default('uploaded')}).strict().parse(body);const file=await this.e.s.file(v.fileId);if(v.instanceId&&!(await this.e.instances()).some(i=>i.id===v.instanceId))throw new AppError(404,'实例不存在');const old=(await this.e.list<PreparedMedia>('prepared-media')).find(m=>m.file.id===file.id&&m.instanceId===v.instanceId);if(old)return old;return this.e.insert<PreparedMedia>('prepared-media',{id:newId('media'),file,instanceId:v.instanceId,parentFileId:null,caption:v.caption,origin:v.origin,createdAt:now()});}
+  async process(body:unknown){const v=z.object({fileId:z.string().max(130),instanceId:z.string().max(130).nullable().default(null),format:z.enum(['gif','mp4']),start:z.number().min(0).max(7200),end:z.number().positive().max(7320),width:z.number().int().min(160).max(1280),fps:z.number().int().min(5).max(24),caption:z.string().max(500).default('')}).strict().parse(body);
+    if(v.end<=v.start||v.end-v.start>120)throw new AppError(400,'请选择不超过 120 秒的有效片段');const original=await this.e.s.file(v.fileId);if(!original.mime.startsWith('video/')&&original.mime!=='image/gif')throw new AppError(400,'请选择视频或 GIF');if(v.instanceId&&!(await this.e.instances()).some(i=>i.id===v.instanceId))throw new AppError(404,'实例不存在');if(original.size>=25000000)throw new AppError(400,'原文件超过 25 MB，请先压缩');if(!ffmpeg)throw new AppError(503,'本机尚无可用的媒体处理器');
+    if(activeJobs.size>=2)throw new AppError(429,'已有两个素材正在处理，请稍后重试');const job=newId('job');activeJobs.add(job);const dir=path.join(this.e.s.store.directory,'processing',job),output=path.join(dir,'result.'+v.format);
+    try{await mkdir(dir,{recursive:true});const filter=`fps=${v.fps},scale=${v.width}:-2:force_original_aspect_ratio=decrease:flags=lanczos`,args=['-nostdin','-hide_banner','-loglevel','error','-protocol_whitelist','file,pipe','-format_whitelist','mov,matroska,webm,gif,avi,mpeg,mpegts','-ss',String(v.start),'-i',this.e.s.filePath(original.id),'-t',String(v.end-v.start),'-threads','2','-filter_threads','1','-filter_complex_threads','1'];
+      if(v.format==='gif')args.push('-filter_complex',`${filter},split[a][b];[a]palettegen=max_colors=128[p];[b][p]paletteuse=dither=bayer`,'-loop','0');else args.push('-vf',filter,'-c:v','libx264','-preset','veryfast','-crf','25','-pix_fmt','yuv420p','-c:a','aac','-movflags','+faststart');args.push('-fs','25000000','-y',output);
+      await new Promise<void>((resolve,reject)=>{const child=spawn(ffmpeg!,args,{stdio:['ignore','ignore','pipe']}),timer=setTimeout(()=>{child.kill('SIGKILL');reject(new AppError(408,'处理超时，请缩短片段或降低分辨率'));},90000);let log='';child.stderr.on('data',b=>{log=(log+b.toString()).slice(-3000);});child.on('error',()=>{clearTimeout(timer);reject(new AppError(503,'无法启动媒体处理器'));});child.on('close',code=>{clearTimeout(timer);code===0?resolve():reject(new AppError(400,'媒体处理失败，请检查片段时间与原始文件。'+(process.env.NODE_ENV==='test'?log:'')));});});
+      if((await stat(output)).size>=25000000)throw new AppError(400,'生成素材过大，请降低分辨率');const file=await this.e.s.putFile(await readFile(output),original.name.replace(/\.[^.]+$/,'')+'-clip.'+v.format,v.format==='gif'?'image/gif':'video/mp4','reference');return this.e.insert<PreparedMedia>('prepared-media',{id:newId('media'),file,instanceId:v.instanceId,parentFileId:original.id,caption:v.caption,origin:'processed',operation:{format:v.format,start:v.start,end:v.end,width:v.width,fps:v.fps},createdAt:now()});
+    }finally{activeJobs.delete(job);await rm(dir,{recursive:true,force:true});}
+  }
+}

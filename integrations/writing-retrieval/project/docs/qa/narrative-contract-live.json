@@ -1,0 +1,1166 @@
+{
+  "at": "2026-10-27T08:08:26.163Z",
+  "scope": "Read-only real Vault + real local retrieval + intercepted provider requests. Product behavior unchanged.",
+  "revision": "4d64f1cf968938374ca93f85f8a6387b2d362bcea13691469454a7dd95a58f71",
+  "stats": {
+    "articles": 5858,
+    "templates": 27,
+    "independentReviews": 364,
+    "analyzedArticles": 1000,
+    "notes": 11
+  },
+  "samples": [
+    {
+      "id": "A500405",
+      "title": "100镜实测新版即梦AI视频3.0，我称之为性价比拉满听懂人话的全能选手！",
+      "genre": "测评",
+      "structureId": "R1",
+      "notePath": "公众号写作结构库/全文拆解v5/文章/A500405.md",
+      "originalNotePath": "公众号写作结构库/文章/卡尔的AI沃茨/2025/A500405 100镜实测新版即梦AI视频3.0，我称之为性价比拉满听懂人话的全能选手！.md",
+      "parsed": {
+        "stageTitles": [
+          "新品实测导入与能力概览",
+          "连续动作测试",
+          "动物动作与表情测试",
+          "单镜头运镜测试",
+          "多镜头切换测试",
+          "人脸还原测试",
+          "画面补足测试",
+          "文生视频审美测试",
+          "总结体验与品牌评价",
+          "互动收尾"
+        ],
+        "stageNotesCount": 0,
+        "hookChainsCount": 0,
+        "openingChars": 373,
+        "middleChars": 1600,
+        "endingChars": 288
+      },
+      "originalHasMarkdownMedia": false,
+      "originalHasVideoText": true
+    },
+    {
+      "id": "A400039",
+      "title": "视频模型到底怎么选？实测三大热门模型后我终于清楚了",
+      "genre": "测评",
+      "structureId": "R2",
+      "notePath": "公众号写作结构库/全文拆解v5/文章/A400039.md",
+      "originalNotePath": "公众号写作结构库/文章/路人甲TM/2026/A400039 视频模型到底怎么选？实测三大热门模型后我终于清楚了.md",
+      "parsed": {
+        "stageTitles": [
+          "选择问题与测评维度",
+          "旗舰模型适用边界",
+          "主测模型和条件",
+          "场景一：复杂动作",
+          "场景二：奇幻场景",
+          "场景三：科幻灾难",
+          "场景四：商业广告",
+          "场景五：微缩纪录片",
+          "选择建议",
+          "开源与API经济性",
+          "结论",
+          "作者署名"
+        ],
+        "stageNotesCount": 0,
+        "hookChainsCount": 0,
+        "openingChars": 305,
+        "middleChars": 1405,
+        "endingChars": 353
+      },
+      "originalHasMarkdownMedia": false,
+      "originalHasVideoText": true
+    },
+    {
+      "id": "A600264",
+      "title": "私有知识库+本地300种模型一键部署，私密性拉满！这个国产开源工具太绝了",
+      "genre": "教程",
+      "structureId": "T1",
+      "notePath": "公众号写作结构库/全文拆解v5/文章/A600264.md",
+      "originalNotePath": "公众号写作结构库/文章/袋鼠帝/2025/A600264 私有知识库+本地300种模型一键部署，私密性拉满！这个国产开源工具太绝了.md",
+      "parsed": {
+        "stageTitles": [
+          "引出本地私有化需求与工具",
+          "下载安装并选择本地模型",
+          "按设备资源选择模型",
+          "创建知识库并测试PDF",
+          "测试Excel和图片并总结本地能力",
+          "配置第三方模型API",
+          "设置联网搜索",
+          "分享智能体和隐私边界",
+          "总结、部署和兼容补充",
+          "互动推广"
+        ],
+        "stageNotesCount": 0,
+        "hookChainsCount": 0,
+        "openingChars": 393,
+        "middleChars": 842,
+        "endingChars": 372
+      },
+      "originalHasMarkdownMedia": false,
+      "originalHasVideoText": false
+    },
+    {
+      "id": "APae4085ada612",
+      "title": "Google 把「地球」玩坏了，硬塞 AI 不到两天就翻车",
+      "genre": "评论",
+      "structureId": "C4",
+      "notePath": "公众号写作结构库/全文拆解v5/文章/APae4085ada612.md",
+      "originalNotePath": "公众号写作结构库/文章/APPSO/2026/APae4085ada612 Google 把「地球」玩坏了，硬塞 AI 不到两天就翻车.md",
+      "parsed": {
+        "stageTitles": [
+          "地图信任引子",
+          "上线功能与快速撤回",
+          "地图信任契约分析",
+          "承认合理需求并提出替代设计",
+          "推广AI与成熟产品角色",
+          "招聘信息尾部"
+        ],
+        "stageNotesCount": 0,
+        "hookChainsCount": 0,
+        "openingChars": 444,
+        "middleChars": 1093,
+        "endingChars": 469
+      },
+      "originalHasMarkdownMedia": false,
+      "originalHasVideoText": false
+    },
+    {
+      "id": "A300587",
+      "title": "他用Luma和Suno复活了逝去11年的爱人，给我看破防了。",
+      "genre": "故事",
+      "structureId": "S2",
+      "notePath": "公众号写作结构库/全文拆解v5/文章/A300587.md",
+      "originalNotePath": "公众号写作结构库/文章/数字生命卡兹克/2024/A300587 他用Luma和Suno复活了逝去11年的爱人，给我看破防了。.md",
+      "parsed": {
+        "stageTitles": [
+          "视频引子与人物",
+          "回溯起点与十年纪念",
+          "AI 时代的转折",
+          "成果与情感高潮",
+          "总结与升华",
+          "互动"
+        ],
+        "stageNotesCount": 0,
+        "hookChainsCount": 0,
+        "openingChars": 143,
+        "middleChars": 162,
+        "endingChars": 131
+      },
+      "originalHasMarkdownMedia": false,
+      "originalHasVideoText": true
+    }
+  ],
+  "captures": [
+    {
+      "kind": "recommend",
+      "exampleCount": 12,
+      "examples": [
+        {
+          "id": "A400039",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 12,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 336,
+          "analysisExcerptChars": 558
+        },
+        {
+          "id": "A100244",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 12,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 342,
+          "analysisExcerptChars": 579
+        },
+        {
+          "id": "A300560",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 7,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 331,
+          "analysisExcerptChars": 627
+        },
+        {
+          "id": "A500525",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 11,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 330,
+          "analysisExcerptChars": 569
+        },
+        {
+          "id": "A500466",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 11,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 322,
+          "analysisExcerptChars": 638
+        },
+        {
+          "id": "APda673e8ebd69",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 7,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 298,
+          "analysisExcerptChars": 497
+        },
+        {
+          "id": "A100173",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 6,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 358,
+          "analysisExcerptChars": 432
+        },
+        {
+          "id": "A500489",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 7,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 312,
+          "analysisExcerptChars": 333
+        },
+        {
+          "id": "A500523",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 9,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 339,
+          "analysisExcerptChars": 210
+        },
+        {
+          "id": "A600171",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 10,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 332,
+          "analysisExcerptChars": 555
+        },
+        {
+          "id": "A300297",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 11,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 330,
+          "analysisExcerptChars": 541
+        },
+        {
+          "id": "A100127",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 6,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 351,
+          "analysisExcerptChars": 410
+        }
+      ],
+      "structures": [
+        {
+          "id": "R2",
+          "name": "同任务横向对照",
+          "fit": "帮助读者在两个或多个方案之间做选择。",
+          "sequence": [
+            "争议与比较问题",
+            "统一任务",
+            "各方案结果",
+            "逐项差异",
+            "适用条件与结论"
+          ],
+          "materials": "相同任务、各方案输入输出、版本、成本或失败情况。",
+          "boundary": "题目不一致或展示条件不一致时，不应给出总胜负。",
+          "hooks": "开头提出选择问题；中段逐项对照；结尾说明在哪些条件下选谁。"
+        },
+        {
+          "id": "R3",
+          "name": "单项目连续验收",
+          "fit": "用一个完整项目验证工具能否交付。",
+          "sequence": [
+            "设定项目",
+            "第一项产出",
+            "基于产出继续制作",
+            "暴露错误并修改",
+            "整体验收"
+          ],
+          "materials": "一个贯穿全篇的项目、连续产物、修改前后记录。",
+          "boundary": "虚构品牌测试不等于真实开店或商业成功。",
+          "hooks": "一个明确挑战开头；每阶段产生新要求；结尾回看完整交付链。"
+        },
+        {
+          "id": "R4",
+          "name": "个人痛点与体验取舍",
+          "fit": "从真实需求出发，解释产品为什么适合或不适合自己。",
+          "sequence": [
+            "具体处境",
+            "旧办法失效",
+            "尝试与比较",
+            "形成选择标准",
+            "成本或限制",
+            "回到需求"
+          ],
+          "materials": "真实处境、尝试过程、可判断的标准、使用摩擦。",
+          "boundary": "只有情绪没有测试依据时，不能推导产品普遍优劣。",
+          "hooks": "生活难题开头；中段明确判断标准；结尾回到人的需求。"
+        },
+        {
+          "id": "R1",
+          "name": "多维能力验证",
+          "fit": "需要了解一个产品在哪些任务上可用。",
+          "sequence": [
+            "能力预览",
+            "测试维度一",
+            "测试维度二",
+            "更多维度",
+            "短板",
+            "适用判断"
+          ],
+          "materials": "不同维度的任务、输入、输出、限制。",
+          "boundary": "多个例子若只来自官方演示，应标明转述，不能算自己的实测。",
+          "hooks": "先给具体能力；每段用任务和结果兑现；结尾限定测试覆盖范围。"
+        }
+      ]
+    },
+    {
+      "kind": "generate",
+      "exampleCount": 5,
+      "examples": [
+        {
+          "id": "A400039",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 12,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 336,
+          "analysisExcerptChars": 558
+        },
+        {
+          "id": "A100244",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 12,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 342,
+          "analysisExcerptChars": 579
+        },
+        {
+          "id": "A300560",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 7,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 331,
+          "analysisExcerptChars": 627
+        },
+        {
+          "id": "A500523",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 9,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 339,
+          "analysisExcerptChars": 210
+        },
+        {
+          "id": "A600171",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 10,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 332,
+          "analysisExcerptChars": 555
+        }
+      ],
+      "structures": [
+        {
+          "id": "R2",
+          "genre": "测评",
+          "name": "同任务横向对照",
+          "fit": "帮助读者在两个或多个方案之间做选择。",
+          "sequence": [
+            "争议与比较问题",
+            "统一任务",
+            "各方案结果",
+            "逐项差异",
+            "适用条件与结论"
+          ],
+          "materials": "相同任务、各方案输入输出、版本、成本或失败情况。",
+          "boundary": "题目不一致或展示条件不一致时，不应给出总胜负。",
+          "hooks": "开头提出选择问题；中段逐项对照；结尾说明在哪些条件下选谁。",
+          "notePath": "公众号写作结构库/结构/R2 同任务横向对照.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E7%BB%93%E6%9E%84%2FR2%20%E5%90%8C%E4%BB%BB%E5%8A%A1%E6%A8%AA%E5%90%91%E5%AF%B9%E7%85%A7",
+          "maturity": "可优先试用",
+          "evidenceCount": 38
+        }
+      ]
+    },
+    {
+      "kind": "recommend",
+      "exampleCount": 12,
+      "examples": [
+        {
+          "id": "APae4085ada612",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 6,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 343,
+          "analysisExcerptChars": 478
+        },
+        {
+          "id": "A100277",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 14,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 905,
+          "analysisExcerptChars": 332
+        },
+        {
+          "id": "A300120",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 1046,
+          "analysisExcerptChars": 0
+        },
+        {
+          "id": "APcf01640c4a02",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 8,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 327,
+          "analysisExcerptChars": 241
+        },
+        {
+          "id": "AP4141ea677f44",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 1027,
+          "analysisExcerptChars": 0
+        },
+        {
+          "id": "A300101",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 1033,
+          "analysisExcerptChars": 0
+        },
+        {
+          "id": "A100115",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 594,
+          "analysisExcerptChars": 0
+        },
+        {
+          "id": "A400203",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 8,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 306,
+          "analysisExcerptChars": 794
+        },
+        {
+          "id": "A100231",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 675,
+          "analysisExcerptChars": 0
+        },
+        {
+          "id": "A100535",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 961,
+          "analysisExcerptChars": 0
+        },
+        {
+          "id": "A100251",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 14,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 333,
+          "analysisExcerptChars": 307
+        },
+        {
+          "id": "A500114",
+          "receivedKeys": [
+            "id",
+            "title",
+            "account",
+            "reviewStatus",
+            "structureId",
+            "evidenceLevel",
+            "classificationCaution",
+            "recipe",
+            "stages",
+            "historicalArticleExcerpt",
+            "analysisExcerpt",
+            "retrievalMatch"
+          ],
+          "stageTitleCount": 0,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": false,
+          "historicalExcerptChars": 985,
+          "analysisExcerptChars": 0
+        }
+      ],
+      "structures": [
+        {
+          "id": "C5",
+          "name": "问题递进的观点访谈",
+          "fit": "已有真实采访或可信的公开访谈记录，希望提炼受访者对产品、行业或生活的判断。",
+          "sequence": [
+            "问题背景",
+            "受访者与核心判断",
+            "围绕观点分组提问",
+            "追问依据与边界",
+            "落到读者处境",
+            "开放收束"
+          ],
+          "materials": "真实问答记录、受访者身份、采访或转述来源、关键观点及对应上下文。",
+          "boundary": "不能编造采访或修改引语原义；受访者自述和可核查事实分开。若主要沿人物成长时间线推进，优先故事S2。",
+          "hooks": "用有冲突的观点建立阅读理由；中段用具体追问、反例和条件让回答落地；结尾从产品或行业转到人的选择。"
+        },
+        {
+          "id": "C1",
+          "name": "判断与理由论证",
+          "fit": "对一个事件或争议提出明确立场。",
+          "sequence": [
+            "事件或问题",
+            "核心判断",
+            "理由一",
+            "理由二",
+            "例证与边界",
+            "行动建议"
+          ],
+          "materials": "明确论点、至少两条理由、事实或案例依据。",
+          "boundary": "不能用“我觉得”替代论证；例证事实与作者推论应分开。",
+          "hooks": "尽早亮判断；按读者可能反驳的顺序展开；结尾落到选择。"
+        },
+        {
+          "id": "C4",
+          "name": "案例到趋势推演",
+          "fit": "通过具体变化讨论未来可能的发展方向。",
+          "sequence": [
+            "可观察案例",
+            "关键变化",
+            "多个旁证",
+            "解释驱动条件",
+            "趋势判断与反例空间"
+          ],
+          "materials": "具体案例、可比较旁证、驱动因素、未满足条件。",
+          "boundary": "避免把少数成功案例当成普遍规律；未来部分要保持条件语气。",
+          "hooks": "具体结果建立兴趣；中段揭示背后条件；结尾给出有边界的推演。"
+        },
+        {
+          "id": "C2",
+          "name": "常见认识与反证纠偏",
+          "fit": "读者已有一个广泛流行但不完整的认识。",
+          "sequence": [
+            "常见印象",
+            "反向证据",
+            "解释差异来源",
+            "限定证据范围",
+            "更准确的判断"
+          ],
+          "materials": "原有观点、可核查反例或数据、口径与适用范围。",
+          "boundary": "不同基准不可直接横比，反例不能证明一切场景都如此。",
+          "hooks": "反常识引题；中段提供可复查证据；结尾把新判断说得更精确。"
+        },
+        {
+          "id": "C3",
+          "name": "亲历观察到观点",
+          "fit": "一次经历改变了作者对一个问题的看法。",
+          "sequence": [
+            "具体见闻",
+            "原先认识遇到矛盾",
+            "解释关键机制",
+            "形成新判断",
+            "扩展应用"
+          ],
+          "materials": "真实见闻、触发变化的细节、解释依据。",
+          "boundary": "亲历是论点入口，不代表已经验证全部行业结论。",
+          "hooks": "场景开头；中段用反差或追问转入解释；结尾回到变化后的判断。"
+        }
+      ]
+    },
+    {
+      "kind": "generate",
+      "exampleCount": 2,
+      "examples": [
+        {
+          "id": "APae4085ada612",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 6,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 343,
+          "analysisExcerptChars": 478
+        },
+        {
+          "id": "APcf01640c4a02",
+          "receivedKeys": [
+            "id",
+            "title",
+            "recipe",
+            "stages",
+            "evidenceLevel",
+            "historicalArticleExcerpt",
+            "analysisExcerpt"
+          ],
+          "stageTitleCount": 8,
+          "missingStructuredStageNotes": true,
+          "missingStructuredHookChains": true,
+          "missingDedicatedOpening": true,
+          "missingDedicatedMiddle": true,
+          "missingDedicatedEnding": true,
+          "sourceHasFullStages": true,
+          "historicalExcerptChars": 327,
+          "analysisExcerptChars": 241
+        }
+      ],
+      "structures": [
+        {
+          "id": "C4",
+          "genre": "评论",
+          "name": "案例到趋势推演",
+          "fit": "通过具体变化讨论未来可能的发展方向。",
+          "sequence": [
+            "可观察案例",
+            "关键变化",
+            "多个旁证",
+            "解释驱动条件",
+            "趋势判断与反例空间"
+          ],
+          "materials": "具体案例、可比较旁证、驱动因素、未满足条件。",
+          "boundary": "避免把少数成功案例当成普遍规律；未来部分要保持条件语气。",
+          "hooks": "具体结果建立兴趣；中段揭示背后条件；结尾给出有边界的推演。",
+          "notePath": "公众号写作结构库/结构/C4 案例到趋势推演.md",
+          "obsidianUrl": "obsidian://open?vault=Obsidian%20Vault&file=%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%99%E4%BD%9C%E7%BB%93%E6%9E%84%E5%BA%93%2F%E7%BB%93%E6%9E%84%2FC4%20%E6%A1%88%E4%BE%8B%E5%88%B0%E8%B6%8B%E5%8A%BF%E6%8E%A8%E6%BC%94",
+          "maturity": "可优先试用",
+          "evidenceCount": 58
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "genre": "测评",
+      "brief": "视频模型到底怎么选，用相同任务对照镜头连续性、人物一致性和失败场景",
+      "ms": 33179,
+      "recommendStatus": 200,
+      "badFixtureDraftAccepted": true,
+      "clarification": "Bad provider output was deliberately supplied as a fixture. This proves a validator gap, not actual DeepSeek behavior.",
+      "selectedExampleIds": [
+        "A400039"
+      ],
+      "draft": "# 后端验收边界模拟坏稿\n\n这是检验后端验收边界的模拟坏稿，不是正式文章。\n\n## 已经写完的判断\n\n这里先把分析和判断全部写完。模拟稿甚至可以在没有本轮测试材料时断言：工具A在稳定性和成本上全面占优。接下来再重复解释这个判断对读者有什么意义，虽然用来支持它的实测材料还没有提供。\n\n【素材位：补充本轮原始输入、输出和失败证据】"
+    },
+    {
+      "genre": "评论",
+      "brief": "Google Earth 接入生成式 AI 后虚构图片破坏地图信任，如何从事件讲到产品设计取舍",
+      "ms": 38926,
+      "recommendStatus": 200,
+      "badFixtureDraftAccepted": true,
+      "clarification": "Bad provider output was deliberately supplied as a fixture. This proves a validator gap, not actual DeepSeek behavior.",
+      "selectedExampleIds": [
+        "APae4085ada612"
+      ],
+      "draft": "# 后端验收边界模拟坏稿\n\n这是检验后端验收边界的模拟坏稿，不是正式文章。\n\n## 已经写完的判断\n\n这里先把分析和判断全部写完。模拟稿甚至可以在没有本轮测试材料时断言：工具A在稳定性和成本上全面占优。接下来再重复解释这个判断对读者有什么意义，虽然用来支持它的实测材料还没有提供。\n\n【素材位：补充本轮原始输入、输出和失败证据】"
+    }
+  ],
+  "interceptedProviderRequests": 4,
+  "paidProviderRequests": 0,
+  "conclusion": "Stage titles survive, but detailed stage/hook/placement fields do not reach the provider as structured data. Excerpts may still contain some details. A tail-placeholder bad fixture is accepted by the current validator."
+}

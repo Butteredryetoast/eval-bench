@@ -1,0 +1,25 @@
+export const INITIAL_SQL = `
+CREATE TABLE IF NOT EXISTS cases (id text PRIMARY KEY, version_id text NOT NULL, version integer NOT NULL, created_at text NOT NULL, updated_at text NOT NULL);
+CREATE TABLE IF NOT EXISTS case_versions (id text PRIMARY KEY, case_id text NOT NULL REFERENCES cases(id), version integer NOT NULL, data jsonb NOT NULL, hash text NOT NULL, created_at text NOT NULL, UNIQUE(case_id, version));
+CREATE TABLE IF NOT EXISTS files (id text PRIMARY KEY, name text NOT NULL, mime text NOT NULL, size integer NOT NULL, sha256 text NOT NULL, role text NOT NULL, attempt_id text, created_at text NOT NULL);
+CREATE TABLE IF NOT EXISTS runs (id text PRIMARY KEY, spec jsonb NOT NULL, request_key text NOT NULL UNIQUE, created_at text NOT NULL, updated_at text NOT NULL, runner_id text, lease_generation integer NOT NULL DEFAULT 0, lease_expires_at text, last_heartbeat_at text);
+CREATE TABLE IF NOT EXISTS results (id text PRIMARY KEY, run_id text NOT NULL REFERENCES runs(id), case_version_id text NOT NULL REFERENCES case_versions(id), profile_id text NOT NULL, status text NOT NULL DEFAULT 'pending', attempt_id text, UNIQUE(run_id, case_version_id, profile_id));
+CREATE TABLE IF NOT EXISTS attempts (id text PRIMARY KEY, result_id text NOT NULL REFERENCES results(id), number integer NOT NULL, status text NOT NULL, started_at text NOT NULL, finished_at text, output_text text NOT NULL DEFAULT '', error text, duration_ms integer, usage jsonb NOT NULL, reported_model text, adapter_version text NOT NULL, logs text NOT NULL DEFAULT '', event_seq integer NOT NULL DEFAULT 0, UNIQUE(result_id, number));
+CREATE TABLE IF NOT EXISTS annotations (attempt_id text PRIMARY KEY REFERENCES attempts(id), verdict text, note text NOT NULL DEFAULT '', revision integer NOT NULL DEFAULT 0, updated_at text NOT NULL, updated_by text NOT NULL);
+CREATE TABLE IF NOT EXISTS annotation_events (id text PRIMARY KEY, attempt_id text NOT NULL REFERENCES attempts(id), verdict text, note text NOT NULL, at text NOT NULL, by text NOT NULL);
+CREATE TABLE IF NOT EXISTS devices (id text PRIMARY KEY, token_hash text NOT NULL UNIQUE, name text NOT NULL, created_at text NOT NULL);
+CREATE INDEX IF NOT EXISTS results_run_idx ON results(run_id);
+CREATE INDEX IF NOT EXISTS attempts_result_idx ON attempts(result_id);
+CREATE INDEX IF NOT EXISTS files_attempt_idx ON files(attempt_id);
+CREATE UNIQUE INDEX IF NOT EXISTS files_attempt_name_unique ON files(attempt_id, name);
+CREATE INDEX IF NOT EXISTS annotation_events_attempt_idx ON annotation_events(attempt_id);
+ALTER TABLE cases ADD COLUMN IF NOT EXISTS favorite boolean NOT NULL DEFAULT false;
+ALTER TABLE runs ADD COLUMN IF NOT EXISTS name text NOT NULL DEFAULT '';
+ALTER TABLE runs ADD COLUMN IF NOT EXISTS pinned boolean NOT NULL DEFAULT false;
+ALTER TABLE attempts ADD COLUMN IF NOT EXISTS conversation_turn_id text;
+ALTER TABLE attempts ADD COLUMN IF NOT EXISTS kind text NOT NULL DEFAULT 'initial';
+ALTER TABLE attempts ADD COLUMN IF NOT EXISTS metadata jsonb NOT NULL DEFAULT '{}';
+CREATE TABLE IF NOT EXISTS conversation_sessions (id text PRIMARY KEY, initial_attempt_id text NOT NULL UNIQUE REFERENCES attempts(id), result_id text NOT NULL REFERENCES results(id), native_thread_id text NOT NULL, model text NOT NULL, active_turn_id text, native_busy boolean NOT NULL DEFAULT false, cancel_requested boolean NOT NULL DEFAULT false, created_at text NOT NULL, updated_at text NOT NULL, last_synced_at text, sync_error text);
+CREATE TABLE IF NOT EXISTS conversation_turns (id text PRIMARY KEY, session_id text NOT NULL REFERENCES conversation_sessions(id), number integer NOT NULL, prompt text NOT NULL, source text NOT NULL, native_turn_id text, attempt_id text NOT NULL REFERENCES attempts(id), request_key text NOT NULL UNIQUE, retry_count integer NOT NULL DEFAULT 0, runner_id text, lease text, heartbeat_at text, created_at text NOT NULL, UNIQUE(session_id, number), UNIQUE(session_id, native_turn_id));
+CREATE TABLE IF NOT EXISTS editorial_records (id text PRIMARY KEY, kind text NOT NULL, data jsonb NOT NULL, created_at text NOT NULL, updated_at text NOT NULL);
+`;

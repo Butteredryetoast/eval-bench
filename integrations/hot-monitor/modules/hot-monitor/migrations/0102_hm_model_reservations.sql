@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS hm_model_reservations (id text PRIMARY KEY, event_id text NOT NULL, amount numeric(14,6) NOT NULL CHECK (amount >= 0), state text NOT NULL CHECK (state IN ('active','released')), created_at timestamptz NOT NULL DEFAULT now());

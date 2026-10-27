@@ -1,0 +1,71 @@
+{
+  "synthetic": true,
+  "model": "deepseek-flash",
+  "mode": "inline",
+  "protectedContentPreserved": true,
+  "skill": {
+    "id": "humanizer-zh",
+    "commit": "f4518a8eab97b8bfebc66a89d34320a89bef6930",
+    "revision": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df"
+  },
+  "before": {
+    "title": "更新记录（演示素材）",
+    "structureId": "N1",
+    "sourceIds": [
+      "demo-record"
+    ],
+    "materialSlots": [
+      "补充导出失败时的复测截图"
+    ],
+    "markdown": "# 更新记录（演示素材）\n\n## 功能与限制\n\n在技术不断发展的时代背景下，这次更新充分彰显了团队对创新的不懈追求。这不仅是一次更新，更是效率的飞跃。它新增 CSV 导出、全文搜索和批量重命名。单个文件上限为 10 MB，仅支持导出当前页面。\n\n## 尚待验证\n\n离线编辑计划在下一版推出，目前尚未完成测试。部分试用者认为搜索更快，但团队还没有测量数据。关于性能提升，可用信息确实比较有限。现有材料没有记录正式上线日期。\n\n复测时先运行 `save --dry-run`，相关记录见[测试说明](https://example.com/v2)。\n\n【素材位：补充导出失败时的复测截图】\n\n总而言之，让我们拭目以待，期待更多可能。"
+  },
+  "api": {
+    "status": 200,
+    "calls": [
+      {
+        "stage": "revise",
+        "skillIncluded": true,
+        "usage": {
+          "prompt_tokens": 5630,
+          "completion_tokens": 176,
+          "total_tokens": 5806,
+          "prompt_tokens_details": {
+            "cached_tokens": 4864
+          },
+          "prompt_cache_hit_tokens": 4864,
+          "prompt_cache_miss_tokens": 766
+        },
+        "output": {
+          "title": "更新记录（演示素材）",
+          "markdown": "# 更新记录（演示素材）\n\n## 功能与限制\n\n这次更新新增 CSV 导出、全文搜索和批量重命名。单个文件上限为 10 MB，仅支持导出当前页面。\n\n## 尚待验证\n\n离线编辑计划在下一版推出，目前尚未完成测试。部分试用者认为搜索更快，但团队还没有测量数据。现有材料没有记录正式上线日期。\n\n复测时先运行 `save --dry-run`，相关记录见[测试说明](https://example.com/v2)。\n\n【素材位：补充导出失败时的复测截图】",
+          "structureId": "N1",
+          "sourceIds": [
+            "demo-record"
+          ],
+          "materialSlots": [
+            "补充导出失败时的复测截图"
+          ]
+        }
+      }
+    ],
+    "result": {
+      "title": "更新记录（演示素材）",
+      "markdown": "# 更新记录（演示素材）\n\n## 功能与限制\n\n这次更新新增 CSV 导出、全文搜索和批量重命名。单个文件上限为 10 MB，仅支持导出当前页面。\n\n## 尚待验证\n\n离线编辑计划在下一版推出，目前尚未完成测试。部分试用者认为搜索更快，但团队还没有测量数据。现有材料没有记录正式上线日期。\n\n复测时先运行 `save --dry-run`，相关记录见[测试说明](https://example.com/v2)。\n\n【素材位：补充导出失败时的复测截图】",
+      "structureId": "N1",
+      "sourceIds": [
+        "demo-record"
+      ],
+      "materialSlots": [
+        "补充导出失败时的复测截图"
+      ],
+      "createdAt": "2026-10-26T07:07:39.177Z",
+      "writingSkill": {
+        "id": "humanizer-zh",
+        "name": "Humanizer-zh",
+        "revision": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df",
+        "mode": "inline",
+        "applied": true
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filled tones / instruction">
+<path id="Tone / light" opacity="0.2" d="M18 2H6C4.34315 2 3 3.34315 3 5V20C3 21.6569 4.34315 23 6 23H18C19.6569 23 21 21.6569 21 20V5C21 3.34315 19.6569 2 18 2Z" fill="#7A8290"/>
+<path id="Tone / dark" d="M15 1H9C7.89543 1 7 1.89543 7 3C7 4.10457 7.89543 5 9 5H15C16.1046 5 17 4.10457 17 3C17 1.89543 16.1046 1 15 1Z" fill="#7A8290"/>
+<path id="Tone / dark_2" d="M6 9L7.3 10.4L10 7.5M6 14.5L7.3 15.9L10 13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke="#7A8290"/>
+<path id="Tone / mid" opacity="0.55" d="M17 8H13C12.4477 8 12 8.44772 12 9C12 9.55228 12.4477 10 13 10H17C17.5523 10 18 9.55228 18 9C18 8.44772 17.5523 8 17 8Z" fill="#7A8290"/>
+<path id="Tone / mid_2" opacity="0.55" d="M17 14H13C12.4477 14 12 14.4477 12 15C12 15.5523 12.4477 16 13 16H17C17.5523 16 18 15.5523 18 15C18 14.4477 17.5523 14 17 14Z" fill="#7A8290"/>
+<path id="Tone / mid_3" opacity="0.55" d="M17.5 19H6.5C6.22386 19 6 19.2239 6 19.5V20C6 20.2761 6.22386 20.5 6.5 20.5H17.5C17.7761 20.5 18 20.2761 18 20V19.5C18 19.2239 17.7761 19 17.5 19Z" fill="#7A8290"/>
+</g>
+</svg>

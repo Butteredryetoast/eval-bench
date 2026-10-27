@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+cd "$(dirname "$0")"
+CASEBENCH_NODE="$(command -v node || true)"
+if [ -z "$CASEBENCH_NODE" ]; then
+  CASEBENCH_NODE="$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+fi
+if [ ! -x "$CASEBENCH_NODE" ]; then
+  echo "请先安装 Node.js LTS。"
+  exit 1
+fi
+exec "$CASEBENCH_NODE" scripts/dev.mjs

@@ -1,0 +1,3 @@
+import {InfoDialog} from "./info-dialog.tsx";
+import {CASE_COLLECTION_STANDARDS} from "../contracts.ts";
+export function CaseStandards({inline=false}:{inline?:boolean}){const content=<div><h3>案例怎么收集、优先收什么？</h3><dl className="hm-rule-definitions">{CASE_COLLECTION_STANDARDS.map(([title,text])=><div key={title}><dt>{title}</dt><dd>{text}</dd></div>)}</dl><p className="hm-caption">API搜索：公众号返回标题、摘要和出处，可按需读取正文；X返回帖子文字、作者、时间及可用媒体线索，均以实际接口返回为准。手动/批量收集只保存链接与填写的信息，不会自动读取全文、评论区或下载视频。脚本导入能附带元数据与媒体候选，仍需人工核验。</p></div>;return inline?content:<InfoDialog label="案例搜寻标准" title="案例怎么收集、优先收什么？">{content}</InfoDialog>;}

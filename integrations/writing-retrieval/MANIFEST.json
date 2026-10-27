@@ -1,0 +1,683 @@
+{
+  "formatVersion": 1,
+  "fileCount": 133,
+  "totalBytes": 1906168,
+  "excludedLocalAssets": [
+    "Obsidian Vault",
+    "complete SQLite vector index",
+    "embedding/reranker ONNX models",
+    "RAG cache",
+    "pip cache",
+    "sample index",
+    "node_modules",
+    "Python virtualenv",
+    ".env and API credentials"
+  ],
+  "files": [
+    {
+      "path": "MAC-本地检索服务接入.md",
+      "bytes": 4197,
+      "sha256": "08782503db8a9f5e12af53c770f9b5724c19a1cfe1a9f60f32e82e5e5a7ac66c"
+    },
+    {
+      "path": "project/.env.example",
+      "bytes": 545,
+      "sha256": "90b185e25c8f84e7b407cca666942b57d8cd9cdc2fa0b7971c0743c833b05721"
+    },
+    {
+      "path": "project/.gitignore",
+      "bytes": 98,
+      "sha256": "83f4baf7cf380745f4c827f825f4f3b7e6bdcff9d8feb15e7d9eaaad8b237d80"
+    },
+    {
+      "path": "project/.npmrc",
+      "bytes": 23,
+      "sha256": "f7dbda001b627b3a792fb6929303b517f047f03916f2c55227e81216d38a2008"
+    },
+    {
+      "path": "project/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "project/AGENTS.md",
+      "bytes": 9548,
+      "sha256": "e5dcabfa4920eb6b36fe74a14ee633ef4501c259b47dea8e38f970fda892c3d8"
+    },
+    {
+      "path": "project/README.md",
+      "bytes": 9209,
+      "sha256": "bf90a19187a0c99f6c6ae5df36c4529a4a94f524fe36ee9de3bf731573bb6d57"
+    },
+    {
+      "path": "project/dist/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "project/dist/client/assets/README.md",
+      "bytes": 480,
+      "sha256": "2c202c46d5d581c3f082c478e141d97cfc292e979ac5e12af9a06473123ed387"
+    },
+    {
+      "path": "project/dist/client/assets/index-BUKWfNiL.js",
+      "bytes": 430627,
+      "sha256": "315294e6372b0e701378813366194d64ea18363942c31107a3f6e22adcac22f5"
+    },
+    {
+      "path": "project/dist/client/assets/index-BkCGX3fU.css",
+      "bytes": 30453,
+      "sha256": "267f29e0d8fb70a3615f7a597e77954a9fa42e9b5b2e126d3c03e46d129b3bd1"
+    },
+    {
+      "path": "project/dist/client/assets/topic-0.jpg",
+      "bytes": 5369,
+      "sha256": "ecae28562ba0adbe4b4fb6778171578c207d118c591dddbd58270222d3b500c3"
+    },
+    {
+      "path": "project/dist/client/assets/topic-1.jpg",
+      "bytes": 2723,
+      "sha256": "ebbff49899b1c9aa63438b3a649693c488562905e6a281af199b93e43fed3cc2"
+    },
+    {
+      "path": "project/dist/client/assets/topic-2.jpg",
+      "bytes": 2507,
+      "sha256": "467d163a08ff86e527c1eccaad9e35f6ca5a6848172f2fc2007f86824ccde131"
+    },
+    {
+      "path": "project/dist/client/assets/topic-4.jpg",
+      "bytes": 2560,
+      "sha256": "de09f36fe1de2ffe8a501975bae172cee9dd49ae65d75cb25eebfd65f7946041"
+    },
+    {
+      "path": "project/dist/client/index.html",
+      "bytes": 414,
+      "sha256": "c1f3094b34f35f5ac284a0b39733c5b4f0cc9bb9fe848403dfee6ece1523dde1"
+    },
+    {
+      "path": "project/dist/server/index.js",
+      "bytes": 483,
+      "sha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389"
+    },
+    {
+      "path": "project/docs/design-qa.md",
+      "bytes": 5055,
+      "sha256": "be5f9afed875e6171e227353e16036e1abaca2c4d3b225abec54c21ba1bb0396"
+    },
+    {
+      "path": "project/docs/haystack-rag.md",
+      "bytes": 10517,
+      "sha256": "a387904a85ff4b41e543163761d0234cd9daf0afb2763ca09b710e9fdff5ee45"
+    },
+    {
+      "path": "project/docs/humanizer-integration.md",
+      "bytes": 4347,
+      "sha256": "85d4904796f6ad539ed28c2d66fa497e791874a80c46af53c21adc4ab3dab32a"
+    },
+    {
+      "path": "project/docs/live-obsidian-qa.md",
+      "bytes": 4276,
+      "sha256": "cafc1b950135ae2a2580ea3be1261547b55027bfa1393e0d2aa1ddba1f6cc7a5"
+    },
+    {
+      "path": "project/docs/local-retrieval.md",
+      "bytes": 8394,
+      "sha256": "566d15ffc7e3a0e9859c3b4f5a5ed361b7e499d1c4a6c56cb63735ad327e3f72"
+    },
+    {
+      "path": "project/docs/narrative-structure-audit.md",
+      "bytes": 7601,
+      "sha256": "4e580a2ac3ee0366b63f119ee60484724a9f8fdbe0e4e05b6a2320656068a6ad"
+    },
+    {
+      "path": "project/docs/narrative-structure-validation.md",
+      "bytes": 7479,
+      "sha256": "10eb98a2e124e57c5b16fe6db12a6d7ffe786f7705430f1bb0760104ad123c2f"
+    },
+    {
+      "path": "project/docs/news-narrative-integration.md",
+      "bytes": 5548,
+      "sha256": "0ae21241cad815f55a27afd6d4d586609908fc7aabdbf79071de397d55bf233c"
+    },
+    {
+      "path": "project/docs/news-narrative-pilot.md",
+      "bytes": 10710,
+      "sha256": "f2bb02c97ed04b7da85d4ecb19db7f57bf18388944f24728af1d4209665da106"
+    },
+    {
+      "path": "project/docs/qa/02-topic-filter.jpg",
+      "bytes": 70386,
+      "sha256": "26706776fb19c31daf3c504df7e5afff461d06396f8121bdebdcf69c8c44e2dc"
+    },
+    {
+      "path": "project/docs/qa/04-writing-start.jpg",
+      "bytes": 49556,
+      "sha256": "bae82fd0e4d87c542db2ad6a6664e466157243b1c592d5e0053b3b51ab848ad8"
+    },
+    {
+      "path": "project/docs/qa/18-draft-panel.jpg",
+      "bytes": 131160,
+      "sha256": "0423a2b8e389f8f4f948e699bd6dc9d4920f1830d29d3251556fd4003c8d2e44"
+    },
+    {
+      "path": "project/docs/qa/downloads/[验收示例] [验收示例] [验收示例] 矛盾起点视角.html",
+      "bytes": 1549,
+      "sha256": "988a799b9feb700858ccbf4d9493a0bbd8740585d1e4acb804c9a87fc64bafcd"
+    },
+    {
+      "path": "project/docs/qa/downloads/[验收示例] [验收示例] [验收示例] 矛盾起点视角.md",
+      "bytes": 1044,
+      "sha256": "ffd0c8c153549fb8337d7b3a31efe7ae8ec8a075c61d8fb86d653f889dd0df90"
+    },
+    {
+      "path": "project/docs/qa/downloads/[验收示例] [验收示例] 矛盾起点视角.md",
+      "bytes": 848,
+      "sha256": "5cbb964f06ec78c90e165455cd944408db3803478bb8b2290acafcf5aec47c7c"
+    },
+    {
+      "path": "project/docs/qa/draft-generation-live.json",
+      "bytes": 8375,
+      "sha256": "30af16eb386c4ed4946c85bf307054a5fd928a40e0853b12ec3e047222845e36"
+    },
+    {
+      "path": "project/docs/qa/draft-validation-repro.json",
+      "bytes": 9345,
+      "sha256": "30a0985d1544e9134bad3b28f0db75de384c4aa2930c4fec6323c4c3b94b1f45"
+    },
+    {
+      "path": "project/docs/qa/haystack-full-before-sql-optimization.json",
+      "bytes": 83647,
+      "sha256": "5b291fca3487c0937ff6a41feeff89b6b3051765f5bd36139bfa68c96faab328"
+    },
+    {
+      "path": "project/docs/qa/haystack-full.json",
+      "bytes": 83364,
+      "sha256": "905a1c81e122a69770ca23f96c211edf948ae516b6419d37e045d218604924ca"
+    },
+    {
+      "path": "project/docs/qa/haystack-live.json",
+      "bytes": 2603,
+      "sha256": "5321ae62084950a94a83b5e6b92262e0a7f1af6264fe5b9e5a7e6cd45d76b233"
+    },
+    {
+      "path": "project/docs/qa/haystack-performance.json",
+      "bytes": 835,
+      "sha256": "8b1f51189f1747eb16b65c3dee380ed18011534823c385aad49532bb09c47263"
+    },
+    {
+      "path": "project/docs/qa/humanizer-comparison.md",
+      "bytes": 2236,
+      "sha256": "424fff217de239c166ca4bd1e7576effa191ae224f0b906c27e1718b98c1a2a8"
+    },
+    {
+      "path": "project/docs/qa/humanizer-inline-comparison.md",
+      "bytes": 1580,
+      "sha256": "90d9cc89e991059cf17d0f3af1b5964de25f1ca60e882ce20f2797e8e951d38e"
+    },
+    {
+      "path": "project/docs/qa/humanizer-inline-live.json",
+      "bytes": 3673,
+      "sha256": "2d93da106c1376202e14b6c1c604562edf362358a0ff9bbec01bc5b0241ace09"
+    },
+    {
+      "path": "project/docs/qa/humanizer-live.json",
+      "bytes": 5248,
+      "sha256": "c6432efc3621257bdc0122ecc65b386e20ee6798c1709be41299cadba4386189"
+    },
+    {
+      "path": "project/docs/qa/local-retrieval-live.json",
+      "bytes": 111211,
+      "sha256": "5e9561f54abfdfbf679d89d0bc48352022e5a89df819fbcb3fe506c085274d5c"
+    },
+    {
+      "path": "project/docs/qa/memory-generation-live.md",
+      "bytes": 3177,
+      "sha256": "073c20abfd528d644fc5eb134a7c46de074f1f77c61626059b99329eed42e771"
+    },
+    {
+      "path": "project/docs/qa/mobile-topics.jpg",
+      "bytes": 38936,
+      "sha256": "93bb19448cee7e4f39d3c9dc1c03c759a15080956c3267f70cdb4b6cd7284db3"
+    },
+    {
+      "path": "project/docs/qa/mobile-writing.jpg",
+      "bytes": 21083,
+      "sha256": "4d40c3d540b29544929f205c02e8da68f35f8ed9c84f83087a145b65698663a0"
+    },
+    {
+      "path": "project/docs/qa/narrative-contract-live.json",
+      "bytes": 40168,
+      "sha256": "5f4d64f3d3858c0cdce184edafdcad0055db758ea1ac3bd510958b3bd58aebbd"
+    },
+    {
+      "path": "project/docs/qa/narrative-media-order.json",
+      "bytes": 6473,
+      "sha256": "dd57f22df64c1553096888184e784c477e9df4e879e8ec01acd18a78944b692a"
+    },
+    {
+      "path": "project/docs/qa/news-narrative-integration.json",
+      "bytes": 8825,
+      "sha256": "2c59e9a18d9ec16e0d0a0f56c171e4c4c8f3f65b6357a9f8f6a418d4ab5ff605"
+    },
+    {
+      "path": "project/docs/qa/news-narrative-pilot-evidence.json",
+      "bytes": 12933,
+      "sha256": "be51249c1ac747749f519b9e9fe206a2a5877c8b3fceed185607607edad028b3"
+    },
+    {
+      "path": "project/docs/qa/topic-filter-initial.jpg",
+      "bytes": 91247,
+      "sha256": "ab2351b08074f438baf0be1e90a90ba2e43cb9f8b8cf047c9811f421da1862ae"
+    },
+    {
+      "path": "project/docs/superpowers/plans/2026-10-26-live-obsidian.md",
+      "bytes": 2410,
+      "sha256": "e37d7cc7bdfd677080cc0a3b765174b12f96e0d98f4dd9bae7dd8c71ef84ae28"
+    },
+    {
+      "path": "project/docs/superpowers/plans/2026-10-26-progress.md",
+      "bytes": 1477,
+      "sha256": "8d31b8d369392420ad14ded3bc205084ff3cf808cb1e1ee3865a604a512ea019"
+    },
+    {
+      "path": "project/docs/superpowers/plans/2026-10-26-writing-workflow.md",
+      "bytes": 3844,
+      "sha256": "477dbf7ddd3796ce5c3ae0cb2495490143aea9fcddf6b1ff75c4c161c084faef"
+    },
+    {
+      "path": "project/docs/superpowers/plans/2026-10-27-news-narrative.md",
+      "bytes": 7464,
+      "sha256": "1d3382253eeaa7570191d3a9c97f1d773c7252d146219bda02016168677e3bb7"
+    },
+    {
+      "path": "project/docs/superpowers/plans/2026-10-27-news-progress.md",
+      "bytes": 3426,
+      "sha256": "2bc22f475b8a702e37d621c1fb2e275a54232ce199617a14b43df577437423a1"
+    },
+    {
+      "path": "project/docs/superpowers/specs/2026-10-26-live-obsidian-design.md",
+      "bytes": 4020,
+      "sha256": "3b2b0dc150d07944d57029e3646c7e62bebfb93c241fdf61eb4542dce4b1f3bb"
+    },
+    {
+      "path": "project/docs/superpowers/specs/2026-10-26-writing-workflow.md",
+      "bytes": 4118,
+      "sha256": "57905ecdcafc3187a1a6b59068c21da97d09997c850823a97198092487bd9952"
+    },
+    {
+      "path": "project/docs/superpowers/specs/2026-10-27-news-narrative-design.md",
+      "bytes": 10310,
+      "sha256": "022a9fb367d678fb742c1ec42f4e7459ff3d3b02512ac801ef00c37b319dced8"
+    },
+    {
+      "path": "project/index.html",
+      "bytes": 316,
+      "sha256": "590f07759315bf6b1a9a162751b98240f3c28c42f416aa6d7cc4cd278d35497c"
+    },
+    {
+      "path": "project/package-lock.json",
+      "bytes": 104530,
+      "sha256": "e22456948ed5f2e2b13236112479861f2c93e790be9c7d74116581f7780f4751"
+    },
+    {
+      "path": "project/package.json",
+      "bytes": 871,
+      "sha256": "e45154b5a1d67651e99e5ca04550f4dec7d883f20e921ce5758e1e7a6c6c0c69"
+    },
+    {
+      "path": "project/public/assets/README.md",
+      "bytes": 480,
+      "sha256": "2c202c46d5d581c3f082c478e141d97cfc292e979ac5e12af9a06473123ed387"
+    },
+    {
+      "path": "project/public/assets/topic-0.jpg",
+      "bytes": 5369,
+      "sha256": "ecae28562ba0adbe4b4fb6778171578c207d118c591dddbd58270222d3b500c3"
+    },
+    {
+      "path": "project/public/assets/topic-1.jpg",
+      "bytes": 2723,
+      "sha256": "ebbff49899b1c9aa63438b3a649693c488562905e6a281af199b93e43fed3cc2"
+    },
+    {
+      "path": "project/public/assets/topic-2.jpg",
+      "bytes": 2507,
+      "sha256": "467d163a08ff86e527c1eccaad9e35f6ca5a6848172f2fc2007f86824ccde131"
+    },
+    {
+      "path": "project/public/assets/topic-4.jpg",
+      "bytes": 2560,
+      "sha256": "de09f36fe1de2ffe8a501975bae172cee9dd49ae65d75cb25eebfd65f7946041"
+    },
+    {
+      "path": "project/scripts/dev.mjs",
+      "bytes": 528,
+      "sha256": "356b49535f856b619324a190c56582e26a89d233c428a2b8ccd1a891e49a87bd"
+    },
+    {
+      "path": "project/scripts/export-knowledge.py",
+      "bytes": 5489,
+      "sha256": "49a8343ebd14c12ccb89feefd685be7a2ad61f4c4d436cbac88e99f0fb389ffc"
+    },
+    {
+      "path": "project/scripts/index-rag.mjs",
+      "bytes": 2634,
+      "sha256": "aa12ce46af53befefc3e5c91ee9ef0fcb49e5f1d209739bcdeb502cf441d3877"
+    },
+    {
+      "path": "project/scripts/prepare-sites-build.mjs",
+      "bytes": 910,
+      "sha256": "b6a6adaa4fab3234676116dd1c9cb6611275ab9d92dd26f5bf402393e3744bf6"
+    },
+    {
+      "path": "project/scripts/qa-humanizer-live.mjs",
+      "bytes": 4288,
+      "sha256": "a427f85302fdaa63d554a5a4a1942ffa01a7207165206c54b2e8150c6b38bb4b"
+    },
+    {
+      "path": "project/scripts/qa-memory-generation.mjs",
+      "bytes": 3440,
+      "sha256": "d54a1959190dd3d0c3c9d8f68a23ed2686257327a30d4175f4d98d926d9f9a13"
+    },
+    {
+      "path": "project/scripts/qa-narrative-contract.mjs",
+      "bytes": 6689,
+      "sha256": "d7ee86f937e12f37b3edaf3977c7d81844fccd919920bf82dfad7163ac6ba916"
+    },
+    {
+      "path": "project/scripts/qa-narrative-media.py",
+      "bytes": 5101,
+      "sha256": "bb04f25e9bbc7d075002653a665c5e1e812779bb757d186e32015568f73108b8"
+    },
+    {
+      "path": "project/scripts/qa-news-narrative.mjs",
+      "bytes": 3832,
+      "sha256": "8f8dc381552a2e200173e07d87950735cf2547e2249172176714cdf542a02a04"
+    },
+    {
+      "path": "project/scripts/qa-rag-full.mjs",
+      "bytes": 3950,
+      "sha256": "485c34c759032ac83df25aea9fb3be0a3540ebad5311f622cdc0fa5d82cbdbf3"
+    },
+    {
+      "path": "project/scripts/qa-rag-live.mjs",
+      "bytes": 7063,
+      "sha256": "13a87f367e295af337aa6139803f9d070cd14599afb9e5744bb13be13882fb16"
+    },
+    {
+      "path": "project/scripts/qa-server.mjs",
+      "bytes": 7421,
+      "sha256": "ad43804491823ce202ed83739d4af7e7fedaa72219224cd144cc093bf557d9a4"
+    },
+    {
+      "path": "project/scripts/setup-rag-models.py",
+      "bytes": 5843,
+      "sha256": "81ab14e341513f25d2c48507a49d01611243bfabec56a0a2a690f316c52f9524"
+    },
+    {
+      "path": "project/scripts/setup-rag.mjs",
+      "bytes": 975,
+      "sha256": "7046a3cd1d33ea58a650f766fbff0b61e23b48b1b8367db5a5c311f163e96094"
+    },
+    {
+      "path": "project/scripts/test-rag.mjs",
+      "bytes": 505,
+      "sha256": "4e2d2e32385ecb23e7d90fcfbfcd148f7ec65e002430c0b93e55bde4f3b965b0"
+    },
+    {
+      "path": "project/server/api.mjs",
+      "bytes": 25112,
+      "sha256": "458694f33c39f9b351cfa7bdd56b571a9ff298b64b6c04def7e0a62fb177edc5"
+    },
+    {
+      "path": "project/server/blueprints.mjs",
+      "bytes": 3692,
+      "sha256": "56d8b107537f358c1ab50196f4c588b3074badf063fb60d9a06d4200db7e7c8f"
+    },
+    {
+      "path": "project/server/deepseek.mjs",
+      "bytes": 3060,
+      "sha256": "3a059c3dfb2789d53bdfe54331db6f24eaac099eb1326a8318fcc6b206fa7306"
+    },
+    {
+      "path": "project/server/haystack-client.mjs",
+      "bytes": 6004,
+      "sha256": "b2b41da2530cd7c0d0d3defda25f55cd6d0bec0a27e35edd1c3d4bde824761d8"
+    },
+    {
+      "path": "project/server/haystack-knowledge.mjs",
+      "bytes": 7456,
+      "sha256": "5d8a5d1fe10c321c4faeaf4db05266cf63a3a952b955aaa86476ef7678ce52d5"
+    },
+    {
+      "path": "project/server/humanizer.mjs",
+      "bytes": 3676,
+      "sha256": "98cc0334622d64358b32c11f97aa15d96a3f8fa9b51c4821c6ef7d881f57953a"
+    },
+    {
+      "path": "project/server/knowledge.mjs",
+      "bytes": 5782,
+      "sha256": "5e7da6b6997982a47615ad6debc766c5ee86f01bf4471dab6c09e200562a70dc"
+    },
+    {
+      "path": "project/server/news-narrative.mjs",
+      "bytes": 12885,
+      "sha256": "70c12547c9095d1ea62284b140dc6839728724b6c7045b7b7bc9095ee64088e2"
+    },
+    {
+      "path": "project/server/obsidian.mjs",
+      "bytes": 15468,
+      "sha256": "c74666e91cdda9015522b73089d5899a304ff6ede9d56fabebf61afc3329a215"
+    },
+    {
+      "path": "project/server/rag/models.json",
+      "bytes": 719,
+      "sha256": "c2fce097a0360d7df286c282600e37909aba4e669b4cd0a8fa81848b102153c0"
+    },
+    {
+      "path": "project/server/rag/requirements.txt",
+      "bytes": 94,
+      "sha256": "2b27865b44ac3429951de19903b5aa20bc6fd5b1fd2d93def2a9e0e3602d6209"
+    },
+    {
+      "path": "project/server/rag/store.py",
+      "bytes": 11961,
+      "sha256": "e25ccca971f30426177105465699b81daee4538d22f223b59bbd5f300f309055"
+    },
+    {
+      "path": "project/server/rag/worker.py",
+      "bytes": 10708,
+      "sha256": "d21e97692053d0585ad996eed818a7ac3380f42f560409e8b65db11c31c94ef5"
+    },
+    {
+      "path": "project/server/rag-documents.mjs",
+      "bytes": 7261,
+      "sha256": "3761ac8f3dff7fee6512733d8be455448e23e15190e0bfb1f2b5f0085d6e95da"
+    },
+    {
+      "path": "project/server/retrieval.mjs",
+      "bytes": 13793,
+      "sha256": "7ef2402b15e25d28bd67abb3e1519b5bfb8ba0af6e2cee38aee84be706cb4fe2"
+    },
+    {
+      "path": "project/server/skills/humanizer-zh/LICENSE",
+      "bytes": 1063,
+      "sha256": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7"
+    },
+    {
+      "path": "project/server/skills/humanizer-zh/SKILL.md",
+      "bytes": 20527,
+      "sha256": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df"
+    },
+    {
+      "path": "project/server/skills/humanizer-zh/source.json",
+      "bytes": 375,
+      "sha256": "d28f385fe4998e7ae01e60640139b2203fba15cf9b4e1ddd7ff855ff82dfa291"
+    },
+    {
+      "path": "project/server/start.mjs",
+      "bytes": 351,
+      "sha256": "d19e43f28ff73af0044b80162a95eb39b296eb9976b961e790f32b7d90bc1f7b"
+    },
+    {
+      "path": "project/server/weknora.mjs",
+      "bytes": 3491,
+      "sha256": "27d8351cef00d209da099081aad3e91f8c79771baeb8a7d5edb6b4d96bfbd9c6"
+    },
+    {
+      "path": "project/src/App.jsx",
+      "bytes": 42420,
+      "sha256": "98164cceadb7b95e4000d233e0d1ba191abeb5c192d8a8c4a5276e32a94dac5f"
+    },
+    {
+      "path": "project/src/NarrativePlan.jsx",
+      "bytes": 2015,
+      "sha256": "a17d9c1f86a8c0ad1d23f350a8a9af7f9ef93741c81c75b8292b7b79fe88a1c1"
+    },
+    {
+      "path": "project/src/main.jsx",
+      "bytes": 242,
+      "sha256": "832f752c6b6a454a26dbc4f2654f5bd633f2b103516c8c0abac648308c133a7e"
+    },
+    {
+      "path": "project/src/seed.mjs",
+      "bytes": 2921,
+      "sha256": "d0a32e213e7a769ce943e9d960d564f1d8e89dc10adb1baa5690623ae758bcb1"
+    },
+    {
+      "path": "project/src/styles.css",
+      "bytes": 30399,
+      "sha256": "83627e96febc3347aaa439ad34437d1f3af8c97088f8714830e2d09daf5bc48e"
+    },
+    {
+      "path": "project/src/workflow.mjs",
+      "bytes": 5670,
+      "sha256": "6c92a00807c5ae77f02cb3512a858a429ed546491604654b23ef74fa90694896"
+    },
+    {
+      "path": "project/tests/api.test.mjs",
+      "bytes": 16666,
+      "sha256": "2a70c74bce580156515aaefcc626ffbf96cec65ab57011158f15bf961e4aaf39"
+    },
+    {
+      "path": "project/tests/blueprints.test.mjs",
+      "bytes": 2757,
+      "sha256": "f30272ea55bdff10d1452a2852efa9cdd9b8c63b0b7067829f69c42fed7be43c"
+    },
+    {
+      "path": "project/tests/fixtures/memory-article-no-heading.json",
+      "bytes": 8197,
+      "sha256": "0a365c929d0b595f2a720e6f9dc1cd21f6b63c9806fb9a2e86b1e2ec7df93563"
+    },
+    {
+      "path": "project/tests/fixtures/news-blueprint.mjs",
+      "bytes": 1498,
+      "sha256": "55011c304137873634311d61b76078aa9af377df62dcb87c5e8f101f8d1a6f9a"
+    },
+    {
+      "path": "project/tests/fixtures/news-contract.mjs",
+      "bytes": 832,
+      "sha256": "b1979fccb488590124050f35760e69306febac817316d8fd8684d3d155bd7b54"
+    },
+    {
+      "path": "project/tests/haystack-client.test.mjs",
+      "bytes": 869,
+      "sha256": "39439336a095ad7bffc02cee7c043c5427793c93ae44760d9c351c360a89dffe"
+    },
+    {
+      "path": "project/tests/haystack-knowledge.test.mjs",
+      "bytes": 5634,
+      "sha256": "0bb599cb7a90da9ec540508a996205880a1ad0aeb388c489a9e43dfd7e67bd0b"
+    },
+    {
+      "path": "project/tests/humanizer.test.mjs",
+      "bytes": 2630,
+      "sha256": "027824f25cc4cc7083f6cf44bd0dd011389dd02419570a9b35f336797343d9e0"
+    },
+    {
+      "path": "project/tests/knowledge.test.mjs",
+      "bytes": 3648,
+      "sha256": "9eff2b4ca4654781647827886d8f4524c4ab6b1d592a62cebe3a4d2a6ef46357"
+    },
+    {
+      "path": "project/tests/live-api.test.mjs",
+      "bytes": 4373,
+      "sha256": "f1d94a560d8e68ea85527d3a484eaea0e037529feebb177dc2f57031668d9ac1"
+    },
+    {
+      "path": "project/tests/news-api.test.mjs",
+      "bytes": 5217,
+      "sha256": "233e10dad1b052b9ddcf71940c2219c3627809e035e87cdb230790f6748c7184"
+    },
+    {
+      "path": "project/tests/news-narrative.test.mjs",
+      "bytes": 5511,
+      "sha256": "0d2b3472977d5379e5ae365cc3c6d2ccc320bf73e1881782ed65607f9b4ccdc7"
+    },
+    {
+      "path": "project/tests/obsidian.test.mjs",
+      "bytes": 7458,
+      "sha256": "182d06a03c4e35e8f4afdf3511b0c09c8be6aac87d72c67f05883159e93b61df"
+    },
+    {
+      "path": "project/tests/provider-http.test.mjs",
+      "bytes": 5921,
+      "sha256": "97e030ec35385c8a3b2be6918e5b554afcc0a49ecce0f7715bee053226ad9152"
+    },
+    {
+      "path": "project/tests/rag-documents.test.mjs",
+      "bytes": 3443,
+      "sha256": "503b175a584e1621b1b9747346bb9722b4a732bdd80bd84c12b1bb2d9fcc88dc"
+    },
+    {
+      "path": "project/tests/retrieval.test.mjs",
+      "bytes": 7576,
+      "sha256": "64ab974ea4a5b34302b991d7990197512f924f7884ec96d320b4339b3cf5e906"
+    },
+    {
+      "path": "project/tests/sites-worker.test.mjs",
+      "bytes": 2219,
+      "sha256": "96af7b48906c6460c793356d7b6952f7d5026dbf5a502bec0d9297ff04201c26"
+    },
+    {
+      "path": "project/tests/test_rag_store.py",
+      "bytes": 4690,
+      "sha256": "7d1701118f0ad1013ffc9073362274188e5bc2cbaec5e3d3f3a5289679fe184e"
+    },
+    {
+      "path": "project/tests/weknora.test.mjs",
+      "bytes": 3439,
+      "sha256": "055a32bc7b431cc10b2decf83b378e70a63ccb4e9b177bb6a941532eb6eb5a2e"
+    },
+    {
+      "path": "project/tests/workflow-state.test.mjs",
+      "bytes": 5861,
+      "sha256": "01562d1e2b13ac458203e498995af538b8855ef38bfb6dda935e0470704a303c"
+    },
+    {
+      "path": "project/vite.config.mjs",
+      "bytes": 432,
+      "sha256": "ced3264db2e74124c923d232a7c2b7ed0d176d2d71b0e44686ce2e3a51f96c76"
+    },
+    {
+      "path": "project/vite.qa.config.mjs",
+      "bytes": 209,
+      "sha256": "b6990d6c2432e726e30d7710c7451a819c9bc9ce00e036dc2c73e95603da37ea"
+    },
+    {
+      "path": "project/worker/index.js",
+      "bytes": 483,
+      "sha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389"
+    },
+    {
+      "path": "先读我.md",
+      "bytes": 1004,
+      "sha256": "f129ed684567a78a7032b2b065d22aae29e3aa5121a237625f710303b7e9c2ce"
+    },
+    {
+      "path": "校验文件.py",
+      "bytes": 636,
+      "sha256": "8460dcecfbc87c8c18d2ad5a8ed35b051dacb61f056a94ccef888a7ddff33331"
+    }
+  ]
+}

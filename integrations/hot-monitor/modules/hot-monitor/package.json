@@ -1,0 +1,15 @@
+{
+  "name": "@aihot/hot-monitor",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*": "./*.ts"
+  },
+  "dependencies": {
+    "@aihot/backend": "workspace:*",
+    "@aihot/contracts": "workspace:*",
+    "@aihot/site": "workspace:*",
+    "zod": "4.6.5",
+    "@aihot/api": "workspace:*"
+  }
+}

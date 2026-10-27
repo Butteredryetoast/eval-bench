@@ -1,0 +1,1 @@
+{"name":"cexie-writing-retrieval","private":true,"type":"module","scripts":{"start":"node context-server.mjs","test":"node --test context-server.test.mjs"},"dependencies":{"yaml":"^2.9.1"}}

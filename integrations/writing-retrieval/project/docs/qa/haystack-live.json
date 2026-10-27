@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-27T06:38:14.657Z",
+  "observedMisses": [
+    {
+      "q": "怎样搭起私人的资料问答系统",
+      "expected": "A2",
+      "reason": "Relevant paraphrase ranked first before score filtering but did not pass the provisional -5 floor."
+    }
+  ],
+  "scope": "temporary controlled fixtures, not a quality benchmark against ima",
+  "checks": [
+    "Paraphrase matched through vectors without a lexical hit; real Chinese reranker applied.",
+    "HTTP recommendation received actual retrieved passages in one mocked generation call.",
+    "A Vault edit updated the actual persisted vector/FTS index and provenance.",
+    "A Vault deletion removed the old source from actual retrieval.",
+    "An unrelated control query returned no accepted examples."
+  ],
+  "queries": [
+    {
+      "q": "横向比较两家文本AI谁更可靠",
+      "expectedArticle": "A1",
+      "acceptedTopArticle": "A1",
+      "ms": 7104,
+      "hits": [
+        {
+          "id": "A1",
+          "channels": [
+            "vector"
+          ],
+          "reranked": true,
+          "snippet": "把同一段文字分别交给两个助手，记录哪一个保留事实、改错和失败，再根据使用目标给出建议。"
+        }
+      ]
+    },
+    {
+      "q": "怎样搭起私人的资料问答系统",
+      "expectedArticle": "A2",
+      "acceptedTopArticle": null,
+      "ms": 752,
+      "hits": []
+    },
+    {
+      "q": "用主人公的人生拐点带出叙事主线",
+      "expectedArticle": "A3",
+      "acceptedTopArticle": "A3",
+      "ms": 1438,
+      "hits": [
+        {
+          "id": "A3",
+          "channels": [
+            "vector"
+          ],
+          "reranked": true,
+          "snippet": "从某位作者早年的失败经历切入，跟随他离职、重选方向的过程，结尾回到选择的代价。"
+        }
+      ]
+    }
+  ],
+  "providerCalls": 1,
+  "paidRemoteCalls": 0,
+  "status": {
+    "engine": "haystack-fastembed-v1",
+    "phase": "ready",
+    "ready": true,
+    "vectorSearch": true,
+    "remoteModelCalls": 0,
+    "done": 1,
+    "total": 1,
+    "totalSources": 5,
+    "revision": "671e816fda8b8318815a99bb24f16d973e6d4b81f47a504188835a0d03aefcc3",
+    "sources": 4,
+    "passages": 5,
+    "articles": 3,
+    "templates": 1,
+    "embeddingModel": "BAAI/bge-small-zh-v1.5",
+    "rerankerModel": "BAAI/bge-reranker-v2-m3-int8",
+    "embeddingLoaded": true,
+    "rerankerLoaded": true,
+    "peakRssMiB": 668,
+    "threads": 2,
+    "rankCandidates": 8,
+    "rerankApplied": true,
+    "queryMs": 564,
+    "lexicalCandidates": 0,
+    "vectorCandidates": 4
+  }
+}

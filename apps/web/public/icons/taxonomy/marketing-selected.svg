@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filled tones / marketing">
+<path id="Tone / dark" d="M4 9H8.3L18.1 4C19.3667 3.33333 20 3.66667 20 5V18C20 19.3333 19.3667 19.6667 18.1 19L8.3 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9Z" fill="#3F5CFF"/>
+<path id="Tone / mid" opacity="0.55" d="M9 8.7L18.2 4.2C19.4 3.6 20 3.93333 20 5.2V17.8C20 19.0667 19.4 19.4 18.2 18.8L9 15V8.7Z" fill="#3F5CFF"/>
+<path id="Tone / dark_2" d="M5 15H9L11.1 20C11.4333 21 11.1 21.5 10.1 21.5H8.5C7.83333 21.5 7.36667 21.1667 7.1 20.5L5 15Z" fill="#3F5CFF"/>
+<g id="Tone / light" opacity="0.2">
+<path d="M22 9V14Z" fill="#3F5CFF"/>
+<path d="M22 9V14" stroke-width="2" stroke-linecap="round" stroke="#3F5CFF"/>
+</g>
+</g>
+</svg>

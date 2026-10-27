@@ -1,0 +1,5 @@
+haystack-ai==3.4.1
+fastembed-haystack==3.0.0
+fastembed==0.9.1
+sqlite-vec==0.1.9
+jieba==0.42.1
