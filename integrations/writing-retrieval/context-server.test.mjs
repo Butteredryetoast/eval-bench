@@ -1,12 +1,28 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {once} from 'node:events';
-import {createContextServer} from './context-server.mjs';
+import {createContextServer,projectContext} from './context-server.mjs';
 import {mkdtemp,mkdir,writeFile,rm} from 'node:fs/promises';
 import {join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {createKnowledgeSource} from './project/server/knowledge.mjs';
 const token='test-only-private-bridge-123456';
+test('unanalysed full articles and blueprint parents are readable citation objects without private paths',()=>{
+ const found={revision:'r1',examples:[{id:'A1',title:'IPO 报道',evidenceLevel:'candidate',contentExcerpt:'召回片段'}],blueprints:[{id:'NEWS-P',name:'推进',sourceArticleIds:['A2'],nodes:[]}]};
+ const library={articles:[{id:'A1',title:'IPO 报道',url:'https://example.com/ipo',account:'作者',publishDate:'2026-01-01',evidenceLevel:'candidate',originalNotePath:'/private/original.md',_sourceText:'这篇尚未拆解的文章有可读取全文。末段是独立可核对的原文内容。'},{id:'A2',title:'蓝图原文',evidenceLevel:'analyzed',originalNotePath:'/private/parent.md',_sourceText:'先给出异常，再展示材料，最后解释影响。'}]};
+ const out=projectContext(found,{id:'humanizer-zh',revision:'s1',instructions:'规则'},library);
+ assert.equal(out.articles[0].id,'A1');assert.equal(out.articles[0].contentScope,'full');assert.match(out.articles[0].content,/末段是独立可核对的原文内容/);
+ assert.equal(out.articles[0].evidenceLevel,'candidate');assert.equal(out.articles[0].url,'https://example.com/ipo');
+ assert.equal(out.articles[1].id,'A2');assert.equal(out.articles[1].title,'蓝图原文');assert.doesNotMatch(JSON.stringify(out),/\/private\/|notePath|obsidian:/);
+});
+test('bridge preserves ordered narrative beats, material roles and dependencies without private source paths',()=>{
+ const blueprint={id:'NEWS-MEMORY',name:'变化—证据—解释',genre:'资讯',structureId:'N1',version:'1',revision:'b1',fit:'产品发生可验证变化',needs:'先核对跨会话记忆证据',boundary:'没有实测不得声称体验',notePath:'/private/blueprint.md',sourceArticleIds:['A1'],nodes:[{id:'change',title:'读者先看到什么变化',readerQuestion:'和以前相比变在哪里？',move:'先交代变化，再用证据解释',transition:'从变化引出验证',evidence:'/private/original.md',beats:[{id:'setup',type:'narration',instruction:'提出需要验证的问题',dependsOn:[]},{id:'memory-proof',type:'material',instruction:'在解释前展示跨会话调用记录',kind:'case',role:'证明同一信息被实际调用',required:true,dependsOn:[],notePath:'/private/material.md'},{id:'explain',type:'observation',instruction:'解释证据能够支持的判断',dependsOn:['memory-proof']}]}]};
+ const out=projectContext({revision:'r1',blueprints:[blueprint],retrieval:{engine:'haystack-fastembed-v1'}},{id:'humanizer-zh',revision:'s1',instructions:'规则'});
+ const b=out.blueprints[0];assert.equal(b.title,blueprint.name);assert.equal(b.version,'1');assert.equal(b.boundary,blueprint.boundary);assert.equal(b.nodes[0].readerQuestion,blueprint.nodes[0].readerQuestion);assert.equal(b.nodes[0].transition,blueprint.nodes[0].transition);
+ assert.deepEqual(b.nodes[0].beats.map(v=>v.id),['setup','memory-proof','explain']);
+ assert.deepEqual(b.nodes[0].beats[1],{id:'memory-proof',type:'material',instruction:'在解释前展示跨会话调用记录',dependsOn:[],kind:'case',role:'证明同一信息被实际调用',required:true});
+ assert.deepEqual(b.nodes[0].beats[2].dependsOn,['memory-proof']);assert.doesNotMatch(JSON.stringify(out),/\/private\/|notePath|obsidian:/);
+});
 test('authenticated retrieval projects current writing references without exposing local paths or making model calls',async()=>{
  let input;const server=createContextServer({token,library:async()=>({revision:'r1',stats:{articles:1}}),lookup:async v=>{input=v;return {revision:'r1',retrieval:{engine:'local-bm25-rrf-v1'},templates:[{id:'A1',name:'消息推进',notePath:'/private/vault'}],examples:[{id:'a1',title:'写法示例',notePath:'/secret',obsidianUrl:'obsidian://secret',contentExcerpt:'文本片段',evidenceLevel:'candidate'}]};},skill:async()=>({id:'humanizer-zh',revision:'skill1',instructions:'规则'})});
  server.listen(0,'127.0.0.1');await once(server,'listening');const url='http://127.0.0.1:'+server.address().port;

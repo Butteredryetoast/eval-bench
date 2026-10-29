@@ -6,10 +6,10 @@ import { documentText, normalizeArticle, revisionChanges, revisionDocument, vali
 import { reviseSelectedPassage } from './writing-selection';
 
 export function documentVersion(a:WritingArticle,label:string){return {id:newId('version'),label,createdAt:now(),document:a.document!};}
-export function finishDocumentGeneration(current:WritingArticle,base:WritingArticle,messageId:string,answer:string,purpose:string,scope?:{start:number;end:number},selection?:WritingSelection):WritingArticle{
+export function finishDocumentGeneration(current:WritingArticle,base:WritingArticle,messageId:string,answer:string,purpose:string,scope?:{start:number;end:number},selection?:WritingSelection,versionLabel='AI 初稿'):WritingArticle{
   const a=normalizeArticle(current);if(purpose==='discuss')return a;
   const document=validateDocument(selection?reviseSelectedPassage(base.document!,selection,answer):revisionDocument(base,answer,scope),a);
-  if(!documentText(base.document!)&&a.documentRevision===base.documentRevision){return {...a,document,documentRevision:(a.documentRevision||0)+1,versions:[...(a.versions||[]),documentVersion({...a,document},'AI 初稿')].slice(-30),proposal:null};}
+  if(!documentText(base.document!)&&a.documentRevision===base.documentRevision){return {...a,document,documentRevision:(a.documentRevision||0)+1,versions:[...(a.versions||[]),documentVersion({...a,document},versionLabel)].slice(-30),proposal:null};}
   return {...a,proposal:{id:newId('proposal'),messageId,baseRevision:base.documentRevision||0,createdAt:now(),changes:revisionChanges(base.document!,document)}};
 }
 export class WritingDocumentService {

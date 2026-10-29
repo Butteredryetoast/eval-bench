@@ -1,3 +1,4 @@
+import {fixtureKnowledge,citedReply} from './fixtures/writing-knowledge';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {randomUUID} from 'node:crypto';
@@ -47,7 +48,7 @@ test('natural conversation distinguishes discussion from edits and removal stops
   try{
     const profile:LocalProfile={id:'writer-api',name:'Writer',vendor:'test',model:'fixture',adapter:'api',color:'#242832',modes:['text'],supportsTemperature:false};
     let response='';const prompts:string[]=[];
-    const e=new EditorialService(new CasebenchService(store),{profiles:async()=>[profile],execute:async task=>{prompts.push(task.case.prompt);return {text:response,usage:UNKNOWN_USAGE,reportedModel:profile.model,logs:''};}}),w=new WritingDocumentService(e);
+    const e=new EditorialService(new CasebenchService(store),{profiles:async()=>[profile],knowledge:async()=>fixtureKnowledge(),execute:async task=>{prompts.push(task.case.prompt);return {text:citedReply(response),usage:UNKNOWN_USAGE,reportedModel:profile.model,logs:''};}}),w=new WritingDocumentService(e);
     let a=await e.create({});a=await w.save(a.id,{documentRevision:0,document:markdownDocument('Before selected ending.\n\nKeep the other paragraph.')});
     const selection={from:8,to:16,text:'selected'};
     async function send(message:string,selectedPassage?:typeof selection){a=await e.send(a.id,{text:message,purpose:'auto',selectedPassage,profileId:profile.id,model:profile.model,revision:a.revision,requestKey:randomUUID()});for(let n=0;n<100&&a.messages.at(-1)?.status==='pending';n++){await new Promise(r=>setTimeout(r,15));a=await e.article(a.id);}assert.equal(a.messages.at(-1)?.status,'complete');}
